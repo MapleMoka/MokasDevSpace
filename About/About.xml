@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Moka Dev Files</name>
+	<author>Moka</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Moka.DevFiles</packageId>
+	<modIconPath>Moka/Core/LoadingScreen/MokaModularCoreIcon</modIconPath>
+	<description></description>
+	
+	<modDependenciesByVersion>
+		<v1.6>
+			<li>
+				<packageId>Ludeon.RimWorld.Biotech</packageId>
+				<displayName>Biotech</displayName>
+			</li>
+		</v1.6>
+    </modDependenciesByVersion>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+	<incompatibleWith>
+		<li>Moka.DreadlockTagFix</li>
+	</incompatibleWith>
+	
+</ModMetaData>

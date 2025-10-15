@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="Genie" or defName="Hussar"]/doubleXenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Genie" or defName="Hussar"]</xpath>
+			<value>
+				<doubleXenotypeChances />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Sanguophage" or defName="Genie" or defName="Hussar"]/doubleXenotypeChances</xpath>
+		<value>
+			<Moka_Baseloc>0.45</Moka_Baseloc>
+		</value>
+	</Operation>
+
+</Patch>

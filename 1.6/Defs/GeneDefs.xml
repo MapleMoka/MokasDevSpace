@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<GeneDef>
+		<defName>Moka_NeedPollution</defName>
+		<label>pollution need</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<enablesNeeds>
+			<li>Moka_NeedPollution</li>
+		</enablesNeeds>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_NeedNatureExposure</defName>
+		<label>nature exposure</label>
+		<!-- <labelShortAdj>kill-thirsty</labelShortAdj> -->
+		<description>Carriers of this gene lust for the feeling of ending another's life. They will become irritated if they go for too long without killing someone in close combat.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_Killthirst</iconPath>
+		<enablesNeeds>
+			<li>Moka_NeedNatureExposure</li>
+		</enablesNeeds>
+		<disablesNeeds>
+			<li>Outdoors</li>
+		</disablesNeeds>
+		<biostatMet>4</biostatMet>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<!-- <GeneDef>
+		<defName>DV_Wastefeaster</defName>
+		<label>wastefeaster</label>
+		<description>Carriers of this gene have a specialized, adapted stomach with a noxious cocktail of acids that can digest even toxic materials like wastepacks.</description>
+		<iconPath>UI/Genes/Gene_Wastefeaster</iconPath>
+		<geneClass>Gene</geneClass>
+		<abilities>
+			<li>DV_Wastefeast</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>DV_Wastefeast</AbilityDef>
+		</descriptionHyperlinks>
+		<customEffectDescriptions>
+			<li>Gives the ability to devour up to 3 stacks of wastepacks, before falling to toxic buildup.</li>
+		</customEffectDescriptions>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>wasterfeaster</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>trash</symbol>
+				</li>
+				<li>
+					<symbol>tox</symbol>
+				</li>
+				<li>
+					<symbol>waste</symbol>
+				</li>
+				<li>
+					<symbol>detritus</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>feeder</symbol>
+				</li>
+				<li>
+					<symbol>eater</symbol>
+				</li>
+				<li>
+					<symbol>gorger</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef> -->
+
+	<!-- <GeneDef>
+		<defName>DV_Pheromones</defName>
+		<label>pherotypical attraction</label>
+		<description>Carriers of this gene emit foul-smelling pheromones that others carrying the same gene are drawn to, while those without the gene dislike.</description>
+		<iconPath>UI/Genes/Gene_PheromoneAttraction</iconPath>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds a positive thought to pawns with the same gene, and a negative thought to pawns without it.</li>
+		</customEffectDescriptions>
+	</GeneDef> -->
+
+	<GeneDef>
+		<defName>Moka_StarchDeposits</defName>
+		<label>starch deposits</label>
+		<iconPath>Moka/Nature/Photosynthesis</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_StarchDeposits</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_BuildingBark</defName>
+		<label>building bark</label>
+		<iconPath>Moka/Nature/ContinuedGrowth</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_BuildingBark</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_WovenXylem</defName>
+		<label>woven xylem</label>
+		<iconPath>Moka/Nature/Transpiration</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_WovenXylem</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_FloralRegeneration</defName>
+		<label>floral regen</label>
+		<iconPath>Moka/Nature/Transpiration</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_FloralRegeneration</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_FloralPheromones</defName>
+		<label>floral pheromones</label>
+		<iconPath>Moka/Nature/FloralPheromones</iconPath>
+		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_Greentuition</defName>
+		<label>floral pheromones</label>
+		<iconPath>Moka/Nature/FloralPheromones</iconPath>
+		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxGasConversion</defName>
+		<label>tox gas conversion</label> 
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxGasConversion</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxTearDown</defName>
+		<label>tox teardown</label>
+		<iconPath>UI/Genes/Gene_FatStorage</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxTearDown</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- <GeneDef>
+		<defName>Moka_ToxCognition</defName>
+		<label>tox cognition</label>
+		<iconPath>UI/Genes/Gene_FatStorage</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxCognition</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef> -->
+
+	<GeneDef>
+		<defName>Moka_SwitchingToxAttack</defName>
+		<label>tox attacks</label>
+		<iconPath>UI/Genes/Gene_FatStorage</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_ToxAttackInactive</hediff>
+						<bodyParts>
+							<li>Arm</li>
+							<li>Arm</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+  	<GeneDef>
+		<defName>Moka_ToxicRage</defName>
+		<label>toxic rage</label>
+		<description>Carriers of this gene have skin pigments that refract light, letting them blend with their surroundings and become invisible for a short time. In smoke, particulate-reactive cells increase this effect to near-total concealment.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		<abilities>
+			<li>Moka_ToxicRage</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxicRage</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<minAgeActive>8</minAgeActive>
+	</GeneDef>
+
+</Defs>

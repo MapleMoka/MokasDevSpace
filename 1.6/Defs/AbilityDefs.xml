@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AbilityDef>
+		<defName>Moka_ToxicRage</defName>
+		<label>toxic rage</label>
+		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases>	
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>	
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_ToxicRage</hediffDef>
+				<psychic>false</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li>
+				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
+			</li>
+			<!--<li Class="CompProperties_AbilitySmokepop">
+				<smokeRadius>4.9</smokeRadius>
+				<clamorType>Ability</clamorType>
+				<clamorRadius>15</clamorRadius>
+			</li>-->		
+		</comps>
+	</AbilityDef>
+	
+</Defs>

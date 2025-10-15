@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<MokaDevSpace.StarchReserves>{0} grams of nutrition stored</MokaDevSpace.StarchReserves>
+	<MokaDevSpace.XylemStores>{0} litres of water stored</MokaDevSpace.XylemStores>
+	<MokaDevSpace.StitchedBark>{0}'s body is effectively {1} years old</MokaDevSpace.StitchedBark>
+	
+	<MokaDevSpace.AbilityNeedsPollutionNeed>this pawn doesn't have the needed gene</MokaDevSpace.AbilityNeedsPollutionNeed>
+	<MokaDevSpace.AbilityNeedsPollutionLevel>this pawn needs to be saturated in pollution to use this</MokaDevSpace.AbilityNeedsPollutionLevel>
+</LanguageData>

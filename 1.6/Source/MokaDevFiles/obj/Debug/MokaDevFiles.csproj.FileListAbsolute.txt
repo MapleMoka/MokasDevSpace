@@ -1,0 +1,8 @@
+C:\Users\Emmanuel\Downloads\Game\Rimworld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MokaDevFiles.csproj.AssemblyReference.cache
+C:\Users\Emmanuel\Downloads\Game\Rimworld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MokaDevFiles.csproj.CoreCompileInputs.cache
+C:\Users\Emmanuel\Downloads\Game\Rimworld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MoreMelaninFarmers.dll
+C:\Users\Emmanuel\Downloads\Game\Rimworld\Mods\Moka Dev Files\1.6\Assemblies\MoreMelaninFarmers.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MokaDevFiles.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MokaDevFiles.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka Dev Files\1.6\Assemblies\MokaDevSpace.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka Dev Files\1.6\Source\MokaDevFiles\obj\Debug\MokaDevSpace.dll

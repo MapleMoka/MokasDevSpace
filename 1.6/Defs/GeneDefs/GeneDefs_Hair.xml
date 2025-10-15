@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_AfroTextureHair</defName>
+		<label>afro texture</label>
+		<description>Carriers of this gene have any of the afrotextured hairs.</description>
+		<iconPath>Moka/Core/AfroTexturedHair</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+	    <selectionWeightFactorDarkSkin>1</selectionWeightFactorDarkSkin>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>AfroTexture</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>afro</symbol></li>
+				<li><symbol>bantu</symbol></li>
+				<li><symbol>dread</symbol></li>
+				<li><symbol>coil</symbol></li>
+				<li><symbol>braid</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>lock</symbol></li>
+				<li><symbol>loc</symbol></li>
+				<li><symbol>lox</symbol></li>
+				<li><symbol>tie</symbol></li>
+				<li><symbol>knot</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Cosmetic</displayCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>HairStyle</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_ColoredHairs" ParentName="GeneHairColorBase" Abstract = "true">
+		<selectionWeight>0</selectionWeight>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<iconPath>Moka/Core/ColoredAfroTex</iconPath>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_RandomGene_FloralHair</defName>
+		<label>floral shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Nature/RandomFloralHairs</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_HairColor_EarlyAutumn</li>
+					<li>Moka_HairColor_DeepAutumn</li>
+					<li>Moka_HairColor_NewLeaf</li>
+					<li>Moka_HairColor_PaleLeaf</li>
+					<li>Moka_HairColor_LightSakura</li>
+					<li>Moka_HairColor_DarkSakura</li>
+
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_LeafyHairBase" ParentName="Moka_ColoredHairs" Abstract = "true">
+		<label>leafy hair</label>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>vert</symbol></li>
+				<li><symbol>aut</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>green</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</suffixSymbols>
+		</symbolPack>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_EarlyAutumn</defName>
+		<hairColorOverride>(239, 95, 74)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DeepAutumn</defName>
+		<hairColorOverride>(161, 41, 39)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_NewLeaf</defName>
+		<hairColorOverride>(247, 217, 98)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_LightGreen</defName>
+		<hairColorOverride>(164, 198, 112)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_RichGreen</defName>
+		<hairColorOverride>(123, 166, 71)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_StrikingGreen</defName>
+		<hairColorOverride>(93, 143, 106)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_PaleGreen</defName>
+		<hairColorOverride>(197, 223, 150)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DeepGreen</defName>
+		<hairColorOverride>(103, 123, 59)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_PaleLeaf</defName>
+		<hairColorOverride>(209, 206, 189)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_LightSakura</defName>
+		<hairColorOverride>(241, 176, 208)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DarkSakura</defName>
+		<hairColorOverride>(211, 43, 92)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+
+	<!-- <GeneDef Name="MokaBloodyHairBase" ParentName="GeneHairColorBase" Abstract = "true">
+		<label>bloody hair</label>
+		<selectionWeight>0</selectionWeight>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+				<li><symbol>blood</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>thirst</symbol></li>
+				<li><symbol>bleed</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		
+	</GeneDef>
+
+	<GeneDef ParentName="MokaBloodyHairBase">
+		<defName>Moka_HairColor_SangBloody</defName>
+		<hairColorOverride>(149,40,97)</hairColorOverride>
+		<displayOrderInCategory>2510</displayOrderInCategory>
+		
+	</GeneDef>
+	
+	<GeneDef ParentName="MokaBloodyHairBase">
+		<defName>Moka_HairColor_DarkSangBloody</defName>
+		<hairColorOverride>(126,36,68)</hairColorOverride>
+		<displayOrderInCategory>2511</displayOrderInCategory>
+		
+	</GeneDef>
+	
+	<GeneDef ParentName="MokaBloodyHairBase">
+		<defName>Moka_HairColor_Bloody</defName>
+		<hairColorOverride>(155,36,44)</hairColorOverride>
+		<displayOrderInCategory>2512</displayOrderInCategory>
+		
+	</GeneDef>
+	
+	<GeneDef ParentName="MokaBloodyHairBase">
+		<defName>Moka_HairColor_PaleBloody</defName>
+		<hairColorOverride>(164,124,116)</hairColorOverride>
+		<displayOrderInCategory>2513</displayOrderInCategory>
+		
+	</GeneDef>
+	
+	<GeneDef ParentName="MokaBloodyHairBase">
+		<defName>Moka_HairColor_RichBloody</defName>
+		<hairColorOverride>(223, 57, 8)</hairColorOverride>
+		<displayOrderInCategory>2514</displayOrderInCategory>
+		
+	</GeneDef> -->
+	
+ </Defs>

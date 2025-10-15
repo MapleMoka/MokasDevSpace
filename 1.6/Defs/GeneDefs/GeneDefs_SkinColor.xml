@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Darkskin -->
+
+	<GeneDef Name="Moka_DarkSkinBlack" ParentName="GeneSkinColorOverride" Abstract="true">
+	    <randomBrightnessFactor>0</randomBrightnessFactor>
+		<selectionWeight>0.5</selectionWeight>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>cofnix</symbol></li>
+				<li><symbol>sunkissed</symbol></li>
+				<li><symbol>darktanned</symbol></li>
+			</wholeNameSymbols>		
+			<prefixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>coff</symbol></li>
+				<li><symbol>curly</symbol></li>
+				<li><symbol>cara</symbol></li>
+				<li><symbol>ebon</symbol></li>
+				<li><symbol>choco</symbol></li>
+				<li><symbol>royal</symbol></li>
+				<li><symbol>dark</symbol></li>
+				<li><symbol>mel</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>chocolate</symbol></li>
+				<li><symbol>curls</symbol></li>
+				<li><symbol>mel</symbol></li>
+				<li><symbol>nix</symbol></li>
+				<li><symbol>locs</symbol></li>
+			</suffixSymbols>			
+		</symbolPack>
+	</GeneDef> 
+
+	<GeneDef>
+		<defName>Moka_RandomDarkSkinPigment</defName>
+		<label>darkskin shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Core/RandomDarkskin</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_SkinColor_BrownCoffee</li>
+					<li>Moka_SkinColor_BrownCoffee</li>
+
+					<li>Moka_SkinColor_RoyalBrown</li>
+					<li>Moka_SkinColor_RoyalBrown</li>
+
+					<li>Moka_SkinColor_Bole</li>
+					<li>Moka_SkinColor_Bole</li>
+
+					<li>Moka_SkinColor_BurntUmber</li>
+					<li>Moka_SkinColor_BurntUmber</li>
+
+					<li>Moka_SkinColor_LiverBrown</li>
+					<li>Moka_SkinColor_LiverBrown</li>
+
+					<li>Moka_SkinColor_DarkBrown</li>
+					<li>Moka_SkinColor_DarkBrown</li>
+
+					<li>Moka_SkinColor_ReddishBrown</li>
+					<li>Moka_SkinColor_ReddishBrown</li>
+
+					<li>Moka_SkinColor_DarkReddishBrown</li>
+					<li>Moka_SkinColor_DarkReddishBrown</li>
+
+					<li>Moka_SkinColor_DarkOlive</li>
+					<li>Moka_SkinColor_DarkOlive</li>
+
+					<li>Moka_SkinColor_BurntBrown</li>
+					<li>Moka_SkinColor_BurntBrown</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_BrownCoffee</defName>
+		<label>brown coffee skin</label>
+		<labelShortAdj>brown coffee</labelShortAdj>
+		<description>Carriers of this have skin that matches brown coffee in color.</description>
+		<skinColorOverride>(77, 42, 34)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_RoyalBrown</defName>
+		<label>royal brown skin</label>
+		<labelShortAdj>royal brown</labelShortAdj>
+		<description>Carriers of this have skin that matches the royal brown pigment.</description>
+		<skinColorOverride>(94, 55, 46)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_Bole</defName>
+		<label>bole skin</label>
+		<labelShortAdj>bole</labelShortAdj>
+		<description>Carriers of this have skin that matches the bole pigment.</description>
+		<skinColorOverride>(113, 65, 55)</skinColorOverride>
+		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_BurntUmber</defName>
+		<label>burnt umber skin</label>
+		<labelShortAdj>burnt umber</labelShortAdj>
+		<description>Carriers of this have skin that matches the burnt umber pigment.</description>
+		<skinColorOverride>(138, 51, 36)</skinColorOverride>
+		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_LiverBrown</defName>
+		<label>liver brown skin</label>
+		<labelShortAdj>liver brown</labelShortAdj>
+		<description>Carriers of this have skin that matches the liver brown pigment.</description>
+		<skinColorOverride>(110, 56, 31)</skinColorOverride>
+		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_DarkBrown</defName>
+		<label>dark brown skin</label>
+		<labelShortAdj>dark brown</labelShortAdj>
+		<description>Carriers of this have dark brown skin.</description>
+		<skinColorOverride>(111, 79, 29)</skinColorOverride>
+		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_ReddishBrown</defName>
+		<label>reddish brown skin</label>
+		<labelShortAdj>reddish brown</labelShortAdj>
+		<description>Carriers of this have reddish brown skin.</description>
+		<skinColorOverride>(124, 80, 26)</skinColorOverride>
+		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_DarkReddishBrown</defName>
+		<label>reddish dark brown skin</label>
+		<labelShortAdj>dark reddish brown</labelShortAdj>
+		<description>Carriers of this have darker reddish brown skin.</description>
+		<skinColorOverride>(89, 48, 39)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_DarkOlive</defName>
+		<label>dark olive skin</label>
+		<labelShortAdj>dark olive</labelShortAdj>
+		<description>Carriers of this have skin that matches the dark olive pigment.</description>
+		<skinColorOverride>(135, 91, 45)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_DarkSkinBlack">
+		<defName>Moka_SkinColor_BurntBrown</defName>
+		<label>burnt brown skin</label>
+		<labelShortAdj>burnt brown</labelShortAdj>
+		<description>Carriers of this have skin that matches the dark gold pigment.</description>
+		<skinColorOverride>(97, 59, 33)</skinColorOverride>		
+	</GeneDef>
+
+	<!-- Lightskin -->
+
+	<GeneDef Name="Moka_LightSkinBlack" ParentName="GeneSkinColorOverride" Abstract="true">
+	    <randomBrightnessFactor>0</randomBrightnessFactor>
+		<selectionWeight>0.5</selectionWeight>
+		<displayOrderInCategory>980</displayOrderInCategory>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>caramel</symbol></li>
+				<li><symbol>sunkissed</symbol></li>
+				<li><symbol>lighttanned</symbol></li>
+			</wholeNameSymbols>		
+			<prefixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>coff</symbol></li>
+				<li><symbol>curly</symbol></li>
+				<li><symbol>cara</symbol></li>
+				<li><symbol>brun</symbol></li>
+				<li><symbol>royal</symbol></li>
+				<li><symbol>tan</symbol></li>
+				<li><symbol>mel</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>chocolate</symbol></li>
+				<li><symbol>curls</symbol></li>
+				<li><symbol>mel</symbol></li>
+				<li><symbol>tan</symbol></li>
+				<li><symbol>locs</symbol></li>
+			</suffixSymbols>			
+		</symbolPack>
+	</GeneDef> 
+
+	<GeneDef>
+		<defName>Moka_RandomLightSkinPigment</defName>
+		<label>lightskin shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Core/RandomLightskin</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_SkinColor_Chestnut</li>
+					<li>Moka_SkinColor_Chestnut</li>
+
+					<li>Moka_SkinColor_Sunrise</li>
+					<li>Moka_SkinColor_Sunrise</li>
+
+					<li>Moka_SkinColor_Peach</li>
+					<li>Moka_SkinColor_Peach</li>
+
+					<li>Moka_SkinColor_Tanned</li>
+					<li>Moka_SkinColor_Tanned</li>
+
+					<li>Moka_SkinColor_Caramel</li>
+					<li>Moka_SkinColor_Caramel</li>
+
+					<li>Moka_SkinColor_Brown</li>
+					<li>Moka_SkinColor_Brown</li>
+
+					<li>Moka_SkinColor_LightBrown</li>
+					<li>Moka_SkinColor_LightBrown</li>
+
+					<li>Moka_SkinColor_YellowishBrown</li>
+					<li>Moka_SkinColor_YellowishBrown</li>
+
+					<li>Moka_SkinColor_Coconut</li>
+					<li>Moka_SkinColor_Coconut</li>
+
+					<li>Moka_SkinColor_DarkGold</li>
+					<li>Moka_SkinColor_DarkGold</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Chestnut</defName>
+		<label>chestnut skin</label>
+		<labelShortAdj>chestnut</labelShortAdj>
+		<description>Carriers of this have skin that matches the dark gold pigment.</description>
+		<skinColorOverride>(187, 119, 82)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Sunrise</defName>
+		<label>sunrise skin</label>
+		<labelShortAdj>sunrise</labelShortAdj>
+		<description>Carriers of this have skin that matches the rising sun.</description>
+		<skinColorOverride>(222, 176, 150)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Peach</defName>
+		<label>peach skin</label>
+		<labelShortAdj>peach</labelShortAdj>
+		<description>Carriers of this have skin that matches golden peaches.</description>
+		<skinColorOverride>(244, 181, 164)</skinColorOverride>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Tanned</defName>
+		<label>tanned skin</label>
+		<labelShortAdj>tanned</labelShortAdj>
+		<description>Carriers of this have skin that matches a golden tan.</description>
+		<skinColorOverride>(179, 134, 89)</skinColorOverride>		
+	</GeneDef>	
+	
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Caramel</defName>
+		<label>caramel skin</label>
+		<labelShortAdj>caramel</labelShortAdj>
+		<description>Carriers of this have skin that matches liquid caramel.</description>
+		<skinColorOverride>(199, 120, 68)</skinColorOverride>		
+	</GeneDef>	
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Brown</defName>
+		<label>brown skin</label>
+		<labelShortAdj>brown</labelShortAdj>
+		<description>Carriers of this have brown skin.</description>
+		<skinColorOverride>(135,97,39)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_LightBrown</defName>
+		<label>light brown skin</label>
+		<labelShortAdj>light brown</labelShortAdj>
+		<description>Carriers of this have light browm skin.</description>
+		<skinColorOverride>(146,106,45)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_YellowishBrown</defName>
+		<label>yellowish brown skin</label>
+		<labelShortAdj>yellowish brown</labelShortAdj>
+		<description>Carriers of this have yellowish brown skin.</description>
+		<skinColorOverride>(156,114,72)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_Coconut</defName>
+		<label>coconut skin</label>
+		<labelShortAdj>coconut</labelShortAdj>
+		<description>Carriers of this have skin that matches the coconut pigment.</description>
+		<skinColorOverride>(161, 92, 51)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LightSkinBlack">
+		<defName>Moka_SkinColor_DarkGold</defName>
+		<label>dark gold skin</label>
+		<labelShortAdj>dark gold</labelShortAdj>
+		<description>Carriers of this have skin that matches the dark gold pigment.</description>
+		<skinColorOverride>(178, 102, 52)</skinColorOverride>		
+	</GeneDef>
+	
+</Defs>

@@ -1,0 +1,16 @@
+<loadFolders>
+	
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<!-- <li IfModActive="sumghai.Replimat">1.5/Mods/Replimattie</li> -->
+		<!-- <li IfModActive="Rooboid.DreadlockHairsHD">1.5/Mods/Hairs/RooDreads</li>	
+		<li IfModActive="Rooboid.GlasseshairHD">1.5/Mods/Hairs/RooGlasses</li>
+		<li IfModActive="Rooboid.AccessoryHairsHD">1.5/Mods/Hairs/RooAccess</li>	
+		<li IfModActive="Rooboid.RoyalhairHD">1.5/Mods/Hairs/RooRoyal</li>
+		<li IfModActive="Rooboid.RoyalhairKoFi">1.5/Mods/Hairs/RooRoyalKofi</li>
+		<li IfModActive="Rooboid.GlasseshairKoFi">1.5/Mods/Hairs/RooGlassesKofi</li>
+		<li IfModActive="vanillaracesexpanded.highmate">1.5/Mods/Xenos/VREHighmates</li> -->
+	</v1.6>
+	
+</loadFolders>

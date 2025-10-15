@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Moka_LocAffinityThoughtMild</defName>
+		<thoughtClass>MCM.Thought_LocAffinityMild</thoughtClass>
+		<workerClass>MCM.Thoughtworker_LocAffinityMild</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>at least theres them</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_LocAffinityThoughtMixed</defName>
+		<thoughtClass>MCM.Thought_LocAffinityMixed</thoughtClass>
+		<workerClass>MCM.Thoughtworker_LocAffinityMixed</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>comforting presence</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_LocAffinityThoughtStrong</defName>
+		<thoughtClass>MCM.Thought_LocAffinityStrong</thoughtClass>
+		<workerClass>MCM.Thoughtworker_LocAffinityStrong</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>youre perfect</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

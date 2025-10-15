@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <WorkGiverDef>
+    <defName>Moka_MilkPawn</defName>
+    <label>milk pawns</label>
+    <giverClass>MFM.WorkGiver_MilkPawn</giverClass>
+    <workType>Handling</workType>
+    <verb>milk</verb>
+    <gerund>milking</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <JobDef>
+    <defName>Moka_MilkPawn</defName>
+    <driverClass>MFM.JobDriver_MilkPawn</driverClass>
+    <reportString>milking TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <WorkGiverDef>
+    <defName>Moka_PluckPawn</defName>
+    <label>pluck fruit from pawns</label>
+    <giverClass>MFM.WorkGiver_PluckPawn</giverClass>
+    <workType>Handling</workType>
+    <verb>pluck</verb>
+    <gerund>plucking</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <JobDef>
+    <defName>Moka_PluckPawn</defName>
+    <driverClass>MFM.JobDriver_PluckPawn</driverClass>
+    <reportString>plucking fruit from TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <WorkGiverDef>
+    <defName>Moka_ShearPawn</defName>
+    <label>shear pawns</label>
+    <giverClass>MFM.WorkGiver_ShearPawn</giverClass>
+    <workType>Handling</workType>
+    <verb>shear</verb>
+    <gerund>shearing</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <JobDef>
+    <defName>Moka_ShearPawn</defName>
+    <driverClass>MFM.JobDriver_ShearPawn</driverClass>
+    <reportString>shearing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <WorkGiverDef>
+    <defName>Moka_HarvestFromPawn</defName>
+    <label>shear pawns</label>
+    <giverClass>MFM.WorkGiver_ShearPawn</giverClass>
+    <workType>Handling</workType>
+    <verb>shear</verb>
+    <gerund>shearing</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <JobDef>
+    <defName>Moka_HarvestFromPawn</defName>
+    <driverClass>MFM.JobDriver_ShearPawn</driverClass>
+    <reportString>shearing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

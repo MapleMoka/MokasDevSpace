@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <GeneDef>
+		<defName>Moka_BlankLactation</defName>
+		<label>blank lactation</label>
+		<description>Carriers of this gene produce milk at all times and can be milked by other pawns every now and then.</description>
+		<geneClass>MCM.Gene_SteadyLactation</geneClass>
+		<iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+		<displayCategory>Moka_ResourceProduction</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MCM.GeneMaterialProduced">
+				<produces>Milk</produces>
+				<intervalDays>3</intervalDays>
+				<amount>20</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Milkables</li>
+		</exclusionTags>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef> 
+
+	<GeneDef>
+		<defName>Moka_BlankGrowths</defName>
+		<label>blank growths</label>
+		<description>Carriers of this gene rapidly produce wool. This wool can be sheared every so often. The coat provides some protection from the elements.</description>
+		<geneClass>MCM.Gene_ForeignGrowths</geneClass>
+		<iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+		<displayCategory>Moka_ResourceProduction</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MCM.GeneMaterialProduced">
+				<produces>WoodLog</produces>
+				<intervalDays>1</intervalDays>
+				<amount>45</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+		  	<li>Extractables</li>
+		</exclusionTags>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef> 
+	
+	<GeneDef>
+		<defName>Moka_BlankCoat</defName>
+		<label>blank coat</label>
+		<description>Carriers of this gene grow wool over their bodies which can be sheared every 10 days for 45 wool. The coat provides some protection from the elements.</description>
+		<geneClass>MCM.Gene_ThickCoat</geneClass>
+		<iconPath>Genes/Icons/BTEMa_DevilWoolIcon</iconPath>
+		<displayCategory>Moka_ResourceProduction</displayCategory>
+		<displayOrderInCategory>73</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MCM.GeneMaterialProduced">
+				<produces>WoolSheep</produces>
+				<intervalDays>10</intervalDays>
+				<amount>45</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+		  	<li>Shearables</li>
+		</exclusionTags>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef> -->
+
+</Defs>

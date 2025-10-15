@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Princess"]/styleTags</xpath>
+		<value>
+			<li>AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Afro"]/styleTags</xpath>
+		<value>
+			<li>AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Messy"]/styleTags</xpath>
+		<value>
+			<li>AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="BraidedKnot"]/styleTags</xpath>
+		<value>
+			<li>AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Locks"]/styleTags</xpath>
+		<value>
+			<li>AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+</Patch>

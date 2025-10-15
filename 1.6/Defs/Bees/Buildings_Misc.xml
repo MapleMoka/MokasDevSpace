@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moka_BeeHive</defName>
+		<thingClass>MFM.Building_BeeHive</thingClass>
+		<label>beehive</label>
+		<tickerType>Rare</tickerType>
+		<description>A wooden box-like structure with a series of shelves, lattices, and chambers. When placed near flowers the apiary will naturally attract wild bees which will make it their new home. Over time these bees will produce honey which can be harvested and eaten directly, or later fermented into mead.</description>
+		<graphicData>
+			<texPath>Moka/Bees/Beehive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.8,0.4,0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+    	<defaultPlacingRot>South</defaultPlacingRot>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1.0</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>20</Mass>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+			<!-- <soundAmbient>VFEV_Apiary_Ambience</soundAmbient> -->
+		</building>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<Moka_BeesWax>30</Moka_BeesWax>
+		</costList>
+		<costStuffCount>90</costStuffCount>
+		<holdsRoof>false</holdsRoof>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<uiIconScale>0.6</uiIconScale>
+		<specialDisplayRadius>4.9</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>Moka_Beekeeping</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>MFM.Placeworker_BeeHive</li>
+		</placeWorkers>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<GeneDef>
+		<defName>Moka_LocAffinityMild</defName>
+		<label>loc affinity mild</label>
+		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
+		<iconPath>Moka/Core/Moka_LocAffinityMild</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_LocAffinityStrong</defName>
+		<label>loc affinity strong</label>
+		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
+		<iconPath>Moka/Core/Moka_LocAffinityStrong</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Weaker relations with the mild gene variant</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags>
+	</GeneDef>
+	
+</Defs>

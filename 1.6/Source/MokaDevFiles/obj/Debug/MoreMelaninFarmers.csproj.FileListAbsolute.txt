@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka's Modular Mods, Farmer Faction Module\1.4\Assemblies\MoreMelaninFarmers.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka's Modular Mods, Farmer Faction Module\1.4\Source\MoreMelaninFarmers\obj\Debug\MoreMelaninFarmers.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka's Modular Mods, Farmer Faction Module\1.4\Source\MoreMelaninFarmers\obj\Debug\MoreMelaninFarmers.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moka's Modular Mods, Farmer Faction Module\1.4\Source\MoreMelaninFarmers\obj\Debug\MoreMelaninFarmers.dll
