@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FurDef>
+		<defName>Moka_BarkLayer</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Moka/Nature/BarkBodies/BarkLayer_Male</Male>
+			<Female>Moka/Nature/BarkBodies/BarkLayer_Female</Female>
+			<Hulk>Moka/Nature/BarkBodies/BarkLayer_Hulk</Hulk>
+			<Fat>Moka/Nature/BarkBodies/BarkLayer_Fat</Fat>
+			<Thin>Moka/Nature/BarkBodies/BarkLayer_Thin</Thin>
+			<Child>Moka/Nature/BarkBodies/BarkLayer_Thin</Child>
+			<Baby>Moka/Nature/BarkBodies/BarkLayer_Thin</Baby><!-- Always covered by swaddled graphic -->
+		</bodyTypeGraphicPaths>
+	</FurDef>
+  
+  
+
+</Defs>

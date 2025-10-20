@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Scratch">
+		<defName>Moka_SporeBlast</defName>
+		<label>spore blast</label>
+		<!-- <workerClass>DamageWorker_AddInjury</workerClass> -->
+		<externalViolence>true</externalViolence>
+	    <harmsHealth>false</harmsHealth>
+		<deathMessage>{0} has been stunned to death.</deathMessage>
+		<!-- <externalViolenceForMechanoids>true</externalViolenceForMechanoids> -->
+		<!-- <deathMessage>{0} has been EMPed to death.</deathMessage> -->
+		<!-- <harmsHealth>false</harmsHealth> -->
+		<impactSoundType>Electric</impactSoundType>
+		<defaultDamage>15</defaultDamage>
+		<additionalHediffs>
+			<li>
+				<hediff>Moka_FungalSickness</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<!-- <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize> -->
+			</li>
+		</additionalHediffs>
+		<!-- <explosionSnowMeltAmount>0</explosionSnowMeltAmount> -->
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<combatLogRules>Damage_Stun</combatLogRules>
+		<causeStun>true</causeStun>
+		<!-- <stunResistStat MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">EMPResistance</stunResistStat> -->
+		<!-- <stunAdaptationTicks>2200</stunAdaptationTicks> -->
+	</DamageDef>
+
+
+</Defs>

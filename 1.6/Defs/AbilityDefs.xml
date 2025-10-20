@@ -38,12 +38,136 @@
 			<li>
 				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
 			</li>
-			<!--<li Class="CompProperties_AbilitySmokepop">
-				<smokeRadius>4.9</smokeRadius>
-				<clamorType>Ability</clamorType>
-				<clamorRadius>15</clamorRadius>
-			</li>-->		
 		</comps>
 	</AbilityDef>
+
+  	<GeneDef>
+		<defName>Moka_XenoSeed</defName>
+		<label>toxic rage</label>
+		<description>Carriers of this gene have skin pigments that refract light, letting them blend with their surroundings and become invisible for a short time. In smoke, particulate-reactive cells increase this effect to near-total concealment.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		<abilities>
+			<li>Moka_XenoSeed</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_XenoSeed</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<minAgeActive>16</minAgeActive>
+	</GeneDef>
+	
+	<AbilityDef>
+		<defName>Moka_XenoSeed</defName>
+		<label>xeno seed</label>
+		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<cooldownTicksRange>3600000</cooldownTicksRange> <!-- 6 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<statBases>
+			<Ability_Duration>210</Ability_Duration>
+		</statBases>	
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>	
+		<comps>
+			<li Class="MokaDevSpace.CompAbilityProperties_CreateXenoSeed">
+				<compClass>MokaDevSpace.CompAbilityEffect_CreateXenoSeed</compClass>
+				<hediffDef>XenogermLossShock</hediffDef>
+				<xenoSeed>Moka_XenoSeed_PlantDev</xenoSeed>
+				<psychic>false</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>Moka_XenoSeed_PlantDev</defName>
+		<label>plantdev xeno seed</label>
+		<description>A soft, rare fruit. Ambrosia tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AmbrosiaHigh</HediffDef>
+			<HediffDef>AmbrosiaTolerance</HediffDef>
+			<HediffDef>AmbrosiaAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ambrosia</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<baseIngestTicks>80</baseIngestTicks>
+			<chairSearchRadius>4</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<!-- <joyKind>Chemical</joyKind>
+			<joy>0.5</joy> -->
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="MokaDevSpace.IngestionOutcomeDoer_ChangeXeno">
+					<xenotype>Moka_PlantDev</xenotype>
+					<xenotypesCheck>
+						<li>Moka_PlantDev</li>
+						<li>Moka_PlantDev</li>
+					</xenotypesCheck>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AmbrosiaHigh</hediffDef>
+					<severity>0.50</severity>
+					<toleranceChemical>Ambrosia</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AmbrosiaTolerance</hediffDef>
+					<toleranceChemical>Ambrosia</toleranceChemical>
+					<severity>0.032</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>Ambrosia</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
 	
 </Defs>

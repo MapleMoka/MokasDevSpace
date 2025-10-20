@@ -3,6 +3,9 @@
 	<MokaDevSpace.StarchReserves>{0} grams of nutrition stored</MokaDevSpace.StarchReserves>
 	<MokaDevSpace.XylemStores>{0} litres of water stored</MokaDevSpace.XylemStores>
 	<MokaDevSpace.StitchedBark>{0}'s body is effectively {1} years old</MokaDevSpace.StitchedBark>
+
+	<MokaDevSpace.ConversionComplete>{0} has become a {1} after consuming a {2}</MokaDevSpace.ConversionComplete>
+	<MokaDevSpace.ConversionImpossible>{0} is already a {1} and cant be converted into a {2}</MokaDevSpace.ConversionImpossible>
 	
 	<MokaDevSpace.AbilityNeedsPollutionNeed>this pawn doesn't have the needed gene</MokaDevSpace.AbilityNeedsPollutionNeed>
 	<MokaDevSpace.AbilityNeedsPollutionLevel>this pawn needs to be saturated in pollution to use this</MokaDevSpace.AbilityNeedsPollutionLevel>

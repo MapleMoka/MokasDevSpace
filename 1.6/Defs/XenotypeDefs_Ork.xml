@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<XenotypeDef Name="Moka_BaseXeno">
-		<defName>Moka_Baseloc</defName>
-		<label>baseloc</label>
+	<XenotypeDef Name="Moka_BaseOrk">
+		<defName>Moka_OrkSkin</defName>
+		<label>orkskin</label>
 		<description>Once a niche product of Melan Inc. on a faraway Rimworld, the Baseloc are now spread across the rim as a less popular alternative to the Baseliner, and the gateway to a new set line of Baseloc spinoffs, collectively known as Lox, developed by Melan Inc. outposts all over the rim. today, outside of sprawling Urbworlds where they continue to proliferate, Baseloc have found themselves as either the minority in more mixed colonies or as the dominant influence in factions populated by other Melan Inc. creations.</description>
 		<descriptionShort>A legacy product of Melan Inc., now the start of a new line of Loc-based xenotypes and forms </descriptionShort>
 		<iconPath>Moka/Core/BaselocXeno</iconPath>
@@ -11,50 +11,76 @@
 		<combatPowerFactor>1</combatPowerFactor>
 		<displayPriority>100</displayPriority>
 		<genes>
-			<li>Moka_AfroTextureHair</li>
-			<li>Moka_LocAffinityMild</li>
-
-			<li>Moka_RandomDarkSkinPigment</li>
-			<li>Moka_RandomLightSkinPigment</li>
+			<!-- <li>Moka_RandomOrkSkinPigment</li> -->
+			<li>Moka_RandomGene_FungalHair</li>
+			<li>Moka_SporeBurstDeath</li>
+			<li>Moka_NaturalBrawler</li>
+			<li>Moka_ChildOfFungus</li>
+			<li>Body_Hulk</li>
+			<li>Body_Standard</li>
+			<li>Ears_Pointed</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Moka_BaseXeno">
-		<defName>Moka_ToxicDev</defName>
-		<label>toxic dev</label>
+	<XenotypeDef ParentName="Moka_BaseOrk">
+		<defName>Moka_OrkSkinNovice</defName>
+		<label>orkskin novice</label>
+		<description>Once a niche product of Melan Inc. on a faraway Rimworld, the Baseloc are now spread across the rim as a less popular alternative to the Baseliner, and the gateway to a new set line of Baseloc spinoffs, collectively known as Lox, developed by Melan Inc. outposts all over the rim. today, outside of sprawling Urbworlds where they continue to proliferate, Baseloc have found themselves as either the minority in more mixed colonies or as the dominant influence in factions populated by other Melan Inc. creations.</description>
+		<descriptionShort>A legacy product of Melan Inc., now the start of a new line of Loc-based xenotypes and forms </descriptionShort>
+		<iconPath>Moka/Core/BaselocXeno</iconPath>
+		<inheritable>true</inheritable>
 		<combatPowerFactor>1</combatPowerFactor>
 		<displayPriority>100</displayPriority>
 		<genes>
-			<li>Moka_Toxosynthesis</li>
-			<li>Moka_NeedPollution</li>
-			<li>Moka_ToxGasConversion</li>
-			<li>Moka_ToxTearDown</li>
-			<li>Moka_SwitchingToxAttack</li>
-			<li>Moka_ToxicRage</li>
-			<!-- <li>Moka_ToxCognition</li> -->
-			<!-- <li>Moka_ToxicRage</li> -->
+			<!-- <li>Moka_RandomOrkSkinPigment</li>
+			<li>Moka_RandomGene_FungalHair</li> -->
+			<li>Moka_RandomPigment_OrkskinN</li>
+			<li>Robust</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>WoundHealing_Slow</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Moka_BaseXeno">
-		<defName>Moka_PlantDev</defName>
-		<label>plant dev</label>
+	<XenotypeDef ParentName="Moka_BaseOrk">
+		<defName>Moka_OrkSkinAdept</defName>
+		<label>orkskin adept</label>
+		<description>Once a niche product of Melan Inc. on a faraway Rimworld, the Baseloc are now spread across the rim as a less popular alternative to the Baseliner, and the gateway to a new set line of Baseloc spinoffs, collectively known as Lox, developed by Melan Inc. outposts all over the rim. today, outside of sprawling Urbworlds where they continue to proliferate, Baseloc have found themselves as either the minority in more mixed colonies or as the dominant influence in factions populated by other Melan Inc. creations.</description>
+		<descriptionShort>A legacy product of Melan Inc., now the start of a new line of Loc-based xenotypes and forms </descriptionShort>
+		<iconPath>Moka/Core/BaselocXeno</iconPath>
+		<inheritable>true</inheritable>
 		<combatPowerFactor>1</combatPowerFactor>
 		<displayPriority>100</displayPriority>
-		<genes> 
-			<li>Moka_Photosynthesis</li>
-			<li>Moka_RandomGene_FloralHair</li>
-			<li>Moka_Headbone_BranchHorns</li>
+		<genes>
+			<!-- <li>Moka_RandomOrkSkinPigment</li>
+			<li>Moka_RandomGene_FungalHair</li> -->
+			<li>Moka_RandomPigment_OrkskinA</li>
+			<li>KillThirst</li>
+			<!-- <li>Aggression_Aggressive</li> -->
+			<li>NakedSpeed</li>
+			<li>Immunity_SuperStrong</li>
+		</genes>
+	</XenotypeDef>
 
-			<li>Moka_FloralPheromones</li>
-			<li>Moka_FloralRegeneration</li>
-			<li>Moka_NeedNatureExposure</li>
-			<li>Moka_StarchDeposits</li>
-			<li>Moka_BuildingBark</li>
-			<li>Moka_WovenXylem</li>
-
-			<li>Moka_XenoSeed</li>
-			<li>Moka_TestLactation</li>
+	<XenotypeDef ParentName="Moka_BaseOrk">
+		<defName>Moka_OrkSkinLord</defName>
+		<label>orkskin lord</label>
+		<description>Once a niche product of Melan Inc. on a faraway Rimworld, the Baseloc are now spread across the rim as a less popular alternative to the Baseliner, and the gateway to a new set line of Baseloc spinoffs, collectively known as Lox, developed by Melan Inc. outposts all over the rim. today, outside of sprawling Urbworlds where they continue to proliferate, Baseloc have found themselves as either the minority in more mixed colonies or as the dominant influence in factions populated by other Melan Inc. creations.</description>
+		<descriptionShort>A legacy product of Melan Inc., now the start of a new line of Loc-based xenotypes and forms </descriptionShort>
+		<iconPath>Moka/Core/BaselocXeno</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!-- <li>Moka_RandomOrkSkinPigment</li>
+			<li>Moka_RandomGene_FungalHair</li> -->
+			<li>Moka_RandomPigment_OrkskinL</li>
+			<li>FireWeakness</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>DarkVision</li>
+			<li>Sterile</li>
+			<li>AptitudeRemarkable_Melee</li>
 		</genes>
 	</XenotypeDef>
 

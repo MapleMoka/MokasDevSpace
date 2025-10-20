@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<HediffDef>
+		<defName>Moka_SporeBurstDeath</defName>
+		<label>spore burst</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_SporeDeath">
+				
+				<radiusTier1>1</radiusTier1>
+				<radiusTier2>2</radiusTier2>
+				<radiusTier3>4</radiusTier3>
+				<damageType>Moka_SporeBlast</damageType>
+				
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef Name="Moka_FungalMix" Abstract="True">
+		<label>fungal spore base</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person is experiencing a rapidly decaying mental state. Within a few days, they will be incapable of most work. With sufficient technology, like a healer mech serum, the condition can still be reversed. However, it will soon become permanent.</description>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <isBad>true</isBad>
+		<tendable>false</tendable> -->
+		<duplicationAllowed>false</duplicationAllowed>
+		<defaultInstallPart>Brain</defaultInstallPart>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_FungalMix">
+		<defName>Moka_FungalSickness</defName>
+		<label>spore sickness</label>
+		<isBad>true</isBad>
+		<tendable>true</tendable>
+		<!-- <hediffClass>MokaDevSpace.HediffComp_FungalXenoCheck</hediffClass> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_FungalXenoCheck">
+				<xenotype>Moka_OrkSkinNovice</xenotype>
+				<changeAtSeverity>0.990</changeAtSeverity>
+			</li>
+			<li Class="MokaDevSpace.HediffCompProperties_AffectsPawnsOnly">
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>Moka_FungalJoy</hediff>
+					</li>
+				</hediffs>
+				<message>{PAWN_nameDef}'s spore sickness has worsened, affecting their cognitive functions.</message>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>Moka_FungalJoy</li>
+					<li>Moka_FungalSong</li>
+					<li>Moka_FungalChorus</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_FungalMix">
+		<defName>Moka_FungalJoy</defName>
+		<label>spore joy</label>
+		<!-- <hediffClass>MokaDevSpace.HediffComp_FungalXenoCheck</hediffClass> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_FungalXenoCheck">
+				<xenotype>Moka_OrkSkinAdept</xenotype>
+				<changeAtSeverity>0.990</changeAtSeverity>
+			</li>
+		<!-- <isBad>true</isBad>
+		<tendable>true</tendable> -->
+			<!-- <li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li> -->
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>Moka_FungalSong</hediff>
+					</li>
+				</hediffs>
+				<message>{PAWN_nameDef}'s spore sickness has worsened, affecting their cognitive functions.</message>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>Moka_FungalSong</li>
+					<li>Moka_FungalChorus</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_FungalMix">
+		<defName>Moka_FungalSong</defName>
+		<label>spore song</label>
+		<!-- <hediffClass>MokaDevSpace.HediffComp_FungalXenoCheck</hediffClass> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_FungalXenoCheck">
+				<xenotype>Moka_OrkSkinLord</xenotype>
+				<changeAtSeverity>0.990</changeAtSeverity>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>Moka_FungalChorus</hediff>
+					</li>
+				</hediffs>
+				<message>{PAWN_nameDef}'s spore sickness has reached its final stage, leading to a catastrophic spore burst.</message>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<!-- <li>Moka_FungalSong</li> -->
+					<li>Moka_FungalChorus</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_FungalMix">
+		<defName>Moka_FungalChorus</defName>
+		<label>spore chorus</label>
+		<everCurableByItem>false</everCurableByItem>
+		<description>This person is about to undergo a catastrophic spore burst, releasing harmful spores into the environment. Immediate medical intervention is required to prevent this outcome.</description>
+
+	</HediffDef>
+
+	
+  
+	<!-- <HediffDef>
+		<defName>Moka_ToxCognition</defName>
+		<label>tox cognition</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>MokaDevSpace.Hediff_ToxCognition</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_ToxCognition">
+				<startThreshold>0.8</startThreshold>
+				<maxFat>4</maxFat>
+				<starvationThreshold>0.1</starvationThreshold>
+				<starvationSpeed>0.01</starvationSpeed>
+				<conversionSpeed>0.0005</conversionSpeed>
+				<injuryHealCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, -0.02)</li>
+						<li>(0.20, -0.06)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.16)</li>
+					</points>
+				</injuryHealCurve>
+				<flameDMGCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 0.04)</li>
+						<li>(0.20, 0.08)</li>
+						<li>(0.30, 0.12)</li>
+						<li>(0.40, 0.15)</li>
+					</points>
+				</flameDMGCurve>
+				<fertilityCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 5)</li>
+						<li>(0.20, 10)</li>
+						<li>(0.30, 20)</li>
+						<li>(0.40, 30)</li>
+					</points>
+				</fertilityCurve>
+				<nutritionCapCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 5)</li>
+						<li>(0.20, 10)</li>
+						<li>(0.30, 20)</li>
+						<li>(0.40, 30)</li>
+					</points>
+				</nutritionCapCurve>
+			</li>
+		</comps>
+	</HediffDef> -->
+	
+</Defs>

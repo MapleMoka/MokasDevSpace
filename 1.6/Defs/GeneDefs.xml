@@ -98,7 +98,7 @@
 	</GeneDef> -->
 
 	<GeneDef>
-		<defName>Moka_StarchDeposits</defName>
+		<defName>Moka_Photosynthesis</defName>
 		<label>starch deposits</label>
 		<iconPath>Moka/Nature/Photosynthesis</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
@@ -109,9 +109,40 @@
 			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
 		</customEffectDescriptions>
 		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_AddHediffToBody">
 				<hediffToAdd>Moka_StarchDeposits</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_Toxosynthesis</defName>
+		<label>starch deposits</label>
+		<iconPath>Moka/Nature/Photosynthesis</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxicCarbs</hediffToAdd>
 			</li>
 		</modExtensions>
 		<symbolPack>
@@ -187,7 +218,7 @@
 	<GeneDef>
 		<defName>Moka_FloralRegeneration</defName>
 		<label>floral regen</label>
-		<iconPath>Moka/Nature/Transpiration</iconPath>
+		<iconPath>Moka/Nature/FloralRegeneration</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
 		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
 		<displayCategory>ToBeSorted</displayCategory>
@@ -232,13 +263,20 @@
 	
 	<GeneDef>
 		<defName>Moka_Greentuition</defName>
-		<label>floral pheromones</label>
-		<iconPath>Moka/Nature/FloralPheromones</iconPath>
+		<label>greentuition</label>
+		<iconPath>Moka/Nature/Greentuition</iconPath>
 		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
 		<displayCategory>ToBeSorted</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
+		<statOffsets>
+			<PlantWorkSpeed>0.5</PlantWorkSpeed>
+			<PlantHarvestYield>0.3</PlantHarvestYield>
+			<DrugHarvestYield>0.2</DrugHarvestYield>
+			<ForagedNutritionPerDay>0.4</ForagedNutritionPerDay>
+			<PruningSpeed>0.5</PruningSpeed>
+		</statOffsets>
 		<customEffectDescriptions>
 			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
 		</customEffectDescriptions>
@@ -246,6 +284,58 @@
 		  	<li>MokaLocAffinity</li>
 		</exclusionTags>
 	</GeneDef>
+
+	<!-- <GeneDef>
+		<defName>Moka_TestLactation</defName>
+		<label>test lactation</label>
+		<description>Carriers of this gene produce milk at all times and can be milked by other pawns every now and then.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
+		<iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGene">
+				<pawnProduce>WoolSheep</pawnProduce>
+				<daysToProduce>1</daysToProduce>
+				<amount>20</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Milkables</li>
+		</exclusionTags>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>  -->
+
+  <GeneDef>
+    <defName>Moka_TestLactation</defName>
+    <label>rapid coat growth</label>
+    <description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
+    <geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
+    <iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+    <displayCategory>ToBeSorted</displayCategory>
+    <displayOrderInCategory>70</displayOrderInCategory>
+	<modExtensions>
+		<li Class="MokaDevSpace.Ext_ProduceFromGene">
+			<produces>WoolSheep</produces>
+			<intervalDays>10</intervalDays>
+			<amount>45</amount>
+		</li>
+	</modExtensions>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>5</ComfyTemperatureMax>
+    </statOffsets>
+    <minAgeActive>13</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef> 
 
 	<GeneDef>
 		<defName>Moka_ToxGasConversion</defName>

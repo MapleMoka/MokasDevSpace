@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Darkskin -->
+
+	<GeneDef Name="Moka_OrkSkin" ParentName="GeneSkinColorOverride" Abstract="true">
+	    <randomBrightnessFactor>0</randomBrightnessFactor>
+		<selectionWeight>0.5</selectionWeight>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<description>Fungus grows and eats away at the melanin in the skin, replacing it with something alive</description>
+		<symbolPack>
+			<!-- <wholeNameSymbols>
+				<li><symbol>cofnix</symbol></li>
+				<li><symbol>sunkissed</symbol></li>
+				<li><symbol>darktanned</symbol></li>
+			</wholeNameSymbols>		
+			<prefixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>coff</symbol></li>
+				<li><symbol>curly</symbol></li>
+				<li><symbol>cara</symbol></li>
+				<li><symbol>ebon</symbol></li>
+				<li><symbol>choco</symbol></li>
+				<li><symbol>royal</symbol></li>
+				<li><symbol>dark</symbol></li>
+				<li><symbol>mel</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>brown</symbol></li>
+				<li><symbol>chocolate</symbol></li>
+				<li><symbol>curls</symbol></li>
+				<li><symbol>mel</symbol></li>
+				<li><symbol>nix</symbol></li>
+				<li><symbol>locs</symbol></li>
+			</suffixSymbols>			 -->
+		</symbolPack>
+	</GeneDef> 
+
+	<GeneDef Name="Moka_RandomPigment_OrkSkin" Abstract="true">
+		<label>orkskin shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Core/RandomDarkskin</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
+		<defName>Moka_RandomPigment_OrkskinN</defName>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+
+					<!-- <li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li> -->
+
+					<li>Moka_SkinColor_FungalGreen</li>
+					<li>Moka_SkinColor_FungalGreen</li>
+
+					<!-- <li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li> -->
+
+					<!-- <li>Moka_SkinColor_Muddy</li> -->
+
+					<li>Moka_SkinColor_GraveGreen</li>
+
+					<!-- <li>Moka_SkinColor_OrkishGreen</li>
+					<li>Moka_SkinColor_OrkishGreen</li> -->
+
+					<!-- <li>Moka_SkinColor_LeafGreen</li> -->
+					<!-- <li>Moka_SkinColor_LeafGreen</li> -->
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
+		<defName>Moka_RandomPigment_OrkskinA</defName>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<!-- <li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li> -->
+
+					<!-- <li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li> -->
+
+					<!-- <li>Moka_SkinColor_FungalGreen</li>
+					<li>Moka_SkinColor_FungalGreen</li> -->
+
+					<!-- <li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li> -->
+
+					<li>Moka_SkinColor_Muddy</li>
+
+					<li>Moka_SkinColor_GraveGreen</li>
+
+					<li>Moka_SkinColor_OrkishGreen</li>
+					<li>Moka_SkinColor_OrkishGreen</li>
+
+					<li>Moka_SkinColor_LeafGreen</li>
+					<li>Moka_SkinColor_LeafGreen</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
+		<defName>Moka_RandomPigment_OrkskinL</defName>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<!-- <li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li> -->
+
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+
+					<!-- <li>Moka_SkinColor_FungalGreen</li>
+					<li>Moka_SkinColor_FungalGreen</li> -->
+
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+
+					<!-- <li>Moka_SkinColor_Muddy</li>
+
+					<li>Moka_SkinColor_GraveGreen</li> -->
+
+					<li>Moka_SkinColor_OrkishGreen</li>
+					<li>Moka_SkinColor_OrkishGreen</li>
+
+					<!-- <li>Moka_SkinColor_LeafGreen</li>
+					<li>Moka_SkinColor_LeafGreen</li> -->
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_PaleGreen</defName>
+		<label>pale green skin</label>
+		<labelShortAdj>pale green</labelShortAdj>
+		<skinColorOverride>(216, 228, 188)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_DeepGreen</defName>
+		<label>deep green skin</label>
+		<labelShortAdj>deep green</labelShortAdj>
+		<skinColorOverride>(0, 120, 72)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_FungalGreen</defName>
+		<label>fungal green skin</label>
+		<labelShortAdj>fungal green</labelShortAdj>
+		<skinColorOverride>(161, 178, 135)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_BlueGreen</defName>
+		<label>blue green skin</label>
+		<labelShortAdj>blue green</labelShortAdj>
+		<skinColorOverride>(0, 164, 143)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_Muddy</defName>
+		<label>dirt green skin</label>
+		<labelShortAdj>dirt green</labelShortAdj>
+		<skinColorOverride>(171, 136, 94)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_GraveGreen</defName>
+		<label>grave green skin</label>
+		<labelShortAdj>grave green</labelShortAdj>
+		<skinColorOverride>(142, 150, 121)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_OrkishGreen</defName>
+		<label>floral green skin</label>
+		<labelShortAdj>floral green</labelShortAdj>
+		<skinColorOverride>(109, 192, 110)</skinColorOverride>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_OrkSkin">
+		<defName>Moka_SkinColor_LeafGreen</defName>
+		<label>leaf green skin</label>
+		<labelShortAdj>leaf green</labelShortAdj>
+		<skinColorOverride>(94, 137, 84)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_RandomGene_FungalHair</defName>
+		<label>fungal shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Nature/RandomFloralHairs</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_HairColor_DeepRed</li>
+					<li>Moka_HairColor_DeepRed</li>
+					<li>Moka_HairColor_DeepRed</li>
+					<li>Moka_HairColor_DeepRed</li>
+					<li>Moka_HairColor_GrossRed</li>
+					<li>Moka_HairColor_GrossRed</li>
+					<li>Moka_HairColor_GrossRed</li>
+					<li>Moka_HairColor_SickPink</li>
+					<li>Moka_HairColor_SickPink</li>
+					<li>Moka_HairColor_PalePink</li>
+					<li>Moka_HairColor_PalePink</li>
+					<li>Moka_HairColor_ToxicBlue</li>
+					<li>Moka_HairColor_ToxicBlue</li>
+					<li>Moka_HairColor_ToxicBlue</li>
+					<li>Moka_HairColor_DirtBlue</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_FungalHairBase" ParentName="Moka_ColoredHairs" Abstract = "true">
+		<label>fungal hair</label>
+		<!-- <symbolPack>
+			<prefixSymbols>
+				<li><symbol>vert</symbol></li>
+				<li><symbol>aut</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>green</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</suffixSymbols>
+		</symbolPack>		 -->
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_DeepRed</defName>
+		<hairColorOverride>(62, 18, 18)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_SickPink</defName>
+		<hairColorOverride>(176, 48, 96)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_PalePink</defName>
+		<hairColorOverride>(247, 170, 196)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_ToxicBlue</defName>
+		<hairColorOverride>(0, 167, 211)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_DirtBlue</defName>
+		<hairColorOverride>(0, 79, 102)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_FungalHairBase">
+		<defName>Moka_HairColor_GrossRed</defName>
+		<hairColorOverride>(128, 25, 26)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_ChildOfFungus</defName>
+		<label>child of fungus</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<geneClass>MokaDevSpace.Gene_FungalChild</geneClass>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_VoiceOfFungus</defName>
+		<label>voice of fungus</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<!-- <modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_VoiceOfFungus</hediffToAdd>
+			</li>
+		</modExtensions> -->
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_SporeBurstDeath</defName>
+		<label>spore burst</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_SporeBurstDeath</hediffToAdd>
+			</li>
+		</modExtensions>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_NaturalBrawler</defName>
+		<label>natural brawler</label>
+		<labelShortAdj>brawler</labelShortAdj>
+		<description>Carriers of this gene feel more pain than others given the same injuries. Neuron activity in the brain's nociception center is amplified, so pain feels extra-intense and fiery. This can be protective, but overall it's considered a negative and makes it hard to push through difficult situations.</description>
+		<iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<forcedTraits>
+			<li>
+				<def>Brawler</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+  
+	<!-- <GeneDef>
+		<defName>Moka_NeedPollution</defName>
+		<label>pollution need</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<enablesNeeds>
+			<li>Moka_NeedPollution</li>
+		</enablesNeeds>
+	</GeneDef> -->
+
+	<!-- <GeneDef>
+		<defName>Moka_NeedNatureExposure</defName>
+		<label>nature exposure</label>
+		<description>Carriers of this gene lust for the feeling of ending another's life. They will become irritated if they go for too long without killing someone in close combat.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_Killthirst</iconPath>
+		<enablesNeeds>
+			<li>Moka_NeedNatureExposure</li>
+		</enablesNeeds>
+		<disablesNeeds>
+			<li>Outdoors</li>
+		</disablesNeeds>
+		<biostatMet>4</biostatMet>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef> -->
+
+</Defs>
