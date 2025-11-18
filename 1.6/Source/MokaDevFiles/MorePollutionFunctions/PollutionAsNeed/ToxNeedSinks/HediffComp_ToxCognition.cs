@@ -9,25 +9,24 @@ using Verse;
 
 namespace MokaDevSpace
 {
-    internal class HediffComp_ToxHediffsDown : HediffComp
+    internal class HediffComp_ToxCognition : HediffComp
     {
         public float starchReserves;
-        //public Need_Food cachedNeed;
-        public Need_Pollution pollutedNeed;
+        public Need_Pollution cachedNeed;
 
-        public HediffCompProperties_ToxHediffsDown Props => this.props as HediffCompProperties_ToxHediffsDown;
+        public HediffCompProperties_ToxCognition Props => this.props as HediffCompProperties_ToxCognition;
 
         //public override string CompTipStringExtra
         //{
         //    get
         //    {
-        //        return (string)"Boglegs.StoredNutrition".Translate((NamedArgument)Math.Round((double)this.starchReserves, 2));
+        //        return (string)"MokaDevSpace.StarchReserves".Translate((NamedArgument)Math.Round((double)this.starchReserves, 2));
         //    }
         //}
 
-        public Need_Pollution initNeed
+        public Need_Pollution localNeed
         {
-            get => this.pollutedNeed ?? (this.pollutedNeed = this.parent.pawn.needs.TryGetNeed<Need_Pollution>());
+            get => this.cachedNeed ?? (this.cachedNeed = this.parent.pawn.needs.TryGetNeed<Need_Pollution>());
         }
 
         public override void CompPostTickInterval(ref float severityAdjustment, int delta)
@@ -38,12 +37,16 @@ namespace MokaDevSpace
 
         public void ApplyFatChanges(int multiplier)
         {
-            if (this.initNeed == null)
+            if (this.localNeed == null)
                 return;
-            if (this.initNeed.CurLevel <= this.initNeed.PollThreshholdForSkills)
-            {
-                this.parent.Severity += 0.999f;
-            }
+
+            if (this.localNeed.CurLevel <= 0.25)
+                this.parent.Severity = 1;
+            else if (this.localNeed.CurLevel <= 0.75)
+                this.parent.Severity = 2;
+            else 
+                this.parent.Severity = 3;
+            //this.parent.pawn.ideo.SetIdeo(this.parent.pawn.ideo.Ideo);
         }
 
         public override void CompExposeData()

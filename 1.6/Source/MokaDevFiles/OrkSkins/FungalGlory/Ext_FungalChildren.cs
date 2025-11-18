@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,12 @@ namespace MokaDevSpace
 {
     public class Ext_FungalChildren : DefModExtension
     {
-        public HediffDef hediffToAdd;
-        public List<Sub_Ext_HediffToBodyparts> hediffsToApply;
+        public XenotypeDef stage1Xeno;
+        public XenotypeDef stage2Xeno;
+        public XenotypeDef stage3Xeno;
+
+        public HediffDef stage1Hediff;
+        public HediffDef stage2Hediff;
+        public HediffDef stage3Hediff;
     }
 }

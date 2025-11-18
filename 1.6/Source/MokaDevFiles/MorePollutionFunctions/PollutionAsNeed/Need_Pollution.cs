@@ -24,11 +24,6 @@ namespace MokaDevSpace
         private float PollLossPerAbilityUsed = 0.001f;
         public float PollThreshholdForSkills = 0.75f;
 
-        public const float UsedIncendiaryWeaponGain = 0.16f;
-        public const float IgnitedFireGain = 0.12f;
-        public const float ContainedGainPerHour = 0.12f;
-        public const float UncontainedGainPerHour = 0.2f;
-        public const float SightRange = 8f;
         private float lastDelta;
         private const float ThresholdExtremelyNegative = 0.05f;
         private const float ThresholdVeryNegative = 0.2f;
@@ -112,45 +107,6 @@ namespace MokaDevSpace
             this.threshPercents.Add(0.4f);
             this.threshPercents.Add(0.2f);
             //this.threshPercents.Add(0.05f);
-        }
-
-
-        public void Notify_SetFire(float increase = 0.1f)
-        {
-            if (this.Disabled)
-                return;
-            this.CurLevel += increase;
-        }
-
-        public void Notify_UsedIncendiaryWeapon()
-        {
-            this.Notify_SetFire(0.16f);
-            this.lastDelta = 0.16f;
-        }
-
-        public void Notify_IgnitedFire()
-        {
-            this.Notify_SetFire(0.12f);
-            this.lastDelta = 0.12f;
-        }
-
-        public void Notify_BuiltCampfireInCaravan()
-        {
-            float increase = 0.24f;
-            this.Notify_SetFire(increase);
-            this.lastDelta = increase;
-        }
-
-        public void Notify_ObservedContainedFire()
-        {
-            this.Notify_SetFire(this.ContainedGainPerNeedIntervalTick);
-            this.lastDelta = this.ContainedGainPerNeedIntervalTick;
-        }
-
-        public void Notify_ObservedUncontainedFire()
-        {
-            this.Notify_SetFire(this.UncontainedGainPerNeedIntervalTick);
-            this.lastDelta = this.UncontainedGainPerNeedIntervalTick;
         }
 
         public override void SetInitialLevel() => this.CurLevel = 0.5f;

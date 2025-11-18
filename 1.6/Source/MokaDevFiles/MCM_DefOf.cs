@@ -15,6 +15,11 @@ public static class MCM_DefOf
 
     public static ThingDef Moka_XenoSeed_PlantDev;
 
+    public static HediffDef Moka_LightCraving;
+    public static HediffDef Moka_PollutionCraving;
+    public static HediffDef Moka_LightCravingFatal;
+    public static GeneDef Moka_LightFatal;
+
     public static XenotypeDef Moka_OrkSkinNovice;
     public static XenotypeDef Moka_OrkSkinAdept;
     public static XenotypeDef Moka_OrkSkinLord;

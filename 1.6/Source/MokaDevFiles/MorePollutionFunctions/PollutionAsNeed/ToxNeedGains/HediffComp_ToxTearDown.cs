@@ -9,13 +9,12 @@ using Verse;
 
 namespace MokaDevSpace
 {
-    internal class HediffComp_PollutionLeech : HediffComp
+    internal class HediffComp_ToxTearDown : HediffComp
     {
         public float starchReserves;
-        //public Need_Food cachedNeed;
         public Need_Pollution pollutedNeed;
 
-        public HediffCompProperties_PollutionLeech Props => this.props as HediffCompProperties_PollutionLeech;
+        public HediffCompProperties_ToxTearDown Props => this.props as HediffCompProperties_ToxTearDown;
 
         //public override string CompTipStringExtra
         //{
@@ -40,7 +39,22 @@ namespace MokaDevSpace
         {
             if (this.initNeed == null)
                 return;
-            this.initNeed.ToxAilityUsed();
+            if (!this.parent.pawn.HasToxicBuildup(HediffDefOf.ToxicBuildup))
+            {
+                this.parent.Severity = 1;
+                //return;
+            }
+
+            Hediff hediffOfTox = this.parent.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ToxicBuildup);
+            float toxSeverityChange = this.initNeed.PollGainFromToxBuildupPerNeedIntervalTick;
+            if (this.parent.pawn.HasToxicBuildup(HediffDefOf.ToxicBuildup))
+            {
+
+                //this.initNeed.CurLevel += this.initNeed.lastDelta = +this.initNeed.PollGainInToxGasPerNeedIntervalTick;
+                this.initNeed.ToxBuildupChange();
+                hediffOfTox.Severity -= toxSeverityChange;
+                this.parent.Severity = 2;
+            }
         }
 
         public override void CompExposeData()

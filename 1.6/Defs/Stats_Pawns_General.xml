@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Genes -->
+
+	<StatDef>
+		<defName>Moka_PollutionGainFactor</defName>
+		<label>pollution gain multiplier</label>
+		<description>A multiplier on the amount of pollution gained.</description>
+		<category>PawnHealth</category>
+		<toStringStyle>PercentZero</toStringStyle>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+		<showOnDrones>false</showOnDrones>
+	</StatDef>
+
+</Defs>

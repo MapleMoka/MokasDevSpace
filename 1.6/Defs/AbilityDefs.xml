@@ -40,6 +40,92 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>Moka_ToxicRageGiz</defName>
+		<label>toxic rage from gizmo</label>
+		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases>	
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>	
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_ToxicRageGiz</hediffDef>
+				<psychic>false</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="MokaDevSpace.CompProperties_AbilityPollutionCost">
+				<hemogenCost>0.2</hemogenCost>
+			</li>
+			<!-- <li>
+				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
+			</li> -->
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>Moka_ToxicStingerGiz</defName>
+		<label>toxic rage from gizmo</label>
+		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
+		<iconPath>UI/Cloak_Glands</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases>	
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>	
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_StingerTox</hediffDef>
+				<psychic>false</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="MokaDevSpace.CompProperties_AbilityPollutionCost">
+				<hemogenCost>0.2</hemogenCost>
+			</li>
+			<!-- <li>
+				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
+			</li> -->
+		</comps>
+	</AbilityDef>
 
   	<GeneDef>
 		<defName>Moka_XenoSeed</defName>

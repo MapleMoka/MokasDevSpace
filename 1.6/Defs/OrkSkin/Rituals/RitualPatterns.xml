@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <RitualPatternDef ParentName="CelebrationConsumable">
+    <defName>SmokeCircle</defName>
+    <shortDescOverride>smokeleaf circle</shortDescOverride>
+    <descOverride>A ritualistic smoking of large amounts of smokeleaf. Participants will gather around a burnbong or incense shrine, light it on fire, and celebrate while inhaling the fumes.</descOverride>
+    <iconPathOverride>UI/Icons/Rituals/SmokeCircle</iconPathOverride>
+    <ritualObligationTargetFilter>SmokeCircle</ritualObligationTargetFilter>
+    <ritualBehavior>SmokeCircle</ritualBehavior>
+    <ritualOutcomeEffect>DestroyConsumableBuilding_Burnbong</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+  <RitualPatternDef Abstract="True" Name="MutilationBase">
+    <nameMaker>NamerRitualMutilation</nameMaker>
+    <tags>
+      <li>Mutilation</li>
+    </tags>
+  </RitualPatternDef>
+
+  <RitualPatternDef ParentName="MutilationBase">
+    <defName>BlindingCeremony</defName>
+    <ritualBehavior>BlindingCeremony</ritualBehavior>
+    <ritualObligationTargetFilter>RitualSpotOrAltar_Blinding</ritualObligationTargetFilter>
+    <ritualOutcomeEffect>BlindingCeremony</ritualOutcomeEffect>
+    <tags>
+      <li>BlindingCeremony</li>
+    </tags>
+    <patternGroupTag>BlindingCeremony</patternGroupTag>
+    <ritualObligationTriggers>
+      <li Class="RitualObligationTrigger_BlindingProperties">
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
+      </li>
+    </ritualObligationTriggers>
+    <mergeGizmosForObligations>true</mergeGizmosForObligations>
+  </RitualPatternDef> -->
+  
+</Defs>

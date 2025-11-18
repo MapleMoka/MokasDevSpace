@@ -47,8 +47,6 @@ namespace MokaDevSpace
                 return;
             if ((double)this.needToWeigh.CurLevel > (double)this.Props.startThreshold && (double)this.starchReserves < (double)this.Props.maxStarch /*&& (Util_PollutionUtils.OnPollutedTile(this.Pawn) || (double) this.needToWeigh.CurLevel >= this.toxicNeed.PollThreshholdForSkills)*/)
             {
-                //this.starchReserves += Math.Min(this.Props.conversionSpeed, this.Props.maxStarch - this.starchReserves) * (float)multiplier;
-                //this.needToWeigh.CurLevel -= Math.Min(this.needToWeigh.CurLevel, this.Props.conversionSpeed) * (float)multiplier;
                 this.needToWeigh.CurLevel -= Math.Min(this.Props.conversionSpeed, this.Props.maxStarch - this.starchReserves) * (float)multiplier * this.Props.conversionRate;
                 this.starchReserves += Math.Min(this.Props.conversionSpeed, this.Props.maxStarch - this.starchReserves) * (float)multiplier;
             }

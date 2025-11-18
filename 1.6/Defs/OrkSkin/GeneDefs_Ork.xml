@@ -305,6 +305,18 @@
 		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
 		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
 		<geneClass>MokaDevSpace.Gene_FungalChild</geneClass>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_FungalChildren">
+				<stage1Xeno>Moka_OrkSkinNovice</stage1Xeno>
+				<stage1Hediff>Moka_FungalJoy</stage1Hediff>
+
+				<stage2Xeno>Moka_OrkSkinAdept</stage2Xeno>
+				<stage2Hediff>Moka_FungalSong</stage2Hediff>
+
+				<stage3Xeno>Moka_OrkSkinLord</stage3Xeno>
+				<stage3Hediff>Moka_FungalChorus</stage3Hediff>
+			</li>
+		</modExtensions>
 		<displayCategory>ToBeSorted</displayCategory>
 		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>

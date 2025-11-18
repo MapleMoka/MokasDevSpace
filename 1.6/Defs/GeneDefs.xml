@@ -98,7 +98,7 @@
 	</GeneDef> -->
 
 	<GeneDef>
-		<defName>Moka_Photosynthesis</defName>
+		<defName>Moka_StarchDepos</defName>
 		<label>starch deposits</label>
 		<iconPath>Moka/Nature/Photosynthesis</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
@@ -128,7 +128,133 @@
 	</GeneDef>
 
 	<GeneDef>
+		<defName>Moka_Photosynthesis</defName>
+		<label>photosynthesis</label>
+		<iconPath>Moka/Nature/Photosynthesis</iconPath>
+		<geneClass>MokaDevSpace.Gene_Photosynthesis</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.4</rsrcLvlRequired>
+				<foodLvlMax>0.3</foodLvlMax>
+				<foodFillRate>0.001</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PhotosynthesisEternal</defName>
+		<label>photosynthesis</label>
+		<iconPath>Moka/Nature/PhotosynthesisMajor</iconPath>
+		<geneClass>MokaDevSpace.Gene_Photosynthesis</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.2</rsrcLvlRequired>
+				<foodLvlMax>0.9</foodLvlMax>
+				<foodFillRate>0.005</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
 		<defName>Moka_Toxosynthesis</defName>
+		<label>toxosynthesis</label>
+		<iconPath>Moka/Nature/Toxosynthesis</iconPath>
+		<geneClass>MokaDevSpace.Gene_Toxosynthesis</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.4</rsrcLvlRequired>
+				<foodLvlMax>0.3</foodLvlMax>
+				<foodFillRate>0.002</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- <GeneDef>
+		<defName>Moka_PhotosynthesisGiz</defName>
+		<label>starch deposits</label>
+		<iconPath>Moka/Nature/Photosynthesis</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_StarchDepositsGiz</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef> -->
+
+	<!-- <GeneDef>
+		<defName>Moka_ToxosynthesisNeed</defName>
 		<label>starch deposits</label>
 		<iconPath>Moka/Nature/Photosynthesis</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
@@ -155,7 +281,7 @@
 				<li><symbol>bodied</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
-	</GeneDef>
+	</GeneDef> -->
 
 	<GeneDef>
 		<defName>Moka_BuildingBark</defName>
@@ -172,6 +298,35 @@
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_AddHediffToBody">
 				<hediffToAdd>Moka_BuildingBark</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>		
+		<defName>Moka_BuildingBarkEternal</defName>
+		<label>building bark</label>
+		<iconPath>Moka/Nature/ContinuedGrowth</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_BuildingBarkEternal</hediffToAdd>
 			</li>
 		</modExtensions>
 		<symbolPack>
@@ -218,7 +373,7 @@
 	<GeneDef>
 		<defName>Moka_FloralRegeneration</defName>
 		<label>floral regen</label>
-		<iconPath>Moka/Nature/FloralRegeneration</iconPath>
+		<iconPath>Moka/Nature/FloralRegen</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
 		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
 		<displayCategory>ToBeSorted</displayCategory>
@@ -230,6 +385,64 @@
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_AddHediffToBody">
 				<hediffToAdd>Moka_FloralRegeneration</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_FloralRegen</defName>
+		<label>floral regen</label>
+		<iconPath>Moka/Nature/FloralRegen</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_FloralRegen</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxicRegen</defName>
+		<label>floral regen</label>
+		<iconPath>Moka/Nature/ToxicRegen</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxicRegen</hediffToAdd>
 			</li>
 		</modExtensions>
 		<symbolPack>
@@ -259,6 +472,23 @@
 		<exclusionTags>
 		  	<li>MokaLocAffinity</li>
 		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_LightFatal</defName>
+		<label>light fatal</label>
+		<iconPath>Moka/Nature/FatalLight</iconPath>
+		<description>Carriers of this gene are just drawn to other pawns with the same gene.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
+		</customEffectDescriptions>
+		<!-- <exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags> -->
 	</GeneDef>
 	
 	<GeneDef>
@@ -318,7 +548,7 @@
     <label>rapid coat growth</label>
     <description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
     <geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
-    <iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+    <iconPath>Moka/Nature/NatFruit</iconPath>
     <displayCategory>ToBeSorted</displayCategory>
     <displayOrderInCategory>70</displayOrderInCategory>
 	<modExtensions>
@@ -338,9 +568,60 @@
   </GeneDef> 
 
 	<GeneDef>
+		<defName>Moka_TestLactationGiz</defName>
+		<label>rapid coat growth</label>
+		<description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromLights</geneClass>
+		<iconPath>Moka/Nature/NatFruit</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>WoolSheep</produces>
+				<intervalDays>1</intervalDays>
+				<amount>45</amount>
+				<lightCost>0.20</lightCost>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<minAgeActive>13</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_TestLactationToxGiz</defName>
+		<label>rapid coat growth</label>
+		<description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromToxins</geneClass>
+		<iconPath>Moka/Nature/ToxFruit</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>WoolSheep</produces>
+				<intervalDays>1</intervalDays>
+				<amount>45</amount>
+				<lightCost>0.20</lightCost>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<minAgeActive>13</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
 		<defName>Moka_ToxGasConversion</defName>
 		<label>tox gas conversion</label> 
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>Moka/Nature/GasToxUse</iconPath>
 		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
 		<displayCategory>ToBeSorted</displayCategory>
 		<displayOrderInCategory>50</displayOrderInCategory>
@@ -368,7 +649,7 @@
 	<GeneDef>
 		<defName>Moka_ToxTearDown</defName>
 		<label>tox teardown</label>
-		<iconPath>UI/Genes/Gene_FatStorage</iconPath>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
 		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
 		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
 		<displayCategory>ToBeSorted</displayCategory>
@@ -441,8 +722,8 @@
 					<li>
 						<hediff>Moka_ToxAttackInactive</hediff>
 						<bodyParts>
-							<li>Arm</li>
-							<li>Arm</li>
+							<!-- <li>Pelvis</li> -->
+							<li>Waist</li>
 						</bodyParts>
 					</li>
 				</hediffsToApply>
@@ -478,5 +759,310 @@
 		<biostatMet>-2</biostatMet>
 		<minAgeActive>8</minAgeActive>
 	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxCognition</defName>
+		<label>tox attacks</label>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_ToxCognition</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	
+
+	<GeneDef>
+		<defName>Moka_LightGizmo</defName>
+		<label>pollutant pawn</label>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Light</geneClass>
+		<iconPath>Moka/Nature/LightGizmo</iconPath>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourceLight</resourceGizmoType>
+		<resourceLabel>light</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.2</li>
+			<!-- <li>0.5</li> -->
+			<li>0.8</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives hemogen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<!-- <GeneDef>
+		<defName>Moka_LightGizmoDrain</defName>
+		<label>light drain</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>light</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_LightDrain</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_HemogenDrain</iconPath>
+		<prerequisite>Moka_LightGizmo</prerequisite>
+		<resourceLossPerDay>0.08</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef> -->
+
+	<GeneDef>
+		<defName>Moka_LightGizmoInSun</defName>
+		<label>light on tile</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>light</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_LightRegen</geneClass>
+		<iconPath>Moka/Nature/ToxInSun</iconPath>
+		<prerequisite>Moka_LightGizmo</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmoInSun</defName>
+		<label>light on tile</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>light</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_PollutionRegen</geneClass>
+		<iconPath>Moka/Nature/ToxInSun</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmo</defName>
+		<label>pollutant pawn</label>
+		<iconPath>Moka/Nature/ToxicGizmo</iconPath>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Pollution</geneClass>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourcePollution</resourceGizmoType>
+		<resourceLabel>pollution</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.25</li>
+			<li>0.5</li>
+			<li>0.75</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives hemogen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmoDrain</defName>
+		<label>pollution drain</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>pollution</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_PollutionDrain</geneClass>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<resourceLossPerDay>0.08</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmoOnTile</defName>
+		<label>pollution on tile</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>pollution</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_PollutionRegenTile</geneClass>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmoInTxGs</defName>
+		<label>pollution in gas</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>pollution</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_PollutionRegenTxGs</geneClass>
+		<iconPath>Moka/Nature/GasToxUse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<resourceLossPerDay>-0.12</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizmoFromTxBld</defName>
+		<label>pollution tox build</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>pollution</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_PollutionRegenTxBld</geneClass>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<resourceLossPerDay>-0.06</resourceLossPerDay>
+		<displayCategory>Hemogen</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizToxRage</defName>
+		<label>tx rage</label>
+		<labelShortAdj>coagulator</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<displayCategory>Hemogen</displayCategory>
+		<abilities>
+			<li>Moka_ToxicRageGiz</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxicRageGiz</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PollutionGizToxTail</defName>
+		<label>tx tail</label>
+		<labelShortAdj>coagulator</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Nature/BuildupReverse</iconPath>
+		<prerequisite>Moka_PollutionGizmo</prerequisite>
+		<displayCategory>Hemogen</displayCategory>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_StingerNumb</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Waist</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<abilities>
+			<li>Moka_ToxicStingerGiz</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxicStingerGiz</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- TODO:
+	Fix Tox Rage functionality with Gizmo version
+	Test and Put in Tox Cognition Gene
+	test and fix tox attack switching gene
+	test and fix pollution gizmo and all its subgenes
+	remove commented out genes if not needed
+	recreate gene icons for:
+		Moka_PollutionGizmoOnTile
+		Moka_ToxCognition
+		Moka_PollutionGizToxRage
+		Moka_PollutionGizmoDrain
+		Moka_PollutionGizmoInSun
+		Moka_LightGizmoInSun
+		Moka_BuildingBarkEternal -->
 
 </Defs>

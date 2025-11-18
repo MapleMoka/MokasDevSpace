@@ -20,18 +20,35 @@
 	</XenotypeDef>
 
 	<XenotypeDef ParentName="Moka_BaseXeno">
-		<defName>Moka_ToxicDev</defName>
+		<defName>Moka_ToxicNeedDev</defName>
 		<label>toxic dev</label>
 		<combatPowerFactor>1</combatPowerFactor>
 		<displayPriority>100</displayPriority>
 		<genes>
-			<li>Moka_Toxosynthesis</li>
+			<li>Moka_ToxosynthesisNeed</li>
 			<li>Moka_NeedPollution</li>
 			<li>Moka_ToxGasConversion</li>
 			<li>Moka_ToxTearDown</li>
 			<li>Moka_SwitchingToxAttack</li>
 			<li>Moka_ToxicRage</li>
-			<!-- <li>Moka_ToxCognition</li> -->
+			<li>Moka_ToxCognition</li>
+			<!-- <li>Moka_ToxicRage</li> -->
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_ToxicGizmoDev</defName>
+		<label>toxic dev</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_PollutionGizmo</li>
+			<li>Moka_PollutionGizmoDrain</li>
+			<li>Moka_PollutionGizmoOnTile</li>
+			<li>Moka_PollutionGizmoInTxGs</li>
+			<li>Moka_PollutionGizmoFromTxBld</li>
+			<li>Moka_PollutionGizToxRage</li>
+			<li>Moka_PollutionGizToxTail</li>
 			<!-- <li>Moka_ToxicRage</li> -->
 		</genes>
 	</XenotypeDef>
@@ -42,19 +59,87 @@
 		<combatPowerFactor>1</combatPowerFactor>
 		<displayPriority>100</displayPriority>
 		<genes> 
-			<li>Moka_Photosynthesis</li>
 			<li>Moka_RandomGene_FloralHair</li>
 			<li>Moka_Headbone_BranchHorns</li>
-
+			
+			<li>Moka_StarchDepos</li>
 			<li>Moka_FloralPheromones</li>
 			<li>Moka_FloralRegeneration</li>
 			<li>Moka_NeedNatureExposure</li>
-			<li>Moka_StarchDeposits</li>
 			<li>Moka_BuildingBark</li>
 			<li>Moka_WovenXylem</li>
 
 			<li>Moka_XenoSeed</li>
 			<li>Moka_TestLactation</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_PlantHediffGizmoDev</defName>
+		<label>plant giz dev</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes> 
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BranchHorns</li>
+			
+			<li>Moka_LightGizmo</li>
+			<li>Moka_LightGizmoInSun</li>
+			<li>Moka_PhotosynthesisGiz</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_FloralRegenerationGiz</li>
+			<li>Moka_NeedNatureExposure</li>
+			<li>Moka_BuildingBark</li>
+			<li>Moka_WovenXylem</li>
+
+			<li>Moka_XenoSeed</li>
+			<li>Moka_TestLactationGiz</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_PlantGizmoDev</defName>
+		<label>plant giz dev lower heds</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes> 
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BranchHorns</li>
+			
+			<li>Moka_LightGizmo</li>
+			<li>Moka_LightGizmoInSun</li>
+			<li>Moka_Photosynthesis</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_FloralRegen</li>
+			<li>Moka_NeedNatureExposure</li>
+			<li>Moka_BuildingBark</li>
+			<li>Moka_WovenXylem</li>
+
+			<li>Moka_XenoSeed</li>
+			<li>Moka_TestLactationGiz</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_PlantToxGizmoDev</defName>
+		<label>plant tox giz dev lower heds</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes> 
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BranchHorns</li>
+			
+			<li>Moka_PollutionGizmo</li>
+			<li>Moka_PollutionGizmoInSun</li>
+			<li>Moka_Toxosynthesis</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_ToxicRegen</li>
+			<li>Moka_NeedNatureExposure</li>
+			<li>Moka_BuildingBark</li>
+			<li>Moka_WovenXylem</li>
+
+			<li>Moka_XenoSeed</li>
+			<li>Moka_TestLactationToxGiz</li>
 		</genes>
 	</XenotypeDef>
 

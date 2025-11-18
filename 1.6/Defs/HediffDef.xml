@@ -10,12 +10,6 @@
 		<everCurableByItem>false</everCurableByItem>
 		<comps>
 			<li Class="MokaDevSpace.HediffCompProperties_FloralRegeneration">
-				<!-- <startThreshold>0.8</startThreshold>
-				<maxStarch>0.8</maxStarch>
-				<starvationThreshold>0.1</starvationThreshold>
-				<starvationSpeed>0.01</starvationSpeed>
-				<conversionSpeed>0.0005</conversionSpeed> -->
-
 				<daysToHeal>5</daysToHeal>
 				<daysToGenerate>15</daysToGenerate>
 				<amountToHeal>5</amountToHeal>
@@ -50,24 +44,102 @@
 				<tirednessReductionCurve>
 					<points>
 						<li>(0, 0)</li>
-						<li>(0.10, 0.04)</li>
-						<li>(0.20, 0.08)</li>
-						<li>(0.30, 0.12)</li>
-						<li>(0.40, 0.15)</li>
+						<li>(0.10, -0.04)</li>
+						<li>(0.20, -0.08)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.15)</li>
 					</points>
 				</tirednessReductionCurve>
 				<learningRateCurve>
 					<points>
 						<li>(0, 0)</li>
-						<li>(0.10, 5)</li>
-						<li>(0.20, 10)</li>
-						<li>(0.30, 20)</li>
-						<li>(0.40, 30)</li>
+						<li>(0.10, 0.5)</li>
+						<li>(0.20, 0.10)</li>
+						<li>(0.30, 0.20)</li>
+						<li>(0.40, 0.30)</li>
 					</points>
 				</learningRateCurve>
 			</li>
 		</comps>
 	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_FloralRegen</defName>
+		<label>floral regen</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_FloralRegen">
+				<daysToHeal>1</daysToHeal>
+				<daysToGenerate>1</daysToGenerate>
+				<amountToHeal>5</amountToHeal>
+			</li>
+		</comps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_ToxicRegen</defName>
+		<label>toxic regen</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_ToxicRegen">
+				<daysToHeal>1</daysToHeal>
+				<daysToGenerate>1</daysToGenerate>
+				<amountToHeal>5</amountToHeal>
+			</li>
+		</comps>
+	</HediffDef>
+  
+	<!-- <HediffDef>
+		<defName>Moka_StarchDepositsGiz</defName>
+		<label>starch deposits</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_StarchGiz">
+				<startThreshold>0.8</startThreshold>
+				<maxStarch>0.8</maxStarch>
+				<starvationThreshold>0.1</starvationThreshold>
+				<starvationSpeed>0.01</starvationSpeed>
+				<conversionSpeed>0.0005</conversionSpeed>
+				adjustment curves
+				<speedUpCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, -0.01)</li>
+						<li>(0.20, -0.05)</li>
+						<li>(0.30, -0.07)</li>
+						<li>(0.40, -0.10)</li>
+					</points>
+				</speedUpCurve>
+				<tirednessReductionCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, -0.04)</li>
+						<li>(0.20, -0.08)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.15)</li>
+					</points>
+				</tirednessReductionCurve>
+				<learningRateCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 0.5)</li>
+						<li>(0.20, 0.10)</li>
+						<li>(0.30, 0.20)</li>
+						<li>(0.40, 0.30)</li>
+					</points>
+				</learningRateCurve>
+			</li>
+		</comps>
+	</HediffDef> -->
   
 	<HediffDef>
 		<defName>Moka_ToxicCarbs</defName>
@@ -96,19 +168,19 @@
 				<tirednessReductionCurve>
 					<points>
 						<li>(0, 0)</li>
-						<li>(0.10, 0.04)</li>
-						<li>(0.20, 0.08)</li>
-						<li>(0.30, 0.12)</li>
-						<li>(0.40, 0.15)</li>
+						<li>(0.10, -0.04)</li>
+						<li>(0.20, -0.08)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.15)</li>
 					</points>
 				</tirednessReductionCurve>
 				<learningRateCurve>
 					<points>
 						<li>(0, 0)</li>
-						<li>(0.10, 5)</li>
-						<li>(0.20, 10)</li>
-						<li>(0.30, 20)</li>
-						<li>(0.40, 30)</li>
+						<li>(0.10, 0.5)</li>
+						<li>(0.20, 0.10)</li>
+						<li>(0.30, 0.20)</li>
+						<li>(0.40, 0.30)</li>
 					</points>
 				</learningRateCurve>
 			</li>
@@ -124,7 +196,7 @@
 		<everCurableByItem>false</everCurableByItem>
 		<comps>
 			<li Class="MokaDevSpace.HediffCompProperties_Bark">
-				<maxAge>4</maxAge>
+				<maxAge>80</maxAge>
 				<!-- adjustment curves -->
 				<slowdownCurve>
 					<points>
@@ -151,6 +223,51 @@
 						<li>(0.20, 10)</li>
 						<li>(0.30, 20)</li>
 						<li>(0.40, 30)</li>
+					</points>
+				</staggerStunCurve>
+			</li>
+		</comps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_BuildingBarkEternal</defName>
+		<label>building bark</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>MokaDevSpace.Hediff_Bark</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_Bark">
+				<maxAge>300</maxAge>
+				<!-- adjustment curves -->
+				<slowdownCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, -0.02)</li>
+						<li>(0.20, -0.06)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.15)</li>
+						<li>(0.80, -0.55)</li>
+					</points>
+				</slowdownCurve>
+				<bluntProtectionCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 0.04)</li>
+						<li>(0.20, 0.08)</li>
+						<li>(0.30, 0.12)</li>
+						<li>(0.40, 0.15)</li>
+						<li>(0.80, 0.55)</li>
+					</points>
+				</bluntProtectionCurve>
+				<staggerStunCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 5)</li>
+						<li>(0.20, 10)</li>
+						<li>(0.30, 20)</li>
+						<li>(0.40, 30)</li>
+						<li>(0.80, 80)</li>
 					</points>
 				</staggerStunCurve>
 			</li>
@@ -200,10 +317,10 @@
 				<nutritionCapCurve>
 					<points>
 						<li>(0, 0)</li>
-						<li>(0.10, 5)</li>
-						<li>(0.20, 10)</li>
-						<li>(0.30, 20)</li>
-						<li>(0.40, 30)</li>
+						<li>(0.10, 0.5)</li>
+						<li>(0.20, 0.10)</li>
+						<li>(0.30, 0.20)</li>
+						<li>(0.40, 0.30)</li>
 					</points>
 				</nutritionCapCurve>
 			</li>
@@ -258,7 +375,7 @@
 		<!-- <isBad>true</isBad> -->
 		<tendable>false</tendable>
 		<duplicationAllowed>true</duplicationAllowed>
-		<defaultInstallPart>Arm</defaultInstallPart>
+		<!-- <defaultInstallPart>Arm</defaultInstallPart> -->
 	</HediffDef>
   
 	<HediffDef ParentName="Moka_SwitchingToxAttack_Base">
@@ -285,8 +402,8 @@
 					<li>
 						<hediff>Moka_ToxAttackActive</hediff>
 						<partsToAffect>
-							<li>Arm</li>
-							<li>Arm</li>
+							<li>Waist</li>
+							<!-- <li>Arm</li> -->
 						</partsToAffect>
 					</li>
 				</hediffs>
@@ -319,8 +436,8 @@
 					<li>
 						<hediff>Moka_ToxAttackInactive</hediff>
 						<partsToAffect>
-							<li>Arm</li>
-							<li>Arm</li>
+							<li>Waist</li>
+							<!-- <li>Arm</li> -->
 						</partsToAffect>
 					</li>
 				</hediffs>
@@ -328,61 +445,264 @@
 			</li>
 		</comps>
 	</HediffDef>
-
-	
   
-	<!-- <HediffDef>
+	<HediffDef>
 		<defName>Moka_ToxCognition</defName>
 		<label>tox cognition</label>
 		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
-		<hediffClass>MokaDevSpace.Hediff_ToxCognition</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1</initialSeverity>
 		<everCurableByItem>false</everCurableByItem>
 		<comps>
 			<li Class="MokaDevSpace.HediffCompProperties_ToxCognition">
-				<startThreshold>0.8</startThreshold>
+				<!-- <startThreshold>0.8</startThreshold>
 				<maxFat>4</maxFat>
 				<starvationThreshold>0.1</starvationThreshold>
 				<starvationSpeed>0.01</starvationSpeed>
-				<conversionSpeed>0.0005</conversionSpeed>
-				<injuryHealCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.10, -0.02)</li>
-						<li>(0.20, -0.06)</li>
-						<li>(0.30, -0.12)</li>
-						<li>(0.40, -0.16)</li>
-					</points>
-				</injuryHealCurve>
-				<flameDMGCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.10, 0.04)</li>
-						<li>(0.20, 0.08)</li>
-						<li>(0.30, 0.12)</li>
-						<li>(0.40, 0.15)</li>
-					</points>
-				</flameDMGCurve>
-				<fertilityCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.10, 5)</li>
-						<li>(0.20, 10)</li>
-						<li>(0.30, 20)</li>
-						<li>(0.40, 30)</li>
-					</points>
-				</fertilityCurve>
-				<nutritionCapCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.10, 5)</li>
-						<li>(0.20, 10)</li>
-						<li>(0.30, 20)</li>
-						<li>(0.40, 30)</li>
-					</points>
-				</nutritionCapCurve>
+				<conversionSpeed>0.0005</conversionSpeed> -->
 			</li>
 		</comps>
-	</HediffDef> -->
+    	<stages>
+			<li>
+				<label>shrivelled</label>
+				<minSeverity>1</minSeverity>
+				<painOffset>-0.02</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>-0.2</GlobalLearningFactor>
+					<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
+					<NegotiationAbility>-0.05</NegotiationAbility>
+					<ResearchSpeed>-0.1</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>flat</label>
+				<minSeverity>2</minSeverity>
+				<painOffset>0</painOffset>
+				<!-- <capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<socialFightChanceFactor>-0.2</socialFightChanceFactor>
+				</statOffsets> -->
+			</li>
+			<li>
+				<label>boosted</label>
+				<minSeverity>3</minSeverity>
+				<painOffset>0.12</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_ToxicRageGiz</defName>
+		<label>toxic rage</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>genetically-induced invisibility. Specialized skin pigments refract light and disrupt nearby perception, rendering the carrier invisible to others regardless of visual ability.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+    	<stages>
+			<li>
+				<label>boosted</label>
+				<minSeverity>3</minSeverity>
+				<painOffset>0.12</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef Name="Moka_Stinger_Base" Abstract="True">
+		<description>genetically-induced invisibility. Specialized skin pigments refract light and disrupt nearby perception, rendering the carrier invisible to others regardless of visual ability.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<tendable>false</tendable>
+		<duplicationAllowed>false</duplicationAllowed>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_Stinger_Base">
+		<defName>Moka_StingerNumb</defName>
+		<label>stinger numb</label>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>stinger jab</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>Moka_StingerTox</hediff>
+						<partsToAffect>
+							<li>Waist</li>
+							<!-- <li>Arm</li> -->
+						</partsToAffect>
+					</li>
+				</hediffs>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>Moka_StingerTox</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Moka_Stinger_Base">
+		<defName>Moka_StingerTox</defName>
+		<label>stinger tox</label>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>toxic stab</label>
+						<capacities>
+							<li>ScratchToxic</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_ReplaceHediff">
+				<hediffs>
+					<li>
+						<hediff>Moka_StingerNumb</hediff>
+						<partsToAffect>
+							<li>Waist</li>
+						</partsToAffect>
+					</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Moka_ToxCognition2</defName>
+		<label>tox cognition</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_ToxCognition">
+				<!-- <startThreshold>0.8</startThreshold>
+				<maxFat>4</maxFat>
+				<starvationThreshold>0.1</starvationThreshold>
+				<starvationSpeed>0.01</starvationSpeed>
+				<conversionSpeed>0.0005</conversionSpeed> -->
+			</li>
+		</comps>
+    	<stages>
+			<li>
+				<label>shrivelled</label>
+				<minSeverity>1</minSeverity>
+				<painOffset>-0.02</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>-0.2</GlobalLearningFactor>
+					<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
+					<NegotiationAbility>-0.05</NegotiationAbility>
+					<ResearchSpeed>-0.1</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>flat</label>
+				<minSeverity>2</minSeverity>
+				<painOffset>0</painOffset>
+				<!-- <capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<socialFightChanceFactor>-0.2</socialFightChanceFactor>
+				</statOffsets> -->
+			</li>
+			<li>
+				<label>boosted</label>
+				<minSeverity>3</minSeverity>
+				<painOffset>0.12</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 	
 </Defs>

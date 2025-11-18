@@ -39,4 +39,42 @@
 		</stages>
 	</ThoughtDef>
 
+	<ThoughtDef>
+		<defName>Moka_NeedNature</defName>
+		<workerClass>MokaDevSpace.ThoughtWorker_NatureNeed</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>depleted</label>
+				<description>I have been abandoned by the volatile energy and need to reconnect.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>diminished</label>
+				<description>My connection is starting to falter.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>stable</label>
+				<description>There's a flame in my heart. I feel calm.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>refined</label>
+				<description>My soul is happy and I feel focused.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>enriched</label>
+				<description>The radiation is adding to my soul and energizing me.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>radiant</label>
+				<description>I am one with the energy others might hate.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 </Defs>

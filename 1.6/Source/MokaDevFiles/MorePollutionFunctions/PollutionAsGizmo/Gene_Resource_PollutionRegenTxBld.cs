@@ -1,0 +1,75 @@
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
+using Verse;
+
+namespace MokaDevSpace
+{
+    internal class Gene_Resource_PollutionRegenTxBld : Gene, IGeneResourceDrain
+    {
+        [Unsaved(false)]
+        private Gene_Resource_Pollution cachedHemogenGene;
+
+        private const float MinAgeForDrain = 3f;
+
+        public Gene_Resource Resource
+        {
+            get
+            {
+                if (cachedHemogenGene == null || !cachedHemogenGene.Active)
+                {
+                    cachedHemogenGene = pawn.genes.GetFirstGeneOfType<Gene_Resource_Pollution>();
+                }
+                return cachedHemogenGene;
+            }
+        }
+
+        public bool CanOffset
+        {
+            get
+            {
+                if (Active)
+                {
+                    return pawn.HasToxicBuildup();
+                }
+                return false;
+            }
+        }
+
+        public float ResourceLossPerDay => def.resourceLossPerDay;
+
+        public Pawn Pawn => pawn;
+
+        public string DisplayLabel => Label + " (" + "Works on Polluted Tile".Translate() + ")";
+
+        public override void TickInterval(int delta)
+        {
+            base.TickInterval(delta);
+            GeneResourceDrainUtility.TickResourceDrainInterval(this, delta);
+            Hediff txBuild = this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ToxicBuildup);
+            //Hediff hediffOfTox = this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ToxicBuildup);
+            float toxSeverityChange = 0.0025f / 2500;
+
+            if (this.pawn.HasToxicBuildup())
+            {
+                txBuild.Severity -= toxSeverityChange;
+            }
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            if (!Active)
+            {
+                yield break;
+            }
+            //foreach (Gizmo resourceDrainGizmo in GeneResourceDrainUtility.GetResourceDrainGizmos(this))
+            //{
+            //    yield return resourceDrainGizmo;
+            //}
+        }
+    }
+}

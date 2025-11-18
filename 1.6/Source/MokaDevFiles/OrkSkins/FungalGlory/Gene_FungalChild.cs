@@ -14,20 +14,20 @@ namespace MokaDevSpace
             base.PostAdd();
 
             Ext_FungalChildren modExtension = def.GetModExtension<Ext_FungalChildren>();
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinNovice)
+            if (this.pawn.genes.Xenotype == modExtension.stage1Xeno)
             {
-                if (!this.pawn.health.hediffSet.HasHediff(MCM_DefOf.Moka_FungalJoy))
-                    pawn.health.AddHediff(MCM_DefOf.Moka_FungalJoy);
+                if (!this.pawn.health.hediffSet.HasHediff(modExtension.stage1Hediff))
+                    pawn.health.AddHediff(modExtension.stage1Hediff);
             }
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinAdept)
+            if (this.pawn.genes.Xenotype == modExtension.stage2Xeno)
             {
-                if (!this.pawn.health.hediffSet.HasHediff(MCM_DefOf.Moka_FungalSong))
-                    pawn.health.AddHediff(MCM_DefOf.Moka_FungalSong);
+                if (!this.pawn.health.hediffSet.HasHediff(modExtension.stage2Hediff))
+                    pawn.health.AddHediff(modExtension.stage2Hediff);
             }
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinLord)
+            if (this.pawn.genes.Xenotype == modExtension.stage3Xeno)
             {
-                if (!this.pawn.health.hediffSet.HasHediff(MCM_DefOf.Moka_FungalChorus))
-                    pawn.health.AddHediff(MCM_DefOf.Moka_FungalChorus);
+                if (!this.pawn.health.hediffSet.HasHediff(modExtension.stage3Hediff))
+                    pawn.health.AddHediff(modExtension.stage3Hediff);
             }
         }
 
@@ -35,17 +35,17 @@ namespace MokaDevSpace
         {
             base.PostRemove();
             Ext_FungalChildren modExtension = def.GetModExtension<Ext_FungalChildren>();
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinNovice)
+            if (this.pawn.genes.Xenotype == modExtension.stage1Xeno)
             {
-                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(MCM_DefOf.Moka_FungalJoy));
+                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(modExtension.stage1Hediff));
             }
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinAdept)
+            if (this.pawn.genes.Xenotype == modExtension.stage2Xeno)
             {
-                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(MCM_DefOf.Moka_FungalSong));
+                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(modExtension.stage2Hediff));
             }
-            if (this.pawn.genes.Xenotype == MCM_DefOf.Moka_OrkSkinLord)
+            if (this.pawn.genes.Xenotype == modExtension.stage3Xeno)
             {
-                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(MCM_DefOf.Moka_FungalChorus));
+                pawn.health.RemoveHediff(this.pawn.health.hediffSet.GetFirstHediffOfDef(modExtension.stage3Hediff));
             }
         }
     }

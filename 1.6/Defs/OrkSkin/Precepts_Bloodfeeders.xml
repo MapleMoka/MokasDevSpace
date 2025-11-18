@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>Moka_OrkishBeliefs</defName>
+		<label>orks</label>
+		<iconPath>UI/Issues/Bloodfeeders</iconPath>
+	</IssueDef>
+
+	<HistoryEventDef>
+		<defName>Moka_OrkskinDied</defName>
+		<label>ork beliver died</label>
+	</HistoryEventDef>
+
+	<PreceptDef>
+		<defName>Moka_OrkskinRevered</defName>
+		<issue>Moka_OrkishBeliefs</issue>
+		<label>orkish love</label>
+		<description>Orks are our beloved brethren. We must cherish and protect them. Our ultimate goal should be to become one if possible</description>
+		<impact>High</impact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinRevered_OpinionOfOrk</thought>
+				<description>ork</description>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>Moka_OrkskinDied</eventDef>
+				<thought>Moka_OrkskinDied_Revered</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinRevered_IsOrk</thought>
+				<description>ork</description>
+				<!-- <thoughtStageDescriptions>
+					<li>Not an ork</li>
+					<li>Beloved ork</li>
+				</thoughtStageDescriptions> -->
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinRevered_Colonist_Thoughts</thought>
+				<thoughtStageDescriptions>
+					<li>No orks</li>
+					<li>Non orks</li>
+					<li>No ork master</li>
+					<li>Ork master</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>Moka_OrkskinReviled</defName>
+		<issue>Moka_OrkishBeliefs</issue>
+		<label>orks despised</label>
+		<description>Orks are abominations and should be exterminated on sight. We can't allow them to live among us</description>
+		<impact>Medium</impact>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>ConvertToOrk</eventDef>
+				<description>Convert to ork</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinReviled_OpinionOfOrk</thought>
+				<description>ork</description>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>Moka_OrkskinDied</eventDef>
+				<thought>Moka_OrkskinDied_Reviled</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinReviled_IsOrk</thought>
+				<description>ork self hatred</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Moka_OrkskinReviled_Colonist_Thoughts</thought>
+				<description>ork among us</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>Moka_OrkskinRevered_OpinionOfOrk</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_OrkLove_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>ork</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinReviled_OpinionOfOrk</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_OrkDespised_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>ork</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinDied_Revered</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stackLimit>3</stackLimit>
+		<durationDays>10</durationDays>
+		<stages>
+			<li>
+				<label>orkskin died</label>
+				<description>An orkskin died today and has become one with the great spore cloud.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinDied_Reviled</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>10</durationDays>
+		<stages>
+			<li>
+				<label>orkskin died</label>
+				<description>Good riddance, i just hope no one got infected.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinRevered_IsOrk</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_IsOrkskin</workerClass>
+		<stages>
+			<!-- <li>
+				<label>Not an ork</label>
+				<description>I am not an orkskin. I feel incomplete without the voice of the cloud.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li> -->
+			<li>
+				<label>Beloved ork</label>
+				<description>To be an ork is to be blessed by the great spore cloud. I am honored to walk among them.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinReviled_IsOrk</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_IsOrkskin</workerClass>
+		<stages>
+			<li>
+				<label>ork self hatred</label>
+				<description>I am an orkskin. A vile abomination that must be cleansed from this world.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinRevered_Colonist_Thoughts</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_OrkskinColonist</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>No orks</label>
+				<description>Without orkskins among us, how will the rest of us ever become a part of the spore cloud.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Non orks</label>
+				<description>I lack the wisdom and the touch of the spore cloud. We should seek to make one of us into an ork.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>No ork master</label>
+				<description>Without an ork master to guide us, we flounder in uncertainty. We must choose an ork to lead us.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Ork master</label>
+				<description>The presence of our ork master fills us with purpose and strength. May they lead us to greatness.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_OrkskinReviled_Colonist_Thoughts</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_BloodfeederPresent</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>ork among us</label>
+				<description>One of them walks among us. We should kill them or burn them up.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+  <!-- Thoughts -->
+
+</Defs>
