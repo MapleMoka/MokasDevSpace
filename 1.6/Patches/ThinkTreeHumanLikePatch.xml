@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!--Colonist-->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThinkTreeDef[defName = "MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes</xpath>
+		<value>
+			<li Class="MokaDevSpace.JobGiver_ConsumeWastepack" MayRequire="Ludeon.RimWorld.Biotech" />
+		</value>
+	</Operation>
+	
+	<!--Colonist-->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Human"]/recipes</xpath>
+		<value>
+      		<li>Moka_RemoveCactusSpines</li>
+		</value>
+	</Operation>
+	
+</Patch>

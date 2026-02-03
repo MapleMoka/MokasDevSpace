@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/HairDef[defName="VRE_FoliageHairLeafein"]/requiredGene</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>/Defs/HairDef[defName="VRE_FoliageHairLeafein"]/requiredGene</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="VRE_FoliageHairLeafein"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/HairDef[defName="VRE_FoliageHairOphie"]/requiredGene</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>/Defs/HairDef[defName="VRE_FoliageHairOphie"]/requiredGene</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="VRE_FoliageHairOphie"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+</Patch>

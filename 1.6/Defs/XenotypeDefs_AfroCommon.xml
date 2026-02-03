@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--  	===============		Faunals 	===============		 -->
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Herauna</defName>
+		<label>herauna</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<iconPath>Moka/Animal/Herauna</iconPath>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_Headbone_KeratinHorn</li>
+			<li>Moka_MuffaloVocals</li>
+			<li>Moka_FloppyEars</li>
+			<li>Moka_PatchyWool</li>
+			<li>Moka_Tail_Bovine</li>
+
+			<li>Moka_ExcessLactation</li>
+			<li>Moka_CoatGrowth</li>
+			<li>Moka_RuminantDigestion</li>
+			<li>Moka_CaravanReadiness</li>
+			<li>Moka_PartialHooves</li>
+			<li>Moka_Zookeeper</li>
+			<li>Moka_RousingRoar</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Moka_BurlyPhysique</li>
+
+			<li>Superclotting</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>VerySleepy</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Carauna</defName>
+		<label>carauna</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<iconPath>Moka/Animal/Carauna</iconPath>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_Headbone_KeratinPlates</li>
+			<li>Moka_CanineVocals</li>
+			<li>Moka_AlertEars</li>
+			<li>Moka_TigerStripes</li>
+			<li>Moka_Tail_Canine</li>
+
+			<li>Moka_Nocturnal</li>
+			<li>Moka_SheddingHorns</li>
+			<li>Moka_MeatSculptor</li>
+			<li>Moka_JungleCamo</li>
+			<li>Moka_EagleEyed</li>
+			<li>Moka_RecessedClaws</li>
+			<li>Moka_FrenziedRoar</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Moka_WiryPhysique</li>
+
+			<li>Aggression_Aggressive</li>
+			<li>MoveSpeed_VeryQuick</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Aquauna</defName>
+		<label>aquauna</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!--
+			<li>Moka_Headbone_FinCrest</li>
+			<li>Moka_ReptileVocals</li>
+			<li>Moka_FinEars</li>
+			<li>Moka_BodyScales</li>
+			<li>Moka_Tail_Reptile</li>
+
+			<li>Moka_Nocturnal</li>
+			<li>Moka_MoltingSkin</li>
+			<li>Moka_FishermanInstincts</li>
+			<li>Moka_WaterMovement</li>
+			<li>Moka_BugEyed</li> 
+			-->
+			<li>Moka_RecessedClaws</li>
+			<li>Moka_FrenziedRoar</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Moka_WiryPhysique</li>
+
+			<li>Aggression_Aggressive</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>WebbedPhalanges</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Buzauna</defName>
+		<label>buzauna</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!--
+			<li>Moka_Headbone_ChitinAntennae</li>
+			<li>Moka_BugVocals</li>
+			<li>Moka_Mandibles</li>
+			<li>Moka_ChitinShell</li>
+			<li>Moka_Tail_Stinger</li> ???????
+
+			<li>Moka_BiologicalProduce</li>
+			<li>Moka_WorkEthic</li> MiningProwess, ConstructionProwess, CookingProwess, GardeningProwess
+			<li>Moka_SheddingChitin</li>
+			<li>Moka_UglyWithoutGene</li>
+			<li>Moka_ManyEyed</li> 
+			-->
+			<li>Moka_RecessedClaws</li>
+			<li>Moka_FrenziedRoar</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Moka_WiryPhysique</li>
+
+			<li>Aggression_Aggressive</li>
+			<li>MoveSpeed_VeryQuick</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Tozauna</defName>
+		<label>tozauna</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!-- 
+			<li>Moka_Headbone_WiryHorns</li>
+			<li>Moka_ToxVocals</li>
+			<li>Moka_NippedEars</li>
+			<li>Moka_GauntBuild</li>
+			<li>Moka_Tail_Scorpion?</li> ???????
+
+			<li>Moka_BiologicalProduce</li>
+			<li>Moka_WorkEthic</li> MiningProwess, ConstructionProwess, CookingProwess, GardeningProwess
+			<li>Moka_SheddingChitin</li>
+			<li>Moka_UglyWithoutGene</li>
+			<li>Moka_ManyEyed</li> 
+			-->
+			<li>Moka_RecessedClaws</li>
+			<li>Moka_FrenziedRoar</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Moka_WiryPhysique</li>
+			
+			<li>Moka_RandomGene_ToxicHair</li>
+
+			<li>Moka_Toxon</li>
+			<li>Moka_ToxonDrain</li>
+			<li>Moka_ToxonAmbient</li>
+			<li>Moka_ToxonMuscles</li>
+			<li>Moka_ToxonFeeding</li>
+			<li>Moka_ToxonStinger</li>
+
+			<li>Aggression_Aggressive</li>
+			<li>MoveSpeed_VeryQuick</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Toxon</defName>
+		<label>toxic loc</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_RandomGene_ToxicHair</li>
+			<li>Moka_Toxon</li>
+			<li>Moka_ToxonDrain</li>
+
+			<li>Moka_ToxonAmbient</li>
+			
+			<li>Moka_ToxonMuscles</li>
+			<li>Moka_ToxonRage</li>
+			
+			<li>Moka_ToxonBrain</li>
+			<li>Moka_ToxonLungs</li>
+			<li>Moka_ToxonFeeding</li>
+			<li>Moka_ToxonStinger</li>
+		</genes>
+	</XenotypeDef>
+
+	<!-- 	===============		Clorals 	===============		 -->
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Soloral</defName>
+		<label>soloral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<iconPath>Moka/Nature/Soloral</iconPath>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BarkAntlers</li>
+			<li>Moka_BarkLayer</li>
+
+			<li>Moka_Photosynthesis</li>
+			<li>Moka_BuildingBark</li>
+			<li>Moka_WovenXylem</li>
+			<li>Moka_FloralRegen</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_Greenskeeper</li>
+			<li>Moka_NatFruit</li>
+			<li>Moka_Lumen</li>
+			<li>Moka_LumenSolar</li>
+
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Epocral</defName>
+		<label>epocral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<inheritable>false</inheritable>
+		<genes>
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BarkAntlersEtern</li>
+			<li>Moka_BarkLayer</li>
+
+			<li>Moka_PhotosynthesisEternal</li>
+			<li>Moka_BuildingBarkEternal</li>
+			<li>Moka_FloralRegenEternal</li>
+			<li>Moka_EternFruit</li>
+
+			<li>Moka_WovenXylem</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_Greenskeeper</li>
+			
+			<li>Moka_Lumen</li>
+			<li>Moka_LumenSolar</li>
+			<li>Moka_LumenDrain</li>
+			<li>Moka_LumenFatal</li>
+			
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Toxoral</defName>
+		<label>toxoral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_RandomGene_ToxicHair</li>
+			<li>Moka_Headbone_BarkAntlers</li>
+			<li>Moka_BarkLayer</li>
+
+			<li>Moka_Toxosynthesis</li>
+			<li>Moka_ToxicRegen</li>
+			<li>Moka_ToxicFruit</li>
+			
+			<li>Moka_Toxon</li>
+			<li>Moka_ToxonSolar</li>
+
+			<li>Moka_BuildingBark</li>
+			<li>Moka_WovenXylem</li>
+			<li>Moka_FloralPheromones</li>
+			<li>Moka_Greenskeeper</li>
+
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>ToxicEnvironmentResistance_Partial</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Psykoral</defName>
+		<label>psykoral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_RandomGene_FloralHair</li>
+			<li>Moka_Headbone_BarkAntlers</li>
+			<li>Moka_BarkLayer</li>
+
+			<li>Moka_Psykicks</li>
+			<li>Moka_PsyNetPsycks</li>
+			<li>Moka_PsyAmplifier</li>
+			
+			<li>Moka_Photosensitive</li>
+			<li>Moka_PsyFruit</li>
+			<li>Moka_PsyNetTree</li>
+			<li>Moka_NeuralTranspiration</li>
+
+
+			<!-- 
+			<li>PsychHairColor</li>
+			
+			<li>Moka_WaterNeuralDump</li> increase neural drain when in water
+			-->
+
+			<li>Moka_BuildingBark</li>
+			<li>Moka_FloralRegen</li>
+			<li>Moka_Greenskeeper</li>
+			
+			<li>Moka_Lumen</li>
+			<li>Moka_LumenSolar</li>
+
+			<li>PsychicBonding</li>
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_PsykTox</defName>
+		<label>psyktox</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_RandomGene_ToxicHair</li>
+			<li>Moka_Toxon</li>
+			<li>Moka_ToxonDrain</li>
+			
+			<li>Moka_Toxosensitive</li>
+
+			<li>Moka_ToxonAmbient</li>
+
+			<li>Moka_Psykicks</li>
+			<li>Moka_PsyNetPsycks</li>
+			<li>Moka_PsyAmplifier</li>
+
+			<!-- 
+			<li>PsychHairColor</li>
+			
+			-->
+
+			<li>PsychicBonding</li>
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Psykics</defName>
+		<label>psykics</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+
+			<li>Moka_Psykicks</li>
+			<li>Moka_PsyNetPsycks</li>
+			<li>Moka_PsyAmplifier</li>
+			<!-- 
+			<li>PsychHairColor</li>
+			
+			<li>Moka_NeuralDump</li> can drain or half neural heat at the cost of sleep and a kind of sickness
+			<li>Moka_PsychicDrain</li> increases personal psychic ability at the cost of everyone else's  
+			-->
+			
+			<li>PsychicAbility_Enhanced</li>
+			<li>PsychicBonding</li>
+			<li>Aggression_DeadCalm</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_PsykVamp</defName>
+		<label>psykvamp</label>
+		<!-- <combatPowerFactor>1</combatPowerFactor> -->
+		<!-- <displayPriority>100</displayPriority> -->
+		<soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+		<generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+		<xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+		<combatPowerFactor>2.5</combatPowerFactor>
+		<displayPriority>-1000</displayPriority>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<genes>
+			<li>Moka_Psykicks</li>
+			<li>Moka_PsyNetPsycks</li>
+			<li>Moka_PsyAmplifier</li>
+			<li>Moka_Hemosensitive</li>
+			<!-- 
+			<li>PsychHairColor</li>
+
+			<li>Moka_NeuralDumpVamp</li> can drain or half neural heat at the cost of deathrest and a kind of sickness
+			<li>Moka_PsychicDrainVamp</li> increases personal psychic ability at the cost of everyone else's  
+			-->
+
+			<li>PsychicAbility_Enhanced</li>
+
+			<li>Hemogenic</li>
+			<li>HemogenDrain</li>
+			<li>Bloodfeeder</li>
+			<li>Ageless</li>
+			<li>Deathless</li>
+			<li>Deathrest</li>
+			<li>TotalHealing</li>
+			<li>PerfectImmunity</li>
+			<li>DiseaseFree</li>
+			<li>ToxResist_Total</li>
+			<li>UVSensitivity_Mild</li>
+			<li>FireWeakness</li>
+			<li>FireTerror</li>
+			<li>ArchiteMetabolism</li>
+			<li>Aggression_Aggressive</li>
+			<li>Robust</li>
+
+			<li>PsychicBonding</li>
+			<li>Aggression_DeadCalm</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_AntiPsykics</defName>
+		<label>anti psykics</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_NonPsykicks</li>
+			<li>Moka_PsyNullifier</li>
+			<!-- 
+			<li>AntiPsychHairColor</li>
+
+			<li>Moka_NullPsykNet</li> increases psychic abilities based on proximity to other psykoral and psyk xenos
+			<li>Moka_NeuralHeatFlood</li> 
+			-->
+
+			<li>PsychicAbility_Deaf</li>
+
+			<li>Libido_Low</li>
+			<li>Aggression_DeadCalm</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Mycoral</defName>
+		<label>mycoral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!--
+			<li>Moka_RandomGene_FungalHair</li>
+			<li>Moka_Headbone_FungalCrest</li>
+			<li>Moka_FungalSpots</li>
+
+			<li>Moka_Dustsynthesis</li>
+			<li>Moka_FungalRegen</li>
+			<li>Moka_FungusGrowths</li>
+			
+			<li>Moka_Dust</li>
+			<li>Moka_DustFromDeath</li>
+
+			<li>Moka_MycalStructures</li>
+			<li>Moka_SporeSickness</li> 
+			-->
+			<li>Moka_Greenskeeper</li>
+			<li>Moka_WovenXylem</li>
+
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Algoral</defName>
+		<label>aquoral</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<!-- 
+			<li>Moka_RandomGene_SeaweedHair</li>
+			<li>Moka_Headbone_CoralCrest</li>
+			<li>Moka_AlgaeSpots</li>
+
+			<li>Moka_Dustsynthesis</li>
+			<li>Moka_FungalRegen</li>
+			<li>Moka_FungusGrowths</li>
+			
+			<li>Moka_Water</li>
+			<li>Moka_WaterInFert</li>
+
+			<li>Moka_CoralStructures</li>
+			<li>Moka_WaterBanks</li>
+			<li>Moka_WetHealth</li> 
+			-->
+			<li>Moka_Greenskeeper</li>
+
+			<li>Sleepy</li>
+			<li>WoundHealing_Slow</li>
+			<li>FireWeakness</li>
+			<li>Aggression_DeadCalm</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+
+	<!--  	===============		Extras 	===============		 -->
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Mechanoid</defName>
+		<label>mech loc</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<iconPath>Moka/Mech/Regtek</iconPath>
+		<displayPriority>100</displayPriority>
+		<genes>			
+			<li>Moka_Nanite</li>
+
+			<li>AptitudeRemarkable_Crafting</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Cavenon</defName>
+		<label>cave loc</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_Dust</li>
+
+			<li>CaveDweller</li>
+			<li>AptitudeRemarkable_Mining</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Aquanon</defName>
+		<label>water loc</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_Dust</li>
+
+			<li>WebbedPhalanges</li>
+			<li>AptitudeRemarkable_Mining</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Moka_BaseXeno">
+		<defName>Moka_Orbiton</defName>
+		<label>space loc</label>
+		<combatPowerFactor>1</combatPowerFactor>
+		<displayPriority>100</displayPriority>
+		<genes>
+			<li>Moka_Dust</li>
+
+			<li>MoveSpeed_Space</li>
+			<li>VacuumResistance_Partial</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

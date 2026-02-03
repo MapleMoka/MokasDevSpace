@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_ToxonBrain</defName>
+		<label>toxon cognition</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_ToxonBrain</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_Toxon</defName>
+		<label>pollutant pawn</label>
+		<iconPath>Moka/Toxic/Toxons</iconPath>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Toxon</geneClass>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourceToxons</resourceGizmoType>
+		<resourceLabel>toxons</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.25</li>
+			<li>0.5</li>
+			<li>0.75</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives hemogen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonDrain</defName>
+		<label>toxon drain</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>toxon</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonDrain</geneClass>
+		<iconPath>Moka/Toxic/ToxonDrain</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<resourceLossPerDay>0.08</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonAmbient</defName>
+		<label>toxon ambient</label>
+		<labelShortAdj>ambient</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>toxon</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonAmbient</geneClass>
+		<iconPath>Moka/Toxic/AmbientToxons</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet> -->
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonLungs</defName>
+		<label>toxon lungs</label>
+		<labelShortAdj>lungs</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>toxon</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonLungs</geneClass>
+		<iconPath>Moka/Toxic/GaseousToxons</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<resourceLossPerDay>-0.12</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet> -->
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonMuscles</defName>
+		<label>toxon muscles</label>
+		<labelShortAdj>muscles</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>toxon</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonMuscles</geneClass>
+		<iconPath>Moka/Toxic/MusclesToxon</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<resourceLossPerDay>-0.06</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet> -->
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonFeeding</defName>
+		<label>toxon feeding</label>
+		<labelShortAdj>feeding</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>toxon</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonFeeding</geneClass>
+		<iconPath>Moka/Toxic/ConsumeToxons</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<!-- <resourceLossPerDay>-0.06</resourceLossPerDay> -->
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet> -->
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonRage</defName>
+		<label>toxon rage</label>
+		<labelShortAdj>rage</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Toxic/ToxonRage</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayCategory>ToBeSorted</displayCategory>
+		<abilities>
+			<li>Moka_ToxonRage</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxonRage</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonStinger</defName>
+		<label>toxon stinger</label>
+		<labelShortAdj>stinger</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Toxic/ToxonStinger</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayCategory>ToBeSorted</displayCategory>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_StingerNumb</hediffToAdd>
+				<!-- <hediffsToApply>
+					<li>
+						<hediff>Moka_StingerNumb</hediff>
+						<bodyParts>
+							<li>Pelvis</li>
+							<li>Waist</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply> -->
+			</li>
+		</modExtensions>
+		<abilities>
+			<li>Moka_ToxonStinger</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxonStinger</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonSaturation</defName>
+		<label>toxon saturation</label>
+		<labelShortAdj>stinger</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Toxic/ToxonStinger</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayCategory>ToBeSorted</displayCategory>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<abilities>
+			<li>Moka_ToxonSaturation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_ToxonSaturation</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- TODO:
+	Fix Tox Rage functionality with Gizmo version
+	Test and Put in Tox Cognition Gene
+	test and fix tox attack switching gene
+	test and fix pollution gizmo and all its subgenes
+	remove commented out genes if not needed
+	recreate gene icons for:
+		<
+		OnTile>
+		<Moka_ToxCognition>
+		<Moka_PollutionGizToxRage>
+		<Moka_PollutionGizmoDrain>
+		<Moka_PollutionGizmoInSun>
+		<Moka_LightGizmoInSun>
+		<Moka_BuildingBarkEternal> -->
+
+</Defs>

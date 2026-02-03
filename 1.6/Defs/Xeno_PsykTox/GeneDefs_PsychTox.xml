@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Toxosensitive</defName>
+		<label>toxosensitive</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_Toxosensitive</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

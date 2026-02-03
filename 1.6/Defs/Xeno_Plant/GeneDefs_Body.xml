@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!---==========					Hair					==========-->
+	<GeneDef>
+		<defName>Moka_RandomGene_FloralHair</defName>
+		<label>floral shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene can be born with one of a number of specific hair colors.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Nature/RandomFloralHairs</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<!-- <biostatMet>1</biostatMet> -->
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random hair color in line with common plant related colors.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_HairColor_EarlyAutumn</li>
+					<li>Moka_HairColor_DeepAutumn</li>
+					<li>Moka_HairColor_NewLeaf</li>
+					<li>Moka_HairColor_PaleLeaf</li>
+					<li>Moka_HairColor_LightSakura</li>
+					<li>Moka_HairColor_DarkSakura</li>
+
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_LeafyHairBase" ParentName="Moka_ColoredHairs" Abstract = "true">
+		<label>leafy hair</label>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>vert</symbol></li>
+				<li><symbol>aut</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>green</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</suffixSymbols>
+		</symbolPack>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_EarlyAutumn</defName>
+		<hairColorOverride>(239, 95, 74)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DeepAutumn</defName>
+		<hairColorOverride>(161, 41, 39)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_NewLeaf</defName>
+		<hairColorOverride>(247, 217, 98)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_LightGreen</defName>
+		<hairColorOverride>(164, 198, 112)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_RichGreen</defName>
+		<hairColorOverride>(123, 166, 71)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_StrikingGreen</defName>
+		<hairColorOverride>(93, 143, 106)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_PaleGreen</defName>
+		<hairColorOverride>(197, 223, 150)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DeepGreen</defName>
+		<hairColorOverride>(103, 123, 59)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_PaleLeaf</defName>
+		<hairColorOverride>(209, 206, 189)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_LightSakura</defName>
+		<hairColorOverride>(241, 176, 208)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_LeafyHairBase">
+		<defName>Moka_HairColor_DarkSakura</defName>
+		<hairColorOverride>(211, 43, 92)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+
+	<!--==========					Antlers					==========-->
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_BarkAntlers</defName>
+		<label>bark-antlers</label>
+		<description>Carriers of this gene grow two small horns mimicking those of cervids from old earth.</description>
+		<iconPath>Moka/Nature/Antlers/BarkAntlers</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				<!-- Hacky way to make certain horn-types less common -->
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_2</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_2</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+				</texPaths>
+				<texPath>Moka/Nature/Antlers/BarkAntlers_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef>
+
+	<!--==========					Bodies					==========-->
+	<GeneDef Name="Moka_BodyBase" Abstract="True">
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Cosmetic</displayCategory>
+		<exclusionTags>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+			<li>Fur</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_BodyBase">
+		<defName>Moka_BarkLayer</defName>
+		<label>bark bodies</label>
+		<labelShortAdj>barklayer</labelShortAdj>
+		<description>Carriers of this gene have their skin resembling tree bark. This allows them to withstand more blunt force trauma than most other pawns.</description>
+		<biostatCpx>1</biostatCpx>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<selectionWeight>0</selectionWeight>
+		<iconPath>Moka/Nature/BarkBodies</iconPath>
+		<forcedHeadTypes>
+			<li>Moka_BarkLayer_AverageM</li>
+			<li>Moka_BarkLayer_AveragePM</li>
+			<li>Moka_BarkLayer_AverageWM</li>
+
+			<li>Moka_BarkLayer_AverageF</li>
+			<li>Moka_BarkLayer_AveragePF</li>
+			<li>Moka_BarkLayer_AverageWF</li>
+
+			<li>Moka_BarkLayer_NarrowM</li>
+			<li>Moka_BarkLayer_NarrowPM</li>
+			<li>Moka_BarkLayer_NarrowWM</li>
+
+			<li>Moka_BarkLayer_NarrowF</li>
+			<li>Moka_BarkLayer_NarrowPF</li>
+			<li>Moka_BarkLayer_NarrowWF</li>
+		</forcedHeadTypes>
+		<statOffsets>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		</statOffsets>
+	</GeneDef>
+	
+ </Defs>

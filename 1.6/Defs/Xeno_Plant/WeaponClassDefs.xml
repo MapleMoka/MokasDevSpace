@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WeaponClassDef>
+		<defName>Moka_Natural</defName>
+		<label>natural</label>
+	</WeaponClassDef>
+
+	<WeaponClassDef>
+		<defName>Moka_Industrial</defName>
+		<label>industrial</label>
+	</WeaponClassDef>
+
+</Defs>

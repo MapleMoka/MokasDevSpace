@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 
+		EH <li>PsychHairColor</li>
+		EH <li>PsychHairColor</li>
+		EH <li>PsychHairColor</li>
+		EH <li>AntiPsychHairColor</li>
+
+		BONES <li>Moka_Photosensitive</li> Tox cognition but with psychic ability boosts scaling due to lumen
+		BONES <li>Moka_Toxosensitive</li> Tox cognition but with psychic ability boosts scaling due to lumen
+		BONES <li>Moka_Hemosensitive</li> Tox cognition but with psychic ability boosts scaling due to lumen
+
+		EH <li>Moka_PsychFruit</li>  Fruit that grants temporary psychic abilities when eaten 
+		BONES <li>Moka_PsychicTreeNet</li> increases psychic abilities based on proximity to trees/plants
+		
+		BONES <li>Moka_PsykNet</li> increases psychic abilities based on proximity to other psykoral and psyk xenos
+		BONES <li>Moka_PsykNet</li> increases psychic abilities based on proximity to other psykoral and psyk xenos
+		BONES <li>Moka_PsykNet</li> increases psychic abilities based on proximity to other psykoral and psyk xenos
+
+		BONES <li>Moka_PsychicBooster</li> Increases psychic abilities of pawns nearby  
+		BONES <li>Moka_NullPsykNet</li> increases psychic abilities based on proximity to other psykoral and psyk xenos
+		
+		<li>Moka_WaterNeuralDump</li> increase neural drain when in water
+		
+		<li>Moka_NeuralDump</li> can drain or half neural heat at the cost of sleep and a kind of sickness
+		<li>Moka_PsychicDrain</li> increases personal psychic ability at the cost of everyone else's  
+
+		<li>Moka_NeuralDumpVamp</li> can drain or half neural heat at the cost of deathrest and a kind of sickness
+		<li>Moka_PsychicDrainVamp</li> increases personal psychic ability at the cost of everyone else's  
+
+		<li>Moka_NeuralHeatFlood</li> 
+	-->
+
+	<GeneDef>
+		<defName>Moka_Psykicks</defName>
+		<label>psychics</label>
+		<iconPath>Moka/Animal/ToxonCognition</iconPath>
+		<!-- <geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass> -->
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<!-- <modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_NullPsykNet</hediffToAdd>
+			</li>
+		</modExtensions> -->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_NonPsykicks</defName>
+		<label>non psychics</label>
+		<iconPath>Moka/Animal/ToxonCognition</iconPath>
+		<!-- <geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass> -->
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<!-- <modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_NullPsykNet</hediffToAdd>
+			</li>
+		</modExtensions> -->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyNullifier</defName>
+		<label>psychic null</label>
+		<iconPath>Moka/Animal/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_PsyNullifier</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyAmplifier</defName>
+		<label>psychic amp</label>
+		<iconPath>Moka/Animal/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_PsyAmplifier</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyNetPawns</defName>
+		<label>psyknet pawn</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_PsyNetPawns</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyNetPsycks</defName>
+		<label>psyknet psyck</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_PsyNetPsycks</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

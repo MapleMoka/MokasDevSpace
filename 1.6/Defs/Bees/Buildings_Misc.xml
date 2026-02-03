@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>Moka_BeeHive</defName>
 		<thingClass>MFM.Building_BeeHive</thingClass>
@@ -57,4 +58,5 @@
 			<li>MFM.Placeworker_BeeHive</li>
 		</placeWorkers>
 	</ThingDef>
+	
 </Defs>

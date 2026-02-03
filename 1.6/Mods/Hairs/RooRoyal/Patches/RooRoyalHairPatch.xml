@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_BattleBunsHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_NaturalcurlsHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_DreadlocksHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_WarriormaleHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_WavymaleHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_CurlyHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_WarriorHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_Bob2HD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_BraidsHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+
+</Patch>

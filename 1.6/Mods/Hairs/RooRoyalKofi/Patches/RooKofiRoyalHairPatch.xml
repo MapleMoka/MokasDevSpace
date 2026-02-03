@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Roo_Royal_DreadlocksevilHD"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+</Patch>

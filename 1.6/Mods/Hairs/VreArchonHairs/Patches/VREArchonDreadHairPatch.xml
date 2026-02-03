@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/HairDef[@Name="VRE_ArchonHairBase"]/requiredGene</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>/Defs/HairDef[@Name="VRE_ArchonHairBase"]/requiredGene</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[@Name="VRE_ArchonHairBase"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+</Patch>

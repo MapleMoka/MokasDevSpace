@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- <GeneDef Name="Moka_BodyBase" Abstract="True">
+		<displayCategory>Cosmetic</displayCategory>
+		<exclusionTags>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+	</GeneDef> -->
+	
+	<GeneDef ParentName="Moka_BodyBase">
+		<defName>Moka_BovineNose</defName>
+		<label>bovine nose</label>
+		<labelShortAdj>bovbody</labelShortAdj>
+		<description>Carriers of this gene have their skin resembling tree bark. This allows them to withstand blunt trauma that would normally knock people unconscious.</description>
+		<biostatCpx>1</biostatCpx>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<selectionWeight>0</selectionWeight>
+		<iconPath>Moka/Animal/BovineNose</iconPath>
+		<forcedHeadTypes>
+			<li>Moka_Bovine_AverageMasc_Norm</li>
+			<li>Moka_Bovine_AverageMasc_Wide</li>
+			
+			<li>Moka_Bovine_AverageFemme_Norm</li>
+			<li>Moka_Bovine_AverageFemme_Wide</li>
+		</forcedHeadTypes>
+	</GeneDef>
+
+	<!-- Average -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_Bovine_AverageMasc_Norm</defName>
+		<graphicPath>Moka/Animal/Bovine/Bovine_HeadMasc_Average_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BovineNose</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_Bovine_AverageMasc_Wide</defName>
+		<graphicPath>Moka/Animal/Bovine/Bovine_HeadMasc_Average_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BovineNose</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_Bovine_AverageFemme_Norm</defName>
+		<graphicPath>Moka/Animal/Bovine/Bovine_HeadFemme_Average_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BovineNose</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_Bovine_AverageFemme_Wide</defName>
+		<graphicPath>Moka/Animal/Bovine/Bovine_HeadFemme_Average_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BovineNose</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

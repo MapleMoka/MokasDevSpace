@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Nanite</defName>
+		<label>nanite pawn</label>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Nanites</geneClass>
+		<iconPath>Moka/Nature/Lumens</iconPath>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourceNanites</resourceGizmoType>
+		<resourceLabel>nanites</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.2</li>
+			<!-- <li>0.5</li> -->
+			<li>0.8</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives hemogen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<!-- <resourceLossPerDay>0.02</resourceLossPerDay> -->
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet> -->
+	</GeneDef>
+
+</Defs>

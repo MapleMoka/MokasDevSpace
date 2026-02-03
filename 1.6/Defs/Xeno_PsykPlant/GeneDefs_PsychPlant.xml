@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Photosensitive</defName>
+		<label>photosensitive</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_Photosensitive</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyNetTree</defName>
+		<label>psyknet tree</label>
+		<iconPath>Moka/Toxic/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<!-- <biostatCpx>1</biostatCpx> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffsToApply>
+					<li>
+						<hediff>Moka_PsyNetTree</hediff>
+						<bodyParts>
+							<!-- <li>Pelvis</li> -->
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PsyFruit</defName>
+		<label>lumen pear</label>
+		<description>Carriers of this gene slowly grow a few lumen pears over time, which can be eaten by other pawns for nutrition.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromLumens</geneClass>
+		<iconPath>Moka/Nature/NatFruit</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>Moka_RawPsychApple</produces>
+				<intervalDays>10</intervalDays>
+				<amount>15</amount>
+				<lightCost>0.10</lightCost>
+			</li>
+		</modExtensions>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_NeuralTranspiration</defName>
+		<label>neural transpiration</label>
+		<iconPath>Moka/Nature/Transpiration</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop special cells specifically to store excess water in their bodies. That water will eventually evaporate but it can also be used to improve certain bodily capabilities.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>When water cells are full:</li>
+			<li>Increased injury healing</li>
+			<li>Reduced flame damage</li>
+			<li>Improved fertility</li>
+			<li>Improved nutrition capacity</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_NeuralTranspiration</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>wet</symbol></li>
+				<li><symbol>water</symbol></li>
+				<li><symbol>dew</symbol></li>
+			</prefixSymbols>
+			<!-- <suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols> -->
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

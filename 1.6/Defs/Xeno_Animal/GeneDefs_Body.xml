@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_HornsBone</defName>
+		<label>bark-BoneHorn</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Moka/Nature/BoneHorn/HornsBone</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				Hacky way to make certain horn-types less common
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_1</li>
+					
+					<li>Moka/Nature/BoneHorn/HornsBone_2</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_2</li>
+					
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_3</li>
+					
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_4</li>
+					
+					<li>Moka/Nature/BoneHorn/HornsBone_5</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_5</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_5</li>
+					<li>Moka/Nature/BoneHorn/HornsBone_5</li>
+				</texPaths>
+				<texPath>Moka/Nature/BoneHorn/HornsBone_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef> -->
+	
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_KeratinHorn</defName>
+		<label>keratin horn</label>
+		<description>Carriers of this gene grow large keratin horns protruding from the head, almost like a cow, goat or some other creatures.</description>
+		<iconPath>Moka/Animal/BovineHorns/BovineHorns</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				<!-- Hacky way to make certain horn-types less common -->
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_2</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_2</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_5</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_5</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_6</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_6</li>
+				</texPaths>
+				<texPath>Moka/Animal/BovineHorns/BovineHorns_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef>
+	
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>Moka_FloppyEars</defName>
+		<label>floppy ears</label>
+		<description>Carriers of this gene have drooping, floppy ears like a goat's.</description>
+		<iconPath>Moka/Animal/BovineEars/BovineEars</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<!-- <texPath>Moka/Animal/BovineEars//BovineEars_1</texPath> -->
+				<texPaths>
+					<li>Moka/Animal/BovineEars/BovineEars_1</li>
+					<li>Moka/Animal/BovineEars/BovineEars_2</li>
+					<li>Moka/Animal/BovineEars/BovineEars_3</li>
+					<li>Moka/Animal/BovineEars/BovineEars_4</li>
+					<li>Moka/Animal/BovineEars/BovineEars_5</li>
+					<li>Moka/Animal/BovineEars/BovineEars_6</li>
+				</texPaths>
+				<colorType>Hair</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fau</symbol></li>
+				<li><symbol>cervi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>dae</symbol></li>
+				<li><symbol>buck</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>Moka_MuffaloVocals</defName>
+		<label>muffalo vocals</label>
+		<description>Carriers have a deep powerful voice like that of a muffalo.</description>
+		<iconPath>Moka/Animal/BovineVoice</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<soundCall>Moka_Pawn_Bovine_Call</soundCall>
+		<soundDeath>Moka_Pawn_Bovine_Death</soundDeath>
+		<soundWounded>Moka_Pawn_Bovine_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>squealer</symbol></li>
+				<li><symbol>oinker</symbol></li>
+				<li><symbol>snorter</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>squeal</symbol></li>
+				<li><symbol>oink</symbol></li>
+				<li><symbol>snuffle</symbol></li>
+				<li><symbol>snort</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>oinker</symbol></li>
+				<li><symbol>hog</symbol></li>
+				<li><symbol>pig</symbol></li>
+				<li><symbol>snorter</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_BodyBase">
+		<defName>Moka_PatchyWool</defName>
+		<label>patchy wool</label>
+		<labelShortAdj>wool</labelShortAdj>
+		<description>Carriers of this gene have patches of wool covering parts of their skin. Due to genetic drift, the wool no longer covers all of their skin.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<iconPath>Moka/Animal/BovinePatches/BovinePatches</iconPath>
+		<forcedHeadTypes>
+			<li>Moka_Bovine_AverageMasc_Norm</li>
+			<li>Moka_Bovine_AverageMasc_Wide</li>
+			
+			<li>Moka_Bovine_AverageFemme_Norm</li>
+			<li>Moka_Bovine_AverageFemme_Wide</li>
+		</forcedHeadTypes>
+		<fur>Moka_BovineBody</fur>
+		<statOffsets>
+			<LifespanFactor>1.1</LifespanFactor>
+			<Fertility>0.05</Fertility>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		</statOffsets>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Moka_Tail_Bovine</defName>
+		<label>bovine tail</label>
+		<description>Carriers of this gene grow a slender tail that can act as a dexterous fifth limb.</description>
+		<iconPath>Moka/Animal/BovineTail/BovineTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Moka/Animal/BovineTail/BovineTail</texPath>
+				<colorType>Hair</colorType>
+				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>-2</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, -0.15)</offset>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<offset>(-0, 0, -0.15)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.5, 0, -0.15)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.5, 0, -0.15)</offset>
+				</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>Moka_BurlyPhysique</defName>
+		<label>burly physique</label>
+		<labelShortAdj>burly</labelShortAdj>
+		<description>Carriers of this gene are afflicted by dwarfism and are shorter and stockier than most.</description>
+		<iconPath>UI/Genes/Gene_Dwarfism</iconPath>
+		<exclusionTags>
+			<li>AG_BodySize</li>
+			<li>Size</li>
+		</exclusionTags>
+		<statFactors>
+			<Mass>1.20</Mass>
+			<MeatAmount>1.2</MeatAmount>
+			<LeatherAmount>1.20</LeatherAmount>
+			<VEF_CosmeticBodySize_Multiplier>1.2</VEF_CosmeticBodySize_Multiplier>
+			<VEF_HeadSize_Cosmetic>1.10</VEF_HeadSize_Cosmetic>
+		</statFactors>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>		
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_KeratinPlates</defName>
+		<label>keratin plates</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Moka/Animal/BovineHorns/BovineHorns</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				<!-- Hacky way to make certain horn-types less common -->
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_1</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_2</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_2</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_3</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_4</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_5</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_5</li>
+					
+					<li>Moka/Animal/BovineHorns/BovineHorns_6</li>
+					<li>Moka/Animal/BovineHorns/BovineHorns_6</li>
+				</texPaths>
+				<texPath>Moka/Animal/BovineHorns/BovineHorns_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef>
+	
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>Moka_AlertEars</defName>
+		<label>alert ears</label>
+		<description>Carriers of this gene have deer-like ears.</description>
+		<iconPath>Moka/Animal/BovineEars/BovineEars</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<!-- <texPath>Moka/Animal/BovineEars//BovineEars_1</texPath> -->
+				<texPaths>
+					<li>Moka/Animal/BovineEars/BovineEars_1</li>
+					<li>Moka/Animal/BovineEars/BovineEars_2</li>
+					<li>Moka/Animal/BovineEars/BovineEars_3</li>
+					<li>Moka/Animal/BovineEars/BovineEars_4</li>
+					<li>Moka/Animal/BovineEars/BovineEars_5</li>
+					<li>Moka/Animal/BovineEars/BovineEars_6</li>
+				</texPaths>
+				<colorType>Hair</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fau</symbol></li>
+				<li><symbol>cervi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>dae</symbol></li>
+				<li><symbol>buck</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>Moka_CanineVocals</defName>
+		<label>canine vocals</label>
+		<description>Carriers have a strong roar like that of a wolf.</description>
+		<iconPath>Moka/Animal/BovineVoice</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<soundCall>Moka_Pawn_Canine_Call</soundCall>
+		<soundDeath>Moka_Pawn_Canine_Death</soundDeath>
+		<soundWounded>Moka_Pawn_Canine_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>squealer</symbol></li>
+				<li><symbol>oinker</symbol></li>
+				<li><symbol>snorter</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>squeal</symbol></li>
+				<li><symbol>oink</symbol></li>
+				<li><symbol>snuffle</symbol></li>
+				<li><symbol>snort</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>oinker</symbol></li>
+				<li><symbol>hog</symbol></li>
+				<li><symbol>pig</symbol></li>
+				<li><symbol>snorter</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_BodyBase">
+		<defName>Moka_TigerStripes</defName>
+		<label>tiger stripes</label>
+		<labelShortAdj>stripes</labelShortAdj>
+		<description>Carriers of this gene have their skin resembling tree bark. This allows them to withstand blunt trauma that would normally knock people unconscious.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<iconPath>Moka/Animal/BovinePatches/BovinePatches</iconPath>
+		<forcedHeadTypes>
+			<li>Moka_Bovine_AverageMasc_Norm</li>
+			<li>Moka_Bovine_AverageMasc_Wide</li>
+			
+			<li>Moka_Bovine_AverageFemme_Norm</li>
+			<li>Moka_Bovine_AverageFemme_Wide</li>
+		</forcedHeadTypes>
+		<fur>Moka_BovineBody</fur>
+		<statOffsets>
+			<LifespanFactor>1.1</LifespanFactor>
+			<Fertility>0.05</Fertility>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		</statOffsets>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Moka_Tail_Canine</defName>
+		<label>canine tail</label>
+		<description>Carriers of this gene grow a slender tail that can act as a dexterous fifth limb.</description>
+		<iconPath>Moka/Animal/BovineTail/BovineTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<!-- <biostatMet>-1</biostatMet> -->
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Moka/Animal/BovineTail/BovineTail</texPath>
+				<colorType>Hair</colorType>
+				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+					<layer>-2</layer>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, -0.15)</offset>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<offset>(-0, 0, -0.15)</offset>
+				</dataSouth>
+				<dataEast>
+					<offset>(-0.5, 0, -0.15)</offset>
+				</dataEast>
+				<dataWest>
+					<offset>(0.5, 0, -0.15)</offset>
+				</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>Moka_WiryPhysique</defName>
+		<label>wiry physique</label>
+		<labelShortAdj>wiry</labelShortAdj>
+		<description>Carriers of this gene are afflicted by dwarfism and are shorter and more slender than most.</description>
+		<iconPath>UI/Genes/Gene_Dwarfism</iconPath>
+		<exclusionTags>
+			<li>AG_BodySize</li>
+			<li>Size</li>
+		</exclusionTags>
+		<statFactors>
+			<Mass>0.80</Mass>
+			<MeatAmount>0.80</MeatAmount>
+			<LeatherAmount>0.80</LeatherAmount>
+			<VEF_CosmeticBodySize_Multiplier>0.85</VEF_CosmeticBodySize_Multiplier>
+			<VEF_HeadSize_Cosmetic>0.90</VEF_HeadSize_Cosmetic>
+		</statFactors>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>		
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+
+</Defs>

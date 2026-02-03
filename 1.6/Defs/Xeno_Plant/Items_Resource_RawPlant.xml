@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>Moka_RawLumenPear</defName>
+		<label>lumen pear</label>
+		<description>Assorted berries. Nice to eat, even when raw.</description>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<!-- <possessionCount>10</possessionCount> -->
+		<graphicData>
+			<texPath>Moka/Nature/LumenPear</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>Moka_AteLumenPear</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<outcomeDoers>
+				<!-- <li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.01</severity>
+				</li> -->
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+  
+</Defs>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Toxosynthesis</defName>
+		<label>toxosynthesis</label>
+		<iconPath>Moka/Toxic/ToxonToFood</iconPath>
+		<geneClass>MokaDevSpace.Gene_Toxosynthesis</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.4</rsrcLvlRequired>
+				<foodLvlMax>0.3</foodLvlMax>
+				<foodFillRate>0.002</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxicRegen</defName>
+		<label>floral regen</label>
+		<iconPath>Moka/Toxic/ToxicRegen</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_ToxicRegen</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxicFruit</defName>
+		<label>rapid coat growth</label>
+		<description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromToxons</geneClass>
+		<iconPath>Moka/Toxic/ToxFruit</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>Moka_RawToxFig</produces>
+				<intervalDays>1</intervalDays>
+				<amount>15</amount>
+				<lightCost>0.10</lightCost>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<minAgeActive>13</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_ToxonSolar</defName>
+		<label>light on tile</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 hemogen per day from biological entropy.</description>
+		<resourceLabel>light</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_ToxonSolar</geneClass>
+		<iconPath>Moka/Toxic/SolarToxons</iconPath>
+		<prerequisite>Moka_Toxon</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+	<!-- TODO:
+	<Fix Tox Rage functionality with Gizmo version>
+	Test and Put in Tox Cognition Gene
+	<test and fix tox attack switching gene>
+	<test and fix pollution gizmo and all its subgenes>
+	<remove commented out genes if not needed>
+	<recreate gene icons for:>
+		<
+		OnTile>
+		<Moka_ToxCognition>
+		<Moka_PollutionGizToxRage>
+		<Moka_PollutionGizmoDrain>
+		<Moka_PollutionGizmoInSun>
+		<Moka_LightGizmoInSun>
+		<Moka_BuildingBarkEternal> -->
+
+</Defs>

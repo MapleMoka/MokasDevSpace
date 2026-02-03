@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>Moka_SunDrop</defName>
+		<label>sundrop bottle</label>
+		<description>A concentrated packet of sunlight, straight from a Heliosian tree. It's main use is to support the solar draw of plant pawns.</description>
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<possessionCount>5</possessionCount>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<alwaysHaulable>true</alwaysHaulable>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<graphicData>
+			<texPath>Moka/Nature/Sundrop</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>0</Beauty>
+			<MarketValue>5</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>Fluid</foodType>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<nonDrugIngestibleWithoutFoodNeed>true</nonDrugIngestibleWithoutFoodNeed>
+			<specialThoughtDirect>Moka_DrankSunDrop</specialThoughtDirect>
+			<ingestSound>HemogenPack_Consume</ingestSound>
+			<outcomeDoers>
+				<li Class="MokaDevSpace.IngestionOutcomeDoer_OffsetLumen">
+					<offset>0.2</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+  <!--=============== ComponentIndustrial ====================-->
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moka_ComponentSeed</defName>
+		<label>floral component</label>
+		<description>A seed capable of becoming any number of weapons, armor, and other tools, when cultivated in a special planters workbench.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Moka/Nature/Resource/ComponentSeed</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<MarketValue>32</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<stuffProps>
+			<color>(112,89,43)</color>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>

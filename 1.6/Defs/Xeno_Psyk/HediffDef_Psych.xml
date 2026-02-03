@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Moka_PsyNullifier</defName>
+		<label>psychic null</label>
+		<description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<!-- <li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li> -->
+			<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>5.9</range>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>Moka_PsyNullNerf</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_PsyNullNerf</defName>
+		<label>psychic null nerf</label>
+		<description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>10</maxDistance>
+				<customMote>Mote_CombatCommandLinkLine</customMote>
+			</li> -->
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+    			<!-- <painFactor>0.25</painFactor> -->
+				<!-- <painOffset>0.12</painOffset> -->
+				 <statFactors>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+					<MeditationFocusGain>0.5</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+				 </statFactors>
+				<!-- <statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+					<MeditationFocusGain>0.1</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+					<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+					<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+            			<postFactor>1.05</postFactor>
+					</li>
+				</capMods> -->
+				<!-- <statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<socialFightChanceFactor>-0.2</socialFightChanceFactor>
+				</statOffsets> -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_PsyAmplifier</defName>
+		<label>psychic amplifier</label>
+		<description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<!-- <li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li> -->
+			<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>5.9</range>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>Moka_PsyAmpBuff</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_PsyAmpBuff</defName>
+		<label>psychic buff</label>
+		<description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>10</maxDistance>
+				<customMote>Mote_CombatCommandLinkLine</customMote>
+			</li> -->
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+    			<!-- <painFactor>0.25</painFactor> -->
+				<!-- <painOffset>0.12</painOffset> -->
+				 <statFactors>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+					<MeditationFocusGain>1.2</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.1</PsychicEntropyRecoveryRate>
+				 </statFactors>
+				<!-- <statOffsets>
+					<MeleeDamageFactor>0.25</MeleeDamageFactor>
+					<MeleeDPS>0.2</MeleeDPS>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+            			<postFactor>1.05</postFactor>
+					</li>
+				</capMods> -->
+				<!-- <statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<socialFightChanceFactor>-0.2</socialFightChanceFactor>
+				</statOffsets> -->
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Moka_PsyNetPawns</defName>
+		<label>psychic relay</label>
+		<description>This colonist has chlorophyll pigments in their skin that allows them to absorb nutrients from sunlight, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<!-- <maxSeverity>1.0</maxSeverity> -->
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_NearPawns">
+				<appliedRadius>9.9</appliedRadius>
+			</li>
+		</comps>
+    	<stages>
+			<li>
+				<label>lonely</label>
+				<minSeverity>1</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>0.003</PsychicSensitivity>
+					<MeditationFocusGain>0.003</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>0.001</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>miniscule</label>
+				<minSeverity>1.25</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.001</PsychicSensitivity>
+					<MeditationFocusGain>1.001</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.0001</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>communual</label>
+				<minSeverity>1.5</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.01</PsychicSensitivity>
+					<MeditationFocusGain>1.01</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.005</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>conscious</label>
+				<minSeverity>1.75</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.05</PsychicSensitivity>
+					<MeditationFocusGain>1.05</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.01</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>overpowered</label>
+				<minSeverity>2</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+					<MeditationFocusGain>1.2</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.1</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Moka_PsyNetPsycks</defName>
+		<label>psychic relay psychic</label>
+		<description>This colonist has chlorophyll pigments in their skin that allows them to absorb nutrients from sunlight, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<!-- <maxSeverity>1.0</maxSeverity> -->
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_NearPsykiks">
+				<appliedRadius>9.9</appliedRadius>
+			</li>
+		</comps>
+    	<stages>
+			<li>
+				<label>lonely</label>
+				<minSeverity>1</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>0.05</PsychicSensitivity>
+					<MeditationFocusGain>0.05</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>0.01</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>miniscule</label>
+				<minSeverity>1.25</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.002</PsychicSensitivity>
+					<MeditationFocusGain>1.002</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.001</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>communual</label>
+				<minSeverity>1.5</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.05</PsychicSensitivity>
+					<MeditationFocusGain>1.05</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.01</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>conscious</label>
+				<minSeverity>1.75</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+					<MeditationFocusGain>1.1</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.05</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>overpowered</label>
+				<minSeverity>2</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+					<MeditationFocusGain>1.5</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.25</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

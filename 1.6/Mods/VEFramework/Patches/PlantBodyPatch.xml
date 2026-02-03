@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!--Colonist-->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Moka_BarkLayer"]</xpath>
+		<value>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+		<fur>Moka_BarkLayer</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		</value>
+	</Operation>
+
+</Patch>

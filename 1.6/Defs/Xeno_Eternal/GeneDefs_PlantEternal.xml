@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_PhotosynthesisEternal</defName>
+		<label>photosynthesis</label>
+		<iconPath>Moka/Eternal/LumenToFoodEtern</iconPath>
+		<geneClass>MokaDevSpace.Gene_Photosynthesis</geneClass>
+		<description>Carriers have the ability to convert the natural lumen they collect into food </description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>While Lumen is above a 20% threshold and food is below a 60% threshold, this pawn converts light to bonus food</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.2</rsrcLvlRequired>
+				<foodLvlMax>0.6</foodLvlMax>
+				<foodFillRate>0.005</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>		
+		<defName>Moka_BuildingBarkEternal</defName>
+		<label>building bark</label>
+		<iconPath>Moka/Eternal/BarkEternal</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers skin grows in layers for each year they are alive, compounding certain bonuses over time.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Until the age of 300, each year of growth makes this pawn a little bit slower, but gives more resistance to staggering and blunt damage.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_BuildingBarkEternal</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_LumenDrain</defName>
+		<label>light drain</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers lose an additional 8 Lumen per day from biological entropy.</description>
+		<resourceLabel>light</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_LumenDrain</geneClass>
+		<iconPath>Moka/Nature/LumenDrain</iconPath>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<resourceLossPerDay>0.08</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_FloralRegenEternal</defName>
+		<label>floral regen</label>
+		<iconPath>Moka/Eternal/FloralRegenEtern</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers cells work to replace missing limbs or wounds over time, eventually replacing any destroyed, lost or missing limbs if allowed, using innate lumen.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Lost limbs are regenerated slowly over two quadrums.</li>
+			<li>Scars and wounds are healed over a quadrum.</li>
+		</customEffectDescriptions>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_FloralRegen</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_LumenFatal</defName>
+		<label>light fatal</label>
+		<iconPath>Moka/Eternal/FatalLightCraving</iconPath>
+		<description>Carriers of this gene will eventully die if lumen levels fall below 0 for too long.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_EternFruit</defName>
+		<label>rapid coat growth</label>
+		<description>Carriers of this gene slowly grow a few etern apples over a year, which can be eaten by other pawns for nutrition and improved healing.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromLumens</geneClass>
+		<iconPath>Moka/Eternal/EternFruit</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>Moka_RawEternApple</produces>
+				<intervalDays>60</intervalDays>
+				<amount>15</amount>
+				<lightCost>0.40</lightCost>
+			</li>
+		</modExtensions>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>5</ComfyTemperatureMax>
+		</statOffsets>
+		<minAgeActive>13</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+</Defs>

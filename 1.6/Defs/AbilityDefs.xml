@@ -1,133 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	<AbilityDef>
-		<defName>Moka_ToxicRage</defName>
-		<label>toxic rage</label>
-		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
-		<iconPath>UI/Cloak_Glands</iconPath>
-		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
-		<writeCombatLog>True</writeCombatLog>
-		<hotKey>Misc12</hotKey>
-		<targetRequired>false</targetRequired>
-		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
-		<statBases>
-			<Ability_Duration>168</Ability_Duration>
-		</statBases>	
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<warmupTime>1</warmupTime>
-			<range>19.9</range>
-			<targetable>false</targetable>
-			<targetParams>
-				<canTargetSelf>True</canTargetSelf>
-			</targetParams>
-		</verbProperties>	
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Moka_ToxicRage</hediffDef>
-				<psychic>false</psychic>
-			</li>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>PsycastPsychicEffect</fleckDef>
-			</li>
-			<li>
-				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
-			</li>
-		</comps>
-	</AbilityDef>
-	
-	<AbilityDef>
-		<defName>Moka_ToxicRageGiz</defName>
-		<label>toxic rage from gizmo</label>
-		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
-		<iconPath>UI/Cloak_Glands</iconPath>
-		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
-		<writeCombatLog>True</writeCombatLog>
-		<hotKey>Misc12</hotKey>
-		<targetRequired>false</targetRequired>
-		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
-		<statBases>
-			<Ability_Duration>168</Ability_Duration>
-		</statBases>	
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<warmupTime>1</warmupTime>
-			<range>19.9</range>
-			<targetable>false</targetable>
-			<targetParams>
-				<canTargetSelf>True</canTargetSelf>
-			</targetParams>
-		</verbProperties>	
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Moka_ToxicRageGiz</hediffDef>
-				<psychic>false</psychic>
-			</li>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>PsycastPsychicEffect</fleckDef>
-			</li>
-			<li Class="MokaDevSpace.CompProperties_AbilityPollutionCost">
-				<hemogenCost>0.2</hemogenCost>
-			</li>
-			<!-- <li>
-				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
-			</li> -->
-		</comps>
-	</AbilityDef>
-	
-	<AbilityDef>
-		<defName>Moka_ToxicStingerGiz</defName>
-		<label>toxic rage from gizmo</label>
-		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
-		<iconPath>UI/Cloak_Glands</iconPath>
-		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
-		<writeCombatLog>True</writeCombatLog>
-		<hotKey>Misc12</hotKey>
-		<targetRequired>false</targetRequired>
-		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
-		<statBases>
-			<Ability_Duration>168</Ability_Duration>
-		</statBases>	
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<warmupTime>1</warmupTime>
-			<range>19.9</range>
-			<targetable>false</targetable>
-			<targetParams>
-				<canTargetSelf>True</canTargetSelf>
-			</targetParams>
-		</verbProperties>	
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Moka_StingerTox</hediffDef>
-				<psychic>false</psychic>
-			</li>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>PsycastPsychicEffect</fleckDef>
-			</li>
-			<li Class="MokaDevSpace.CompProperties_AbilityPollutionCost">
-				<hemogenCost>0.2</hemogenCost>
-			</li>
-			<!-- <li>
-				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
-			</li> -->
-		</comps>
-	</AbilityDef>
 
-  	<GeneDef>
+  	<!-- <GeneDef>
 		<defName>Moka_XenoSeed</defName>
 		<label>toxic rage</label>
 		<description>Carriers of this gene have skin pigments that refract light, letting them blend with their surroundings and become invisible for a short time. In smoke, particulate-reactive cells increase this effect to near-total concealment.</description>
@@ -151,7 +25,7 @@
 		<label>xeno seed</label>
 		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
 		<iconPath>UI/Cloak_Glands</iconPath>
-		<cooldownTicksRange>3600000</cooldownTicksRange> <!-- 6 hours -->
+		<cooldownTicksRange>3600000</cooldownTicksRange> 6 hours
 		<writeCombatLog>True</writeCombatLog>
 		<hotKey>Misc12</hotKey>
 		<targetRequired>false</targetRequired>
@@ -212,8 +86,8 @@
 			<preferability>DesperateOnly</preferability>
 			<tasteThought></tasteThought>
 			<foodType>VegetableOrFruit</foodType>
-			<!-- <joyKind>Chemical</joyKind>
-			<joy>0.5</joy> -->
+			<joyKind>Chemical</joyKind>
+			<joy>0.5</joy>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
@@ -255,5 +129,70 @@
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
 	</ThingDef>
+
+	<AbilityDef>
+		<defName>Moka_PoisonousSprayNorm</defName>
+		<label>poison spray</label>
+		<description>Use the corrosive heart to spray acid a short distance. The heart pumps the corrosive fluid through a surgically implanted duct, allowing the ghoul to spew it from their mouth at high velocity.</description>
+		<iconPath>UI/Abilities/AcidSpray</iconPath>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>11.9</range>
+			<warmupTime>0.25</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>Moka_Proj_PoisonSpray</projectileDef>
+				<numCellsToHit>9</numCellsToHit>
+				<sprayEffecter>AcidSpray_Directional</sprayEffecter>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef>
+		<defName>Moka_Proj_PoisonSpray</defName>
+		<label>poison spray</label>
+		<thingClass>Projectile_Liquid</thingClass>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Projectile/Acid</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Moka_Pollen</damageDef>
+			<speed>25</speed>
+			<damageAmountBase>30</damageAmountBase>
+			<arcHeightFactor>0.4</arcHeightFactor>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<shadowSize>0</shadowSize>
+			<filth>Filth_SpentAcid</filth>
+			<filthCount>1</filthCount>
+		</projectile>
+	</ThingDef>
+
+	<DamageDef ParentName="Stun">
+		<defName>Moka_Pollen</defName>
+		<label>pollen</label>
+		<defaultDamage>20</defaultDamage>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<causeStun>true</causeStun>
+    	<hediff>AcidBurn</hediff>
+	</DamageDef> -->
 	
 </Defs>

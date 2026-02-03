@@ -3,20 +3,132 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mokasdevspace\\1.6\\source\\mokadevfiles\\morenaturefunctions\\planthediffs\\hediffcomp_bark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\planthediffs\\hediffcomp_bark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mokasdevspace\\1.6\\source\\mokadevfiles\\morepsychicfunctions\\psykradius\\hediffcomp_neartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcomp_neartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mokasdevspace\\1.6\\source\\mokadevfiles\\morenaturefunctions\\lightgizmos\\ext_producefromgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lightgizmos\\ext_producefromgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\hediffcomp_nearpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcomp_nearpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mokasdevspace\\1.6\\source\\mokadevfiles\\morenaturefunctions\\lightgizmos\\ext_resourcetofoodgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lightgizmos\\ext_resourcetofoodgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\hediffcomp_nearpsykiks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcomp_nearpsykiks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mokasdevspace\\1.6\\source\\mokadevfiles\\morepollutionfunctions\\pollutionasgizmo\\hediff_pollutioncraving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\pollutionasgizmo\\hediff_pollutioncraving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcomp_lumentopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcomp_lumentopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\hediffcompproperties_nearpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcompproperties_nearpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\hediffcompproperties_nearpsykiks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcompproperties_nearpsykiks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\hediffcompproperties_neartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\hediffcompproperties_neartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\psykradius\\testprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\psykradius\\testprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\mcm_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:mcm_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\lumens\\hediffcomp_severityfromlumens - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lumens\\hediffcomp_severityfromlumens - copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcomp_hemotopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcomp_hemotopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_toxontopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_toxontopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_lumentopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_lumentopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_hemotopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcompproperties_hemotopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepsychicfunctions\\resourcetopsyk\\hediffcomp_toxontopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepsychicfunctions\\resourcetopsyk\\hediffcomp_toxontopsych.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\lumens\\hediffcomp_severityfromlumens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lumens\\hediffcomp_severityfromlumens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\resourcegenes\\gene_producefromgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\resourcegenes\\gene_producefromgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morecavefunctions\\gene_resource_dustgain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morecavefunctions\\gene_resource_dustgain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morecavefunctions\\util_cavemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morecavefunctions\\util_cavemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morecavefunctions\\gene_resource_dust.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morecavefunctions\\gene_resource_dust.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\utils_mapbasedeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\utils_mapbasedeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\lumens\\hediffcompproperties_sawseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lumens\\hediffcompproperties_sawseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morenaturefunctions\\lumens\\hediffcompproperties_severityfromlumens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morenaturefunctions\\lumens\\hediffcompproperties_severityfromlumens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morecavefunctions\\ingestionoutcomedoer_offsetlumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morecavefunctions\\ingestionoutcomedoer_offsetlumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxons\\gene_resource_toxon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxons\\gene_resource_toxon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxons\\genegizmo_resourcetoxons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxons\\genegizmo_resourcetoxons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxonasbug\\hediffcomp_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxonasbug\\hediffcomp_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxonasbug\\hediffcompproperties_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxonasbug\\hediffcompproperties_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxonasbug\\hediff_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxonasbug\\hediff_toxonstinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxonasbug\\jobgiver_consumewastepack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxonasbug\\jobgiver_consumewastepack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\morepollutionfunctions\\toxonasbug\\gene_resource_toxonfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D626C209-555B-4E11-AB31-7967F7DD6A6A}|MokaDevFiles.csproj|solutionrelative:morepollutionfunctions\\toxonasbug\\gene_resource_toxonfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +138,392 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HediffComp_Bark.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\PlantHediffs\\HediffComp_Bark.cs",
-              "RelativeDocumentMoniker": "MoreNatureFunctions\\PlantHediffs\\HediffComp_Bark.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\PlantHediffs\\HediffComp_Bark.cs",
-              "RelativeToolTip": "MoreNatureFunctions\\PlantHediffs\\HediffComp_Bark.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "MCM_DefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MCM_DefOf.cs",
+              "RelativeDocumentMoniker": "MCM_DefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MCM_DefOf.cs",
+              "RelativeToolTip": "MCM_DefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:40:48.121Z",
+              "WhenOpened": "2026-01-21T15:09:48.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HediffCompProperties_NearTrees.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearTrees.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearTrees.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearTrees.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearTrees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T15:08:59.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HediffComp_NearTrees.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearTrees.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearTrees.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearTrees.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearTrees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T15:00:18.918Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HediffCompProperties_NearPawns.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPawns.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPawns.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPawns.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPawns.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T14:40:37.314Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ext_ProduceFromGene.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\LightGizmos\\Ext_ProduceFromGene.cs",
-              "RelativeDocumentMoniker": "MoreNatureFunctions\\LightGizmos\\Ext_ProduceFromGene.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\LightGizmos\\Ext_ProduceFromGene.cs",
-              "RelativeToolTip": "MoreNatureFunctions\\LightGizmos\\Ext_ProduceFromGene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Title": "HediffComp_NearPawns.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearPawns.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearPawns.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearPawns.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearPawns.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T22:13:21.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T14:39:40.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HediffCompProperties_NearPsykiks.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPsykiks.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPsykiks.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPsykiks.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffCompProperties_NearPsykiks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T22:41:38.036Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Ext_ResourceToFoodGene.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\LightGizmos\\Ext_ResourceToFoodGene.cs",
-              "RelativeDocumentMoniker": "MoreNatureFunctions\\LightGizmos\\Ext_ResourceToFoodGene.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\LightGizmos\\Ext_ResourceToFoodGene.cs",
-              "RelativeToolTip": "MoreNatureFunctions\\LightGizmos\\Ext_ResourceToFoodGene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Title": "HediffComp_NearPsykiks.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearPsykiks.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearPsykiks.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\HediffComp_NearPsykiks.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\HediffComp_NearPsykiks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T22:12:26.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T22:32:17.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "testprop.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\testprop.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\testprop.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\testprop.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\testprop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T21:58:34.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "test.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\test.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\PsykRadius\\test.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\PsykRadius\\test.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\PsykRadius\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T21:46:27.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HediffCompProperties_ToxonToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_ToxonToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_ToxonToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_ToxonToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_ToxonToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T20:19:47.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HediffComp_ToxonToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_ToxonToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_ToxonToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_ToxonToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_ToxonToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T20:16:59.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HediffComp_SeverityFromLumens.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T20:15:33.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Gene_ProduceFromGene.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\ResourceGenes\\Gene_ProduceFromGene.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\ResourceGenes\\Gene_ProduceFromGene.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\ResourceGenes\\Gene_ProduceFromGene.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\ResourceGenes\\Gene_ProduceFromGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T20:07:21.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HediffCompProperties_HemoToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_HemoToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_HemoToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_HemoToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_HemoToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T20:04:15.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HediffComp_HemoToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_HemoToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_HemoToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_HemoToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_HemoToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T19:26:01.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HediffCompProperties_LumenToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_LumenToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_LumenToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_LumenToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffCompProperties_LumenToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T19:24:33.657Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Hediff_PollutionCraving.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\PollutionAsGizmo\\Hediff_PollutionCraving.cs",
-              "RelativeDocumentMoniker": "MorePollutionFunctions\\PollutionAsGizmo\\Hediff_PollutionCraving.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\PollutionAsGizmo\\Hediff_PollutionCraving.cs",
-              "RelativeToolTip": "MorePollutionFunctions\\PollutionAsGizmo\\Hediff_PollutionCraving.cs",
+              "Title": "HediffComp_LumenToPsych.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_LumenToPsych.cs",
+              "RelativeDocumentMoniker": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_LumenToPsych.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePsychicFunctions\\ResourceToPsyk\\HediffComp_LumenToPsych.cs",
+              "RelativeToolTip": "MorePsychicFunctions\\ResourceToPsyk\\HediffComp_LumenToPsych.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T19:19:45.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IngestionOutcomeDoer_OffsetLumen.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\IngestionOutcomeDoer_OffsetLumen.cs",
+              "RelativeDocumentMoniker": "MoreCaveFunctions\\IngestionOutcomeDoer_OffsetLumen.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\IngestionOutcomeDoer_OffsetLumen.cs",
+              "RelativeToolTip": "MoreCaveFunctions\\IngestionOutcomeDoer_OffsetLumen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T14:29:55.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HediffComp_SeverityFromLumens - Copy.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens - Copy.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens - Copy.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens - Copy.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\Lumens\\HediffComp_SeverityFromLumens - Copy.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T23:44:38.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HediffCompProperties_SawSeed.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffCompProperties_SawSeed.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\Lumens\\HediffCompProperties_SawSeed.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffCompProperties_SawSeed.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\Lumens\\HediffCompProperties_SawSeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T23:16:04.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HediffCompProperties_SeverityFromLumens.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffCompProperties_SeverityFromLumens.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\Lumens\\HediffCompProperties_SeverityFromLumens.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Lumens\\HediffCompProperties_SeverityFromLumens.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\Lumens\\HediffCompProperties_SeverityFromLumens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T23:15:38.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Gene_Resource_Toxon.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\Toxons\\Gene_Resource_Toxon.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\Toxons\\Gene_Resource_Toxon.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\Toxons\\Gene_Resource_Toxon.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\Toxons\\Gene_Resource_Toxon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T21:53:52.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-25T20:04:48.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GeneGizmo_ResourceToxons.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\Toxons\\GeneGizmo_ResourceToxons.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\Toxons\\GeneGizmo_ResourceToxons.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\Toxons\\GeneGizmo_ResourceToxons.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\Toxons\\GeneGizmo_ResourceToxons.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:04:41.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HediffComp_ToxonStinger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\HediffComp_ToxonStinger.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\ToxonAsBug\\HediffComp_ToxonStinger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\HediffComp_ToxonStinger.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\ToxonAsBug\\HediffComp_ToxonStinger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:04:33.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HediffCompProperties_ToxonStinger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\HediffCompProperties_ToxonStinger.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\ToxonAsBug\\HediffCompProperties_ToxonStinger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\HediffCompProperties_ToxonStinger.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\ToxonAsBug\\HediffCompProperties_ToxonStinger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:04:31.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Hediff_ToxonStinger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\Hediff_ToxonStinger.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\ToxonAsBug\\Hediff_ToxonStinger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\Hediff_ToxonStinger.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\ToxonAsBug\\Hediff_ToxonStinger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:04:27.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "JobGiver_ConsumeWastepack.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\JobGiver_ConsumeWastepack.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\ToxonAsBug\\JobGiver_ConsumeWastepack.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\JobGiver_ConsumeWastepack.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\ToxonAsBug\\JobGiver_ConsumeWastepack.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDoAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T09:17:11.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Gene_Resource_ToxonFeeding.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\Gene_Resource_ToxonFeeding.cs",
+              "RelativeDocumentMoniker": "MorePollutionFunctions\\ToxonAsBug\\Gene_Resource_ToxonFeeding.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MorePollutionFunctions\\ToxonAsBug\\Gene_Resource_ToxonFeeding.cs",
+              "RelativeToolTip": "MorePollutionFunctions\\ToxonAsBug\\Gene_Resource_ToxonFeeding.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T09:12:37.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Utils_MapBasedEffects.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Utils_MapBasedEffects.cs",
+              "RelativeDocumentMoniker": "MoreNatureFunctions\\Utils_MapBasedEffects.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreNatureFunctions\\Utils_MapBasedEffects.cs",
+              "RelativeToolTip": "MoreNatureFunctions\\Utils_MapBasedEffects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:30:20.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Gene_Resource_DustGain.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Gene_Resource_DustGain.cs",
+              "RelativeDocumentMoniker": "MoreCaveFunctions\\Gene_Resource_DustGain.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Gene_Resource_DustGain.cs",
+              "RelativeToolTip": "MoreCaveFunctions\\Gene_Resource_DustGain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:27:46.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Gene_Resource_Dust.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Gene_Resource_Dust.cs",
+              "RelativeDocumentMoniker": "MoreCaveFunctions\\Gene_Resource_Dust.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Gene_Resource_Dust.cs",
+              "RelativeToolTip": "MoreCaveFunctions\\Gene_Resource_Dust.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:21:45.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Util_CaveMethods.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Util_CaveMethods.cs",
+              "RelativeDocumentMoniker": "MoreCaveFunctions\\Util_CaveMethods.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MokasDevSpace\\1.6\\Source\\MokaDevFiles\\MoreCaveFunctions\\Util_CaveMethods.cs",
+              "RelativeToolTip": "MoreCaveFunctions\\Util_CaveMethods.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:21:01.832Z"
             }
           ]
         }

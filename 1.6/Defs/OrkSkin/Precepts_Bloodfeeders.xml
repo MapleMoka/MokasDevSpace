@@ -80,7 +80,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinRevered_OpinionOfOrk</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_OrkLove_Social</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_OrkSkin_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -93,7 +93,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinReviled_OpinionOfOrk</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_OrkDespised_Social</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_OrkSkin_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -135,7 +135,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinRevered_IsOrk</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsOrkskin</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_IsOrkskin</workerClass>
 		<stages>
 			<!-- <li>
 				<label>Not an ork</label>
@@ -153,7 +153,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinReviled_IsOrk</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_IsOrkskin</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_IsOrkskin</workerClass>
 		<stages>
 			<li>
 				<label>ork self hatred</label>
@@ -166,7 +166,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinRevered_Colonist_Thoughts</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_OrkskinColonist</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_OrkskinColonist</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>
@@ -195,7 +195,7 @@
 	<ThoughtDef>
 		<defName>Moka_OrkskinReviled_Colonist_Thoughts</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>ThoughtWorker_Precept_BloodfeederPresent</workerClass>
+		<workerClass>MokaDevSpace.ThoughtWorker_Precept_OrkskinPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

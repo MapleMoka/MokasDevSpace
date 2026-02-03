@@ -35,7 +35,7 @@ namespace MokaDevSpace
                 return true;
             else return false;
         }
-        public static void OffsetPollution(Pawn pawn, float offset, bool applyStatFactor = true)
+        public static void OffsetToxons(Pawn pawn, float offset, bool applyStatFactor = true)
         {
             if (!ModsConfig.BiotechActive)
             {
@@ -43,18 +43,29 @@ namespace MokaDevSpace
             }
             if (offset > 0f && applyStatFactor)
             {
-                offset *= pawn.GetStatValue(StatDefOf.HemogenGainFactor);
+                offset *= pawn.GetStatValue(MCM_DefOf.Moka_PollutionGainFactor);
             }
-            Gene_Resource_PollutionDrain gene_HemogenDrain = pawn.genes?.GetFirstGeneOfType<Gene_Resource_PollutionDrain>();
-            if (gene_HemogenDrain != null)
+            Gene_Resource_ToxonDrain gene_ToxonDrain = pawn.genes?.GetFirstGeneOfType<Gene_Resource_ToxonDrain>();
+            if (gene_ToxonDrain != null)
             {
-                GeneResourceDrainUtility.OffsetResource(gene_HemogenDrain, offset);
+                GeneResourceDrainUtility.OffsetResource(gene_ToxonDrain, offset);
                 return;
             }
-            Gene_Resource_Pollution gene_Hemogen = pawn.genes?.GetFirstGeneOfType<Gene_Resource_Pollution>();
-            if (gene_Hemogen != null)
+            Gene_Resource_Toxon gene_Toxon = pawn.genes?.GetFirstGeneOfType<Gene_Resource_Toxon>();
+            if (gene_Toxon != null)
             {
-                gene_Hemogen.Value += offset;
+                gene_Toxon.Value += offset;
+            }
+            else
+            {
+                if (pawn.health.hediffSet.HasHediff(HediffDefOf.ToxicBuildup))
+                {
+                    pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ToxicBuildup).Severity += 0.02f;
+                }
+                else
+                {
+                    pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
+                }
             }
         }
     }

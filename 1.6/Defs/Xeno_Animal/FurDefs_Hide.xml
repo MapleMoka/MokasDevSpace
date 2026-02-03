@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FurDef>
+		<defName>Moka_BovineBody</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Moka/Animal/BovinePatches/BovinePatches_Male</Male>
+			<Female>Moka/Animal/BovinePatches/BovinePatches_Female</Female>
+			<Hulk>Moka/Animal/BovinePatches/BovinePatches_Hulk</Hulk>
+			<Fat>Moka/Animal/BovinePatches/BovinePatches_Fat</Fat>
+			<Thin>Moka/Animal/BovinePatches/BovinePatches_Thin</Thin>
+			<Child>Moka/Animal/BovinePatches/BovinePatches_Thin</Child>
+			<Baby>Moka/Animal/BovinePatches/BovinePatches_Thin</Baby><!-- Always covered by swaddled graphic -->
+		</bodyTypeGraphicPaths>
+	</FurDef>
+  
+  
+
+</Defs>

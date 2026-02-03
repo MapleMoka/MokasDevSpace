@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Moka_Pheromones</defName>
+		<thoughtClass>MokaDevSpace.Thought_Pheromones</thoughtClass>
+		<workerClass>MokaDevSpace.Thoughtworker_Pheromones</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>they just seem...better</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_DrankSunDrop</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>5</stackLimit>
+		<nullifyingGenes>
+			<li>Hemogenic</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>drank sundrop</label>
+				<description>I ingested a hemogen pack. It might keep me alive, but it was absolutely disgusting.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_AteLumenPear</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>3</stackLimit>
+		<nullifyingGenes>
+			<li>Hemogenic</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>ate lumen pear</label>
+				<description>I ingested a hemogen pack. It might keep me alive, but it was absolutely disgusting.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_AteToxFig</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>5</stackLimit>
+		<nullifyingGenes>
+			<li>Hemogenic</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>ate tox fig</label>
+				<description>I ingested a hemogen pack. It might keep me alive, but it was absolutely disgusting.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Moka_AteEternApple</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>5</stackLimit>
+		<nullifyingGenes>
+			<li>Hemogenic</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>ate etern apple</label>
+				<description>I ingested a hemogen pack. It might keep me alive, but it was absolutely disgusting.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

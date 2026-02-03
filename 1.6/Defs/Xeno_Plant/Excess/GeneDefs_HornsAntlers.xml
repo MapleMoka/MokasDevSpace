@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_BarkAntlers</defName>
+		<label>bark-antlers</label>
+		<description>Carriers of this gene grow two small horns mimicking those of cervids from old earth.</description>
+		<iconPath>Moka/Nature/Antlers/BarkAntlers</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				Hacky way to make certain horn-types less common
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_1</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_2</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_2</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_3</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_4</li>
+					
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+					<li>Moka/Nature/Antlers/BarkAntlers_5</li>
+				</texPaths>
+				<texPath>Moka/Nature/Antlers/BarkAntlers_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef> -->
+	
+	<!-- <GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_BarkAntlersTox</defName>
+		<label>bark-AntlersTox</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Moka/Nature/AntlersTox/BarkAntlersTox</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				Hacky way to make certain horn-types less common
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_1</li>
+					
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_2</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_2</li>
+					
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_3</li>
+					
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_4</li>
+					
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_5</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_5</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_5</li>
+					<li>Moka/Nature/AntlersTox/BarkAntlersTox_5</li>
+				</texPaths>
+				<texPath>Moka/Nature/AntlersTox/BarkAntlersTox_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef> -->
+
+</Defs>

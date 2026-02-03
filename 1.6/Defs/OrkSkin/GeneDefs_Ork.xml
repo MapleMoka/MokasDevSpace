@@ -41,7 +41,6 @@
 		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
 		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
 		<displayCategory>ToBeSorted</displayCategory>
-		<iconPath>Moka/Core/RandomDarkskin</iconPath>
 		<displayOrderInCategory>5.2</displayOrderInCategory>
 		<biostatMet>1</biostatMet>
 		<customEffectDescriptions>
@@ -50,7 +49,45 @@
 	</GeneDef>
 
 	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
+		<defName>Moka_RandomPigment_OrkskinBase</defName>
+		<iconPath>Moka/Ork/RandomSkinOrk1</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+					<li>Moka_SkinColor_PaleGreen</li>
+
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+					<li>Moka_SkinColor_DeepGreen</li>
+
+					<li>Moka_SkinColor_FungalGreen</li>
+					<li>Moka_SkinColor_FungalGreen</li>
+
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+					<li>Moka_SkinColor_BlueGreen</li>
+
+					<li>Moka_SkinColor_Muddy</li>
+
+					<li>Moka_SkinColor_GraveGreen</li>
+
+					<li>Moka_SkinColor_OrkishGreen</li>
+					<li>Moka_SkinColor_OrkishGreen</li>
+
+					<li>Moka_SkinColor_LeafGreen</li>
+					<li>Moka_SkinColor_LeafGreen</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
 		<defName>Moka_RandomPigment_OrkskinN</defName>
+		<iconPath>Moka/Ork/RandomSkinOrk1</iconPath>
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
 				<genesToChooseFrom>
@@ -87,6 +124,7 @@
 
 	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
 		<defName>Moka_RandomPigment_OrkskinA</defName>
+		<iconPath>Moka/Ork/RandomSkinOrk2</iconPath>
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
 				<genesToChooseFrom>
@@ -123,6 +161,7 @@
 
 	<GeneDef ParentName="Moka_RandomPigment_OrkSkin">
 		<defName>Moka_RandomPigment_OrkskinL</defName>
+		<iconPath>Moka/Ork/RandomSkinOrk3</iconPath>
 		<modExtensions>
 			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
 				<genesToChooseFrom>
@@ -362,12 +401,51 @@
 		<description>Carriers of this gene feel more pain than others given the same injuries. Neuron activity in the brain's nociception center is amplified, so pain feels extra-intense and fiery. This can be protective, but overall it's considered a negative and makes it hard to push through difficult situations.</description>
 		<iconPath>UI/Icons/Genes/Gene_ExtraPain</iconPath>
 		<displayOrderInCategory>20</displayOrderInCategory>
+		<displayCategory>ToBeSorted</displayCategory>
 		<forcedTraits>
 			<li>
 				<def>Brawler</def>
 			</li>
 		</forcedTraits>
 		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+	<!-- Misc -->
+	
+	<GeneDef>
+		<defName>VRE_FacialSpots</defName>
+		<label>facial spots</label>
+		<description>Carriers of this gene have small pigmentation spots on their face.</description>
+		<biostatCpx>1</biostatCpx>
+		<iconPath>UI/Icons/Genes/Gene_FacialSpots</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsA</li>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsB</li>
+					<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsC</li>
+				</texPaths>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		
 	</GeneDef>
   
 	<!-- <GeneDef>

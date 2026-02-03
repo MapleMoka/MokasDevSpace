@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>Moka_ToxonRage</defName>
+		<label>toxon rage</label>
+		<description>Use the adrenal heart to saturate the bloodstream with stress hormones and liquid energy, permitting the ghoul to move and attack at incredible speeds for a short time.</description>
+		<iconPath>Moka/Toxic/ToxonRage</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 30 seconds -->
+		<hostile>false</hostile>
+		<groupAbility>true</groupAbility>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<soundCast>Pawn_Ghoul_Frenzy</soundCast>
+			<targetable>false</targetable>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_ToxonRage</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="MokaDevSpace.CompProperties_AbilityToxonCost">
+				<toxonCost>0.2</toxonCost>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Moka_ToxonSaturation</defName>
+		<label>toxon saturation</label>
+		<description>Use the adrenal heart to saturate the bloodstream with stress hormones and liquid energy, permitting the ghoul to move and attack at incredible speeds for a short time.</description>
+		<iconPath>Moka/Toxic/ToxonRage</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 30 seconds -->
+		<hostile>false</hostile>
+		<groupAbility>true</groupAbility>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<!-- <statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases> -->
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<soundCast>Pawn_Ghoul_Frenzy</soundCast>
+			<targetable>false</targetable>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!-- <li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_ToxonRage</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li> -->
+			<li Class="MokaDevSpace.CompProperties_AbilityToxonCost">
+				<toxonCost>0.5</toxonCost>
+			</li>
+			<li Class="MokaDevSpace.CompProperties_AbilityToxonSaturation">
+				<polluteGene>PollutionRush</polluteGene>
+				<geneDefs>
+					<li>PollutionStimulus</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionRegeneration</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionRage</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionSustenance</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionCognition</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionNumbness</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionHappiness</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionProductivity</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionPsySensitivity</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionFertility</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_PollutionAccuracy</li>
+				</geneDefs>
+				<severityOffsetBeneficial>0.95</severityOffsetBeneficial>
+				<severityOffsetDetrimental>0.15</severityOffsetDetrimental>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>Moka_ToxonStinger</defName>
+		<label>toxon stinger</label>
+		<description>Specialized skin pigments refract light, allowing the carrier to blend with their surroundings and become invisible for a short time while covered in smoke.</description>
+		<iconPath>Moka/Toxic/ToxonStinger</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange> <!-- 6 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>168</Ability_Duration>
+		</statBases>	
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>	
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Moka_StingerTox</hediffDef>
+				<psychic>false</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="MokaDevSpace.CompProperties_AbilityToxonCost">
+				<toxonCost>0.2</toxonCost>
+			</li>
+			<!-- <li>
+				<compClass>MokaDevSpace.AbilityComp_UsableWhenToxSaturated</compClass>
+			</li> -->
+		</comps>
+	</AbilityDef>
+	
+</Defs>

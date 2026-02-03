@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>Moka_RawEternApple</defName>
+		<label>etern apple</label>
+		<description>Assorted berries. Nice to eat, even when raw.</description>
+		<!-- <possessionCount>10</possessionCount> -->
+		<graphicData>
+			<texPath>Moka/Eternal/EternApple</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>Moka_AteEternApple</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<outcomeDoers>
+				<!-- <li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.01</severity>
+				</li> -->
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+  
+</Defs>

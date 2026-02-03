@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Moka_Headbone_BarkAntlersEtern</defName>
+		<label>bark-AntlersEtern</label>
+		<description>Carriers of this gene grow two small horns mimicking those of cervids from old earth but in a golden sheen.</description>
+		<iconPath>Moka/Eternal/AntlersEtern/BarkAntlersEtern</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+				<!-- Hacky way to make certain horn-types less common -->
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</li>
+					
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_2</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_2</li>
+					
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_3</li>
+					
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_4</li>
+					
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_5</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_5</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_5</li>
+					<li>Moka/Eternal/AntlersEtern/BarkAntlersEtern_5</li>
+				</texPaths>
+				<texPath>Moka/Eternal/AntlersEtern/BarkAntlersEtern_1</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>knob</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>devil</symbol></li>
+				<li><symbol>demon</symbol></li>
+				<li><symbol>luci</symbol></li>
+				<li><symbol>beelze</symbol></li>
+				<li><symbol>hell</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>horn</symbol></li>
+				<li><symbol>spike</symbol></li>
+				<li><symbol>vil</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+    </GeneDef>
+
+</Defs>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Moka_CraftDust</defName>
+		<label>crush any stone blocks to dust</label>
+		<description>crush rock chunks into dust.</description>
+		<jobString>Cutting stone blocks from chunk.</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>1.4</workSkillLearnFactor>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<!-- <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers> -->
+		<!-- <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> -->
+		<!-- <workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass> -->
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+						<li>ChunkSlate</li>
+						<li MayRequire="Rimworld.Odyssey">ChunkVacstone</li>
+						<li>ChunkSandstone</li>
+						<li>ChunkGranite</li>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Moka_DustTray>15</Moka_DustTray>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkMarble</li>
+				<li>ChunkSlate</li>
+				<li>ChunkSandstone</li>
+				<li>ChunkGranite</li>
+				<li>ChunkLimestone</li>
+				<li MayRequire="Ludeon.Rimworld.Odyssey">ChunkVacstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+
+</Defs>

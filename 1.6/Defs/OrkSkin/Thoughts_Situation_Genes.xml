@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Moka_Orx_VoiceOfGod_Thoughts</defName>
+		<workerClass>MokaDevSpace.ThoughtWorker_VoiceOfGod</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<requiredGenes>
+			<li>Moka_VoiceOfGod</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>fungal itch</label>
+				<description>theres a voice in the back of their mind, clawing away at who they are.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>fungal joy</label>
+				<description>the voice of the all fungus is all they hear.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>fungal happiness</label>
+				<description>the voice of the all fungus is all they know.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>fungal bliss</label>
+				<description>the voice of the all fungus is all they are, all they feel, all they think. they are one with the fungus.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

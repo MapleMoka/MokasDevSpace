@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="GlowforestPlantBase">
+		<defName>Moka_Plant_Fungus</defName>
+		<label>fungus</label>
+		<!-- <thingClass>Plant_Psilocap</thingClass> -->
+		<tickerType>Normal</tickerType>
+		<description>A fungus that gives off hallucinogenic spores. Standing next to them is enough to produce mild hallucinations. Psilocaps can be harvested and ingested to produce a vivid sensory experience that increases the user's mood.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Psilocap</texPath>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<uiIconScale>0.588</uiIconScale>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.03</fertilityMin>
+			<fertilitySensitivity>0.45</fertilitySensitivity>
+			<growDays>50</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>5</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Moka_Drug_Fungus</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>25</wildClusterWeight>
+			<purpose>Food</purpose>
+			<pollution>Any</pollution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(50,33,145,0)</glowColor>
+				<overrideIsCavePlant>true</overrideIsCavePlant>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>Moka_Drug_Fungus</defName>
+		<label>fungus</label>
+		<description>The fruiting body of a hallucinogenic fungus. When eaten it produces vivid sensory experiences and lifts mood. There is a small chance to immediately induce a catatonic state, or creatively inspire the user. Psilocaps are not addictive, but can cause overdoses if eaten in large quantities.\n\nSome cultures use psilocaps for religious ceremonies, while many others have outlawed the mushrooms entirely.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Moka_FungusHigh</HediffDef>
+			<HediffDef>Moka_FungusTolerance</HediffDef>
+		</descriptionHyperlinks>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Drug/Psilocap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<baseIngestTicks>80</baseIngestTicks>
+			<chairSearchRadius>4</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.7</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Moka_FungusHigh</hediffDef>
+					<severity>0.60</severity>
+					<toleranceChemical>Moka_Fungus_Chemical</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Moka_FungusTolerance</hediffDef>
+					<toleranceChemical>Moka_Fungus_Chemical</toleranceChemical>
+					<severity>0.04</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="MokaDevSpace.IngestionOutcomeDoer_OffsetFungus">
+					<offset>0.05</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>Moka_Fungus_Chemical</chemical>
+				<addictiveness>0</addictiveness>
+				<minToleranceToAddict>1</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+		<possessionCount>5</possessionCount>
+	</ThingDef>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>Moka_Drug_FungusMade</defName>
+		<label>made fungus</label>
+		<description>A refined powdery preparation of the psychite drug. When snorted, it produces a rapid euphoric high, dramatically reduces the user's need for rest, and suppresses pain. Like all forms of psychite, it is addictive, though it is not as addictive as the cruder flake.\n\nBecause of its high cost and refined appearance, many cultures associate yayo with degenerate wealth. Whether in the throneroom or the boardroom, many hare-brained policy schemes have been developed during yayo-fueled binge parties.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Moka_FungusHigh</HediffDef>
+			<HediffDef>Moka_FungusTolerance</HediffDef>
+			<HediffDef>Moka_FungusAddiction</HediffDef>
+			<!-- <HediffDef>ChemicalDamageSevere</HediffDef> -->
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Yayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>350</WorkToMake>
+			<MarketValue>21</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<minRewardCount>10</minRewardCount>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<drugCategory>Hard</drugCategory>
+			<baseIngestTicks>150</baseIngestTicks>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Moka_FungusHigh</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Moka_Fungus_Chemical</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.4</offset>
+					<toleranceChemical>Moka_Fungus_Chemical</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Moka_FungusTolerance</hediffDef>
+					<toleranceChemical>Moka_Fungus_Chemical</toleranceChemical>
+					<severity>0.040</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1700</displayPriority>
+		</recipeMaker>
+		<costList>
+			<PsychoidLeaves>8</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Moka_Fungus_Chemical</chemical>
+				<addictiveness>0.01</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>100</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.01</largeOverdoseChance>
+			</li>
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+	
+	<HediffDef ParentName="AddictionBase">
+		<defName>Moka_FungusAddiction</defName>
+		<label>fungus addiction</label>
+		<description>A chemical addiction to psychite. Long-term presence of psychite has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+	\nWithout regular doses of psychite from drugs like flake or yayo, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<chemicalNeed>Chemical_Psychite</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<socialFightChanceFactor>3.0</socialFightChanceFactor>
+				<statOffsets>
+					<RestFallRateFactor>0.3</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugExtreme</mentalState>
+						<mtbDays>40</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>10</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>Moka_FungusWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Moka_FungusAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>psychite withdrawal</label>
+				<description>God I'm tired. Everything's so slow and boring. Especially me.</description>
+				<baseMoodEffect>-35</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<HediffDef>
+		<defName>Moka_FungusHigh</defName>
+		<label>fungus hallucinations</label>
+		<description>Chemicals from psilocap spores, possibly inhaled from the air, are causing this person to experience subtle hallucinations that distort their perception of reality.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<initialSeverity>0.01</initialSeverity>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.92</severityPerDay> <!-- 8% per hour -->
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>extreme</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.35</setMax>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>Moka_FungusHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Moka_FungusHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>psilocap hallucinations</label>
+				<description>My emotions feel stronger and warmer.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>psilocap hallucinations</label>
+				<description>All my senses seem to blend together. Everything is connected...</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+			<li>
+				<label>psilocap hallucinations</label>
+				<description>My mind is open. I feel everything. I am the universe.</description>
+				<baseMoodEffect>24</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- Psilocap tolerance -->
+
+	<ChemicalDef>
+		<defName>Moka_Fungus_Chemical</defName>
+		<label>fungus</label>
+		<toleranceHediff>Moka_FungusTolerance</toleranceHediff>
+		<generateAddictionGenes>false</generateAddictionGenes>
+		<canBeAddicted>false</canBeAddicted>
+	</ChemicalDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>Moka_FungusTolerance</defName>
+		<label>fungus tolerance</label>
+		<description>An acquired tolerance to fungus. The more severe this tolerance is, the more fungus it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.020</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Moka_Fungus_Chemical</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

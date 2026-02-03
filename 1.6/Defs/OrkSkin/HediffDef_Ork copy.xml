@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<HediffDef>
+		<defName>Moka_SporeBurstDeathGiz</defName>
+		<label>spore burst</label>
+		<description>Steer clear of this pawn when they die. Nearby pawns will be caught in the blast.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_SporeDeathGiz">
+				
+				<radius>5</radius>
+				<multiplierOne>0.4</multiplierOne>
+				<multiplierTwo>0.6</multiplierTwo>
+				<multiplierThree>0.8</multiplierThree>
+				<multiplierFour>1.0</multiplierFour>
+				
+				<damageType>Moka_SporeBlast</damageType>
+				
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_PsychicBulwark</defName>
+		<label>psychic bulwark</label>
+		<description>This pawn's psychic capabilities are being augmented by the fungus building up inside and around this pawn.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.0001</initialSeverity>
+		<maxSeverity>3</maxSeverity>
+    	<!-- <tickerType>Rare</tickerType> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_AdjustByFungusLevel">
+				<!-- <severityPerFungusLevel>0.2</severityPerFungusLevel> -->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!-- <label>minor</label> -->
+				<minSeverity>0.0001</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+					<PsychicEntropyMax>0.5</PsychicEntropyMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>1.01</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>1.01</PsychicEntropyRecoveryRate>
+					<PsychicEntropyMax>1.01</PsychicEntropyMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>1.1</PsychicEntropyRecoveryRate>
+					<PsychicEntropyMax>1.1</PsychicEntropyMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+					<PsychicEntropyMax>1.5</PsychicEntropyMax>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_FungalStitching</defName>
+		<label>fungal stitching</label>
+		<description>This pawn's regenerative capabilities are being augmented by the fungus building up inside and around this pawn.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.0001</initialSeverity>
+		<maxSeverity>3</maxSeverity>
+    	<!-- <tickerType>Rare</tickerType> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_AdjustByFungusLevel">
+				<!-- <severityPerFungusLevel>0.2</severityPerFungusLevel> -->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!-- <label>minor</label> -->
+				<minSeverity>0.0001</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>0.8</InjuryHealingFactor>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>1.01</InjuryHealingFactor>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>1.1</InjuryHealingFactor>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>1.5</InjuryHealingFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_TemperatureVariance</defName>
+		<label>temperature variance</label>
+		<description>This pawn's temperature tolerance is being augmented by the fungus building up inside and around this pawn.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.0001</initialSeverity>
+		<maxSeverity>3</maxSeverity>
+    	<!-- <tickerType>Rare</tickerType> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_AdjustByFungusLevel">
+				<!-- <severityPerFungusLevel>0.2</severityPerFungusLevel> -->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!-- <label>minor</label> -->
+				<minSeverity>0.0001</minSeverity>
+				<statFactors>
+					<ComfyTemperatureMin>1.1</ComfyTemperatureMin>
+					<ComfyTemperatureMax>0.9</ComfyTemperatureMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<ComfyTemperatureMin>0.09</ComfyTemperatureMin>
+					<ComfyTemperatureMax>1.01</ComfyTemperatureMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<statFactors>
+					<ComfyTemperatureMin>0.95</ComfyTemperatureMin>
+					<ComfyTemperatureMax>1.05</ComfyTemperatureMax>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<ComfyTemperatureMin>0.90</ComfyTemperatureMin>
+					<ComfyTemperatureMax>1.1</ComfyTemperatureMax>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_FungusTouched</defName>
+		<label>orkskin</label>
+		<description>Carriers of this gene have a reserve of biological strength powered by a resource called hemogen. The resource can be gained and spent in various ways, all of which are unlocked by other genes.\n\nCarriers lose 2 hemogen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Fungus</geneClass>
+		<iconPath>Moka/Nature/Lumens</iconPath>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourceFungus</resourceGizmoType>
+		<resourceLabel>fungus conversion</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.25</li>
+			<li>0.5</li>
+			<li>0.75</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives hemogen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>hemo</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<!-- <resourceLossPerDay>0.02</resourceLossPerDay> -->
+		<!-- <biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet> -->
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_SporeBurstDeathGiz</defName>
+		<label>spore burst</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_SporeBurstDeathGiz</hediffToAdd>
+			</li>
+		</modExtensions>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_VoiceOfGod</defName>
+		<label>voice of god</label>
+		<description>Carriers of this gene can hear the voice of the all fungus at every moment.</description>
+		<!-- <geneClass>MokaDevSpace.Gene_VoiceOfGod</geneClass> -->
+		<iconPath>Moka/Nature/VoiceOfGod</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_TemperatureVariance</defName>
+		<label>temperature variance</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_TemperatureVariance</hediffToAdd>
+			</li>
+		</modExtensions>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_PsychicBulwark</defName>
+		<label>psychic bulwark</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_PsychicBulwark</hediffToAdd>
+			</li>
+		</modExtensions>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+  
+	<GeneDef>
+		<defName>Moka_FungalStitching</defName>
+		<label>fungal stitching</label>
+		<description>Carriers of this gene have no need for the outdoors and will never feel cooped up no matter how long they stay inside.</description>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_CaveDweller</iconPath>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_FungalStitching</hediffToAdd>
+			</li>
+		</modExtensions>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatMet>+1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+
+</Defs>

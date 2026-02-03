@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>Moka_Lash</defName>
+		<label>lash</label>
+		<labelNoun>a lash</labelNoun>
+		<description>A lash from a whip.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>lash scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.025</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0125</averagePainPerSeverityPermanent>
+			<bleedRate>0.03</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Torn off</destroyedLabel>
+			<destroyedOutLabel>Torn out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_CactusSpines</defName>
+		<label>cactus spines</label>
+		<hediffClass>Hediff_PorcupineQuill</hediffClass>
+		<description>A sharp spine from a porcupine. While generally not fatal, these are incredibly painful. It must be surgically removed.</description>
+		<tendable>false</tendable> <!-- Must be removed via surgery -->
+		<displayWound>true</displayWound>
+		<stages>
+			<li>
+				<painOffset>0.05</painOffset>
+			</li>
+		</stages>
+		<comps />
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_CoveredInHoney</defName>
+		<description>Covered in honey.</description>
+		<label>covered in honey</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<Flammability>0</Flammability>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>900</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_SawSeed</defName>
+		<label>saw seed</label>
+		<description>Poison in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.
+	\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.
+	\nIf a creature dies with toxic buildup, there's a chance that they cannot be eaten. The higher the toxic buildup, the higher the chance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<lethalSeverity>1</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<!-- <taleOnVisible>ToxicityRevealed</taleOnVisible> -->
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_SawSeed">
+				<compClass>MokaDevSpace.HediffComp_SawSeed</compClass>
+				<severityPerHourNotInSun>-0.05</severityPerHourNotInSun>
+				<severityPerHourInSun>0.08</severityPerHourInSun>
+				<severityPerHourWithLumen>0.08</severityPerHourWithLumen>
+				<lumenDrainPerSeverityOffset>0.01</lumenDrainPerSeverityOffset>
+			</li>
+			<!-- <li Class="HediffCompProperties_Immunizable">
+				<compClass>HediffComp_ImmunizableToxic</compClass>
+				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+			</li> -->
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} is showing early signs of a tree growth. Keep {PAWN_objective} away from the sun or any lights.</surgicalDetectionDesc>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>tickle</label>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>itch</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>146</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>438</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+			<li>
+				<label>growth</label>
+				<minSeverity>0.60</minSeverity>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>37</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>111</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+			<li>
+				<label>bursting</label>
+				<minSeverity>0.80</minSeverity>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.10</setMax>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>13</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>39</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Moka_VinesLatch</defName>
+		<label>strangling vines</label>
+		<description>Poison in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.
+	\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.
+	\nIf a creature dies with toxic buildup, there's a chance that they cannot be eaten. The higher the toxic buildup, the higher the chance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		 <maxSeverity>1</maxSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<!-- <taleOnVisible>ToxicityRevealed</taleOnVisible> -->
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500</disappearsAfterTicks>
+			</li>
+			<!-- <li Class="MokaDevSpace.HediffCompProperties_SawSeed">
+				<compClass>MokaDevSpace.HediffComp_SawSeed</compClass>
+				<severityPerHourNotInSun>-0.05</severityPerHourNotInSun>
+				<severityPerHourInSun>0.08</severityPerHourInSun>
+				<severityPerHourWithLumen>0.08</severityPerHourWithLumen>
+				<lumenDrainPerSeverityOffset>0.01</lumenDrainPerSeverityOffset>
+			</li> -->
+			<!-- <li Class="HediffCompProperties_Immunizable">
+				<compClass>HediffComp_ImmunizableToxic</compClass>
+				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+			</li> -->
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} is showing early signs of a tree growth. Keep {PAWN_objective} away from the sun or any lights.</surgicalDetectionDesc>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>tickle</label>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>itch</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>146</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>438</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+			<li>
+				<label>growth</label>
+				<minSeverity>0.60</minSeverity>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>37</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>111</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+			<li>
+				<label>bursting</label>
+				<minSeverity>0.80</minSeverity>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.10</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<!-- <hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Dementia</hediff>
+						<mtbDays>13</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>39</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers> -->
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

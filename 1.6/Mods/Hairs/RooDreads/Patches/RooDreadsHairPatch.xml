@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Crunch"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Amp"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Astra"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Camden"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Paladin"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Poppy"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Bookworm"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Relaxed"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Buzzdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Fairy"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Halfdyed"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Halfshavedreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Hangout"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Headbanddreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Ponytaildreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Twintails"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Sweptbackdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Sweptover"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Shortdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Alpha"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Clipsmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Dreadsmohawk"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Halfdyedmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Hangoutmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Headbanddreadsmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Longdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Loosemale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Manbun"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Mane"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Mediator"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Neat"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Widepart"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Puffs"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Turban"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBDHD_Twinbuns"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+
+</Patch>

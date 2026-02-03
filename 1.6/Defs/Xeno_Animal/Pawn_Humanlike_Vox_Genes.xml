@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <SoundDef>
+        <defName>Moka_Pawn_Bovine_Call</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Muffalo/Muffalo_Calls</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Moka_Pawn_Bovine_Wounded</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Muffalo/Muffalo_Pain</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+                <repeatMode>NeverTwice</repeatMode>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Moka_Pawn_Bovine_Death</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Muffalo/Muffalo_Death</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+    
+    <SoundDef>
+        <defName>Moka_Pawn_Canine_Call</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Dog/Dog_Call</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Moka_Pawn_Canine_Wounded</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Dog/Dog_Injured</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+                <repeatMode>NeverTwice</repeatMode>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Moka_Pawn_Canine_Death</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Pawn/Animal/Dog/Dog_Dead</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

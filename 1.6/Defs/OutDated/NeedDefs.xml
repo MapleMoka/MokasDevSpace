@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <NeedDef>
+		<defName>Moka_NeedNatureExposure</defName>
+		<needClass>MokaDevSpace.Need_NatureExposure</needClass>
+		<label>natural exposure</label>
+		<description>Nature is healing for certain pawns. This one needs to be out in a natural world from time to time or they will lose themselves.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistsOnly>true</colonistsOnly>
+		<neverOnPrisoner>true</neverOnPrisoner>
+		<listPriority>500</listPriority>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+		<freezeInMentalState>true</freezeInMentalState>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<onlyIfCausedByGene>true</onlyIfCausedByGene>
+		<fallPerDay>0.300</fallPerDay>
+	</NeedDef> -->
+
+	<NeedDef>
+		<defName>Moka_NeedPollution</defName>
+		<needClass>MokaDevSpace.Need_Pollution</needClass>
+		<label>pollution</label>
+		<description>While pollution cripples and devastates most creatures, this pawn thrives with occasional exposure to it in one of multiple ways.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<listPriority>500</listPriority>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<onlyIfCausedByGene>true</onlyIfCausedByGene>
+		<fallPerDay>0.300</fallPerDay>
+	</NeedDef>
+
+</Defs>

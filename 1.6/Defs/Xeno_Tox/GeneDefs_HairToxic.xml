@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_RandomGene_ToxicHair</defName>
+		<label>toxic shuffle</label>
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<description>Carriers of this gene have latent grazer dna in them that can be triggered to transform their bodies.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<iconPath>Moka/Toxic/RandomToxicHairs</iconPath>
+		<displayOrderInCategory>5.2</displayOrderInCategory>
+		<!-- <biostatMet>1</biostatMet> -->
+		<customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random gene that changes a pawns limbs and eyes in line with specific animals.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_HairColor_ToxicGreyWhite</li>
+					<li>Moka_HairColor_ToxicGreyWhite</li>
+					<li>Moka_HairColor_ToxicGreyWhite</li>
+					
+					<li>Moka_HairColor_ToxicGreyWhiteB</li>
+					<li>Moka_HairColor_ToxicGreyWhiteB</li>
+					<li>Moka_HairColor_ToxicGreyWhiteB</li>
+
+					<li>Moka_HairColor_ToxicGreyWhiteC</li>
+					<li>Moka_HairColor_ToxicGreyWhiteC</li>
+					<li>Moka_HairColor_ToxicGreyWhiteC</li>
+					
+					<!-- <li>Moka_HairColor_PaleLeaf</li>
+					<li>Moka_HairColor_LightSakura</li>
+					<li>Moka_HairColor_DarkSakura</li> -->
+
+					<li>Moka_HairColor_ToxicGreyWhiteD</li>
+					<li>Moka_HairColor_ToxicGreyWhiteD</li>
+					<li>Moka_HairColor_ToxicGreyWhiteD</li>
+					
+					<li>Moka_HairColor_ToxicGreyWhiteE</li>
+					<li>Moka_HairColor_ToxicGreyWhiteE</li>
+					<li>Moka_HairColor_ToxicGreyWhiteE</li>
+					
+					<li>Moka_HairColor_ToxicGreyWhiteF</li>
+					<li>Moka_HairColor_ToxicGreyWhiteF</li>
+					<li>Moka_HairColor_ToxicGreyWhiteF</li>
+					
+					<li>Moka_HairColor_ToxicGreyWhiteG</li>
+					<li>Moka_HairColor_ToxicGreyWhiteG</li>
+					<li>Moka_HairColor_ToxicGreyWhiteG</li>
+					
+					<li>Moka_HairColor_ToxicGreyWhiteH</li>
+					<li>Moka_HairColor_ToxicGreyWhiteH</li>
+					<li>Moka_HairColor_ToxicGreyWhiteH</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_ToxicHairBase" ParentName="Moka_ColoredHairs" Abstract = "true">
+		<label>grey hair</label>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>vert</symbol></li>
+				<li><symbol>aut</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>green</symbol></li>
+				<li><symbol>leaf</symbol></li>
+			</suffixSymbols>
+		</symbolPack>		
+	</GeneDef>
+
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhite</defName>
+		<hairColorOverride>(190, 190, 190)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteB</defName>
+		<hairColorOverride>(200, 200, 200)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteC</defName>
+		<hairColorOverride>(187, 187, 187)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteD</defName>
+		<hairColorOverride>(164, 164, 164)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteE</defName>
+		<hairColorOverride>(178, 178, 178)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteF</defName>
+		<hairColorOverride>(145, 143, 145)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteG</defName>
+		<hairColorOverride>(126, 126, 126)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_ToxicGreyWhiteH</defName>
+		<hairColorOverride>(103, 103, 103)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<!-- <GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_PaleLeaf</defName>
+		<hairColorOverride>(209, 206, 189)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_LightSakura</defName>
+		<hairColorOverride>(241, 176, 208)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef>
+	
+	<GeneDef ParentName="Moka_ToxicHairBase">
+		<defName>Moka_HairColor_DarkSakura</defName>
+		<hairColorOverride>(211, 43, 92)</hairColorOverride>
+		<displayOrderInCategory>2500</displayOrderInCategory>		
+	</GeneDef> -->
+	
+ </Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Moka_RandomGenesTemplate" Abstract="true">
+		<!-- <defName>Moka_Template_RandomGenes</defName>
+		<label>floral shuffle</label> -->
+		<geneClass>MokaDevSpace.Gene_RandomGeneFromList</geneClass>
+		<!-- <description>Carriers of this gene can be born with one of a number of specific hair colors.</description> -->
+		<displayCategory>ToBeSorted</displayCategory>
+		<!-- <iconPath>Moka/Nature/RandomFloralHairs</iconPath> -->
+		<!-- <displayOrderInCategory>5.2</displayOrderInCategory> -->
+		<!-- <biostatMet>1</biostatMet> -->
+		<!-- <customEffectDescriptions>
+			<li>On generation, this gene is replaced with a random hair color in line with common plant related colors.</li>
+		</customEffectDescriptions> -->
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_RandomGeneFromList">
+				<genesToChooseFrom>
+					<li>Moka_HairColor_EarlyAutumn</li>
+					<li>Moka_HairColor_DeepAutumn</li>
+					<li>Moka_HairColor_NewLeaf</li>
+					<li>Moka_HairColor_PaleLeaf</li>
+					<li>Moka_HairColor_LightSakura</li>
+					<li>Moka_HairColor_DarkSakura</li>
+
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					<li>Moka_HairColor_LightGreen</li>
+					
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					<li>Moka_HairColor_RichGreen</li>
+					
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					<li>Moka_HairColor_StrikingGreen</li>
+					
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					<li>Moka_HairColor_PaleGreen</li>
+					
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+					<li>Moka_HairColor_DeepGreen</li>
+				</genesToChooseFrom>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

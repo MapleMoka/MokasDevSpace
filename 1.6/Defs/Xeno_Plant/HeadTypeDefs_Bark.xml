@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Average -->
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AverageM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Average_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AveragePM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Average_Pointy</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AverageWM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Average_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AverageF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Average_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AveragePF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Average_Pointy</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_AverageWF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Average_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Narrow -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Narrow_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowPM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Narrow_Pointy</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowWM</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadMasc_Narrow_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Narrow_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowPF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Narrow_Pointy</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Moka_BarkLayer_NarrowWF</defName>
+		<graphicPath>Moka/Nature/BarkHeads/BarkLayer_HeadFemme_Narrow_Wide</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Moka_BarkLayer</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Gaunt -->
+	<!-- <HeadTypeDef ParentName="AverageBase">
+		<defName>VRE_BarkGaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkin_Gaunt_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRE_BarkSkin</li>
+			<li>Head_Gaunt</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRE_BarkGaunt_Female</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkinFemale_Gaunt_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRE_BarkSkin</li>
+			<li>Head_Gaunt</li>
+		</requiredGenes>
+	</HeadTypeDef> -->
+
+	<!-- Heavy -->
+
+	<!-- <HeadTypeDef ParentName="HeavyJawBase">
+		<defName>VRE_BarkHeavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkin_Wide_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRE_BarkSkin</li>
+			<li>Jaw_Heavy</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="HeavyJawBase">
+		<defName>VRE_BarkHeavy_Female</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkinFemale_Wide_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRE_BarkSkin</li>
+			<li>Jaw_Heavy</li>
+		</requiredGenes>
+	</HeadTypeDef> -->
+	
+
+	
+
+</Defs>

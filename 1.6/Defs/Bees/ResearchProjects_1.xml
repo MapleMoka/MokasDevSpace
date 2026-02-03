@@ -6,7 +6,7 @@
         <label>bee keeping</label>
         <description>Learn how to keep bees to produce honey from nearby plants.</description>
         <baseCost>500</baseCost>
-		<!-- <tab>VanillaExpanded</tab> -->
+		<tab>ToBeSorted</tab>
         <techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>0.15</researchViewY>

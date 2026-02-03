@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef>
+		<defName>Moka_Photosensitive</defName>
+		<label>photosensitive</label>
+		<description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_LumenToPsych">
+			</li>
+		</comps>
+    	<stages>
+			<li>
+				<label>shrivelled</label>
+				<minSeverity>1</minSeverity>
+				<painOffset>-0.02</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>-0.2</GlobalLearningFactor>
+					<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
+					<NegotiationAbility>-0.05</NegotiationAbility>
+					<ResearchSpeed>-0.1</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>flat</label>
+				<minSeverity>2</minSeverity>
+				<painOffset>0</painOffset>
+			</li>
+			<li>
+				<label>boosted</label>
+				<minSeverity>3</minSeverity>
+				<painOffset>0.12</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>0.11</WorkSpeedGlobal>
+					<NegotiationAbility>0.05</NegotiationAbility>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<!-- <socialFightChanceFactor>-0.2</socialFightChanceFactor> -->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Moka_PsyNetTree</defName>
+		<label>psychic net tree</label>
+		<description>This colonist has chlorophyll pigments in their skin that allows them to absorb nutrients from sunlight, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<!-- <maxSeverity>1.0</maxSeverity> -->
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_NearTrees">
+				<appliedRadius>9.9</appliedRadius>
+			</li>
+		</comps>
+    	<stages>
+			<li>
+				<label>lonely</label>
+				<minSeverity>1</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>0.003</PsychicSensitivity>
+					<MeditationFocusGain>0.003</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>0.001</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>miniscule</label>
+				<minSeverity>1.25</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.001</PsychicSensitivity>
+					<MeditationFocusGain>1.001</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.0001</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>communual</label>
+				<minSeverity>1.5</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.01</PsychicSensitivity>
+					<MeditationFocusGain>1.01</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.005</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>conscious</label>
+				<minSeverity>1.75</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.05</PsychicSensitivity>
+					<MeditationFocusGain>1.05</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.01</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+			<li>
+				<label>overpowered</label>
+				<minSeverity>2</minSeverity>
+				 <statFactors>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+					<MeditationFocusGain>1.2</MeditationFocusGain>
+					<PsychicEntropyRecoveryRate>1.1</PsychicEntropyRecoveryRate>
+				 </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>Moka_NeuralTranspiration</defName>
+		<label>neural transpiration</label>
+		<description>This pawn can take in water from lakes, rivers, oceans and rain to boost certain traits.</description>
+		<hediffClass>MokaDevSpace.Hediff_Xylem</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="MokaDevSpace.HediffCompProperties_Xylem">
+				<maxStorage>4</maxStorage>
+				<evaporationSpeed>0.001</evaporationSpeed>
+				<intakeSpeed>0.005</intakeSpeed>
+				<!-- adjustment curves -->
+				<injuryHealCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, -0.02)</li>
+						<li>(0.20, -0.06)</li>
+						<li>(0.30, -0.12)</li>
+						<li>(0.40, -0.16)</li>
+					</points>
+				</injuryHealCurve>
+				<flameDMGCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 0.04)</li>
+						<li>(0.20, 0.08)</li>
+						<li>(0.30, 0.12)</li>
+						<li>(0.40, 0.15)</li>
+					</points>
+				</flameDMGCurve>
+				<fertilityCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 5)</li>
+						<li>(0.20, 10)</li>
+						<li>(0.30, 20)</li>
+						<li>(0.40, 30)</li>
+					</points>
+				</fertilityCurve>
+				<nutritionCapCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.10, 0.5)</li>
+						<li>(0.20, 0.10)</li>
+						<li>(0.30, 0.20)</li>
+						<li>(0.40, 0.30)</li>
+					</points>
+				</nutritionCapCurve>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

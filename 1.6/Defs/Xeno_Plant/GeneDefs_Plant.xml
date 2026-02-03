@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Photosynthesis</defName>
+		<label>photosynthesis</label>
+		<iconPath>Moka/Nature/LumenToFood</iconPath>
+		<geneClass>MokaDevSpace.Gene_Photosynthesis</geneClass>
+		<description>Carriers have the ability to convert the natural Lumen they collect into food </description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>While Lumen is above a 40% threshold and food is below a 30% threshold, this pawn converts light to bonus food</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ResourceToFoodGene">
+				<rsrcLvlRequired>0.4</rsrcLvlRequired>
+				<foodLvlMax>0.3</foodLvlMax>
+				<foodFillRate>0.001</foodFillRate>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>food</symbol></li>
+				<li><symbol>starch</symbol></li>
+				<li><symbol>sugar</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>store</symbol></li>
+				<li><symbol>sugar</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_BuildingBark</defName>
+		<label>building bark</label>
+		<iconPath>Moka/Nature/Bark</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers skin grows in layers for each year they are alive, compounding certain bonuses over time.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Until the age of 80, each year of growth makes this pawn a little bit slower, but gives more resistance to staggering and blunt damage.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_BuildingBark</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>bark</symbol></li>
+				<li><symbol>skin</symbol></li>
+				<li><symbol>woody</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>skinned</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_WovenXylem</defName>
+		<label>woven xylem</label>
+		<iconPath>Moka/Nature/Transpiration</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop special cells specifically to store excess water in their bodies. That water will eventually evaporate but it can also be used to improve certain bodily capabilities.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>When water cells are full:</li>
+			<li>Increased injury healing</li>
+			<li>Reduced flame damage</li>
+			<li>Improved fertility</li>
+			<li>Improved nutrition capacity</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_WovenXylem</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>wet</symbol></li>
+				<li><symbol>water</symbol></li>
+				<li><symbol>dew</symbol></li>
+			</prefixSymbols>
+			<!-- <suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols> -->
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_FloralRegen</defName>
+		<label>floral regeneration</label>
+		<iconPath>Moka/Nature/FloralRegen</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers cells are work to replace missing limbs or wounds over time, eventually replacing any destroyed, lost or missing limbs if allowed, using innate lumen.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Lost limbs are regenerated slowly over a year.</li>
+			<li>Scars and wounds are healed over two quadrums.</li>
+		</customEffectDescriptions>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_FloralRegen</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>limb</symbol></li>
+				<li><symbol>branch</symbol></li>
+				<li><symbol>grow</symbol></li>
+				<li><symbol>sprou</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>branch</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_FloralPheromones</defName>
+		<label>floral pheromones</label>
+		<iconPath>Moka/Nature/FloralPheromones</iconPath>
+		<description>Carriers of this gene often have other pawns thinking higher of them.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Other pawns think higher of this pawn</li>
+		</customEffectDescriptions>
+		<!-- <exclusionTags>
+		  	<li>MokaLocAffinity</li>
+		</exclusionTags> -->
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_Greenskeeper</defName>
+		<label>greenskeeper</label>
+		<iconPath>Moka/Nature/GreenTuition</iconPath>
+		<description>Carriers of this gene are just a lot faster when it comes to planting, harvesting and other related skills. They have a genetic passion for plant based work and have a natural meditation focus.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Moka_Greenskeeper</def>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_NatFruit</defName>
+		<label>lumen pear</label>
+		<description>Carriers of this gene slowly grow a few lumen pears over time, which can be eaten by other pawns for nutrition.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromLumens</geneClass>
+		<iconPath>Moka/Nature/NatFruit</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGeneGiz">
+				<produces>Moka_RawLumenPear</produces>
+				<intervalDays>10</intervalDays>
+				<amount>15</amount>
+				<lightCost>0.10</lightCost>
+			</li>
+		</modExtensions>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<minAgeActive>16</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>	
+
+	<GeneDef>
+		<defName>Moka_Lumen</defName>
+		<label>luminated pawn</label>
+		<description>Carriers of this gene have a core of energy that can be used to perform and fuel a number of biological processes. It can be gained and spent in different ways, unlocked by other genes. The second most common source of lumen is from the Sundrop fruit.\n\nCarriers lose 2 lumen per day from biological entropy.</description>
+		<geneClass>MokaDevSpace.Gene_Resource_Lumens</geneClass>
+		<iconPath>Moka/Nature/Lumens</iconPath>
+		<resourceGizmoType>MokaDevSpace.GeneGizmo_ResourceLumen</resourceGizmoType>
+		<resourceLabel>lumens</resourceLabel>
+		<resourceGizmoThresholds>
+			<li>0.2</li>
+			<!-- <li>0.5</li> -->
+			<li>0.8</li>
+		</resourceGizmoThresholds>
+		<showGizmoOnWorldView>true</showGizmoOnWorldView>
+		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+		<resourceDescription>A reserve of biological energy which can be gained and spent in a variety of ways.\n\nDepending on other genes, Lumen can be increased primarily through solar exposure.\n\nIf lumen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-2</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Gives lumen supply.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>light</symbol></li>
+				<li><symbol>lumen</symbol></li>
+				<li><symbol>lit</symbol></li>
+				<li><symbol>bright</symbol></li>
+				<li><symbol>glow</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+		<minAgeActive>3</minAgeActive>
+		<resourceLossPerDay>0.02</resourceLossPerDay>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_LumenSolar</defName>
+		<label>solar lumen conversion</label>
+		<labelShortAdj>draining</labelShortAdj>
+		<description>Carriers will gain 25 lumen for every day they spend with direct solar exposure.</description>
+		<resourceLabel>lumen</resourceLabel>
+		<geneClass>MokaDevSpace.Gene_Resource_LumenSolar</geneClass>
+		<iconPath>Moka/Nature/SolarLumen</iconPath>
+		<prerequisite>Moka_Lumen</prerequisite>
+		<resourceLossPerDay>-0.25</resourceLossPerDay>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<minAgeActive>3</minAgeActive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>sun</symbol></li>
+				<li><symbol>solar</symbol></li>
+				<li><symbol>sol</symbol></li>
+				<li><symbol>star</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

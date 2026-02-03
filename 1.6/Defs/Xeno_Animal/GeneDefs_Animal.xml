@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_ExcessLactation</defName>
+		<label>excess lactation</label>
+		<description>Carriers of this gene produce milk at all times and can be milked by other pawns every now and then.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
+		<iconPath>Moka/Animal/ExcessLactation</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>16</minAgeActive>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGene">
+				<produces>Milk</produces>
+				<intervalDays>10</intervalDays>
+				<amount>15</amount>
+			</li>
+		</modExtensions>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<!-- <li>Milkables</li> -->
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_CoatGrowth</defName>
+		<label>coat growth</label>
+		<description>Carriers of this gene produce milk at all times and can be milked by other pawns every now and then.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
+		<iconPath>Moka/Animal/CoatGrowth</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>16</minAgeActive>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGene">
+				<produces>WoolSheep</produces>
+				<intervalDays>15</intervalDays>
+				<amount>15</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<!-- <ComfyTemperatureMax>5</ComfyTemperatureMax> -->
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<!-- <li>Milkables</li> -->
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_SheddingHorns</defName>
+		<label>shedding horns</label>
+		<description>Carriers of this gene produce milk at all times and can be milked by other pawns every now and then.</description>
+		<geneClass>MokaDevSpace.Gene_ProduceFromGene</geneClass>
+		<iconPath>Moka/Animal/CoatGrowth</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>16</minAgeActive>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_ProduceFromGene">
+				<produces>WoolSheep</produces>
+				<intervalDays>5</intervalDays>
+				<amount>10</amount>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<!-- <ComfyTemperatureMax>5</ComfyTemperatureMax> -->
+		</statOffsets>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<!-- <li>Milkables</li> -->
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_RuminantDigestion</defName>
+		<label>ruminant digestion</label>
+		<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
+		<customEffectDescriptions>
+			<li>Can eat hay.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<iconPath>Moka/Animal/BovineStomach</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<dontMindRawFood>true</dontMindRawFood>
+		<statFactors>
+			<RawNutritionFactor>1.2</RawNutritionFactor>
+			<MaxNutrition>1.2</MaxNutrition>
+		</statFactors>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>graze</symbol></li>
+				<li><symbol>hay</symbol></li>
+				<li><symbol>herbi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>grazer</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>dae</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_CaravanReadiness</defName>
+		<label>caravan readiness</label>
+		<iconPath>Moka/Animal/BovineStrength</iconPath>
+		<description>Carriers of this gene form stronger muscles on their backs and shoulders, and have tougher spines, allowing them to haul more weight over long distances.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<statOffsets>
+			<CarryingCapacity>25</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="oskarpotocki.vanillafactionsexpanded.core">25</VEF_MassCarryCapacity>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>heavy</symbol>
+				</li>
+				<li>
+					<symbol>strong</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>weight</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_PartialHooves</defName>
+		<label>partial hooves</label>
+		<iconPath>Moka/Animal/BovineMelee</iconPath>
+		<description>Carriers of this gene have heavier arms that make them slower at swinging melee weapons.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<statOffsets>
+			<MeleeCooldownFactor>0.18</MeleeCooldownFactor>
+			<MeleeHitChance>-0.1</MeleeHitChance>
+			<MeleeArmorPenetration>0.19</MeleeArmorPenetration>
+			<MeleeDoorDamageFactor>0.2</MeleeDoorDamageFactor>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.03</offset>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>hoof</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>hooves</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_Zookeeper</defName>
+		<label>zookeeper</label>
+		<iconPath>Moka/Animal/BovineInstincts</iconPath>
+		<description>Carriers of this gene are naturally more skilled at taming and training animals. It is easier for them to bond with animals and they can experience an inspiration in taming after having a mental break. If they ever have an extreme mental break, they will likely run wild.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Moka_Zookeeper</def>
+			</li>
+		</forcedTraits>
+		<!-- <customEffectDescriptions>
+			<li>Improved relations with any other pawn sharing the same gene. Stronger relations with the strong gene variant</li>
+		</customEffectDescriptions> -->
+	</GeneDef>
+
+	<!-- Eternal???? -->
+	<GeneDef>
+		<defName>Moka_RousingRoar</defName>
+		<label>rousing roar</label>
+		<labelShortAdj>roar</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Toxic/ToxonStinger</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<abilities>
+			<li>Moka_RousingRoar</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_RousingRoar</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- <prerequisite>Moka_Toxon</prerequisite> -->
+		<!-- <geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass> -->
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>13</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- Eternal???? -->
+	<GeneDef>
+		<defName>Moka_FrenziedRoar</defName>
+		<label>frenzied roar</label>
+		<labelShortAdj>roar</labelShortAdj>
+		<description>Carriers of this gene have special glands on their hands and wrists, as well as a unique salivary compound that they can use to rapidly tend wounds.</description>
+		<iconPath>Moka/Toxic/ToxonStinger</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<abilities>
+			<li>Moka_FrenziedRoar</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Moka_FrenziedRoar</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- <prerequisite>Moka_Toxon</prerequisite> -->
+		<!-- <geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass> -->
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>13</minAgeActive>
+		<symbolPack>
+			<suffixSymbols>
+				<li><symbol>life</symbol></li>
+				<li><symbol>clotter</symbol></li>
+				<li><symbol>tender</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- Predator -->
+	<GeneDef>
+		<defName>Moka_Nocturnal</defName>
+		<label>naturally nocturnal</label>
+		<labelShortAdj>brawler</labelShortAdj>
+		<description>Carriers of this gene are more comfortable </description>
+		<iconPath>Moka/Animal/PredNight</iconPath>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<displayCategory>ToBeSorted</displayCategory>
+		<ignoreDarkness>true</ignoreDarkness>
+		<biostatMet>-1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>NightOwl</def>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_MeatSculptor</defName>
+		<label>meat sculptor</label>
+		<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
+		<customEffectDescriptions>
+			<li>Can eat hay.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<iconPath>Moka/Animal/BovineStomach</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<!-- <dontMindRawFood>true</dontMindRawFood> -->
+		<forcedTraits>
+			<li>
+				<def>Moka_MeatSculptor</def>
+			</li>
+		</forcedTraits>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>graze</symbol></li>
+				<li><symbol>hay</symbol></li>
+				<li><symbol>herbi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>grazer</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>dae</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_JungleCamo</defName>
+		<label>jungle camo</label>
+		<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
+		<customEffectDescriptions>
+			<li>Can eat hay.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<iconPath>Moka/Animal/PredStealth</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<!-- <dontMindRawFood>true</dontMindRawFood> -->
+        <statOffsets>
+          	<MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+		<statFactors>
+			<HuntingStealth>1.4</HuntingStealth>
+			<PawnTrapSpringChance>0.8</PawnTrapSpringChance>
+          	<!-- <MeleeDodgeChance>15</MeleeDodgeChance> -->
+		</statFactors>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>graze</symbol></li>
+				<li><symbol>hay</symbol></li>
+				<li><symbol>herbi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>grazer</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>dae</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Moka_EagleEyed</defName>
+		<label>eagle-eyed</label>
+		<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
+		<customEffectDescriptions>
+			<li>Can eat hay.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<iconPath>Moka/Animal/BovineStomach</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<!-- <dontMindRawFood>true</dontMindRawFood> -->
+		<statFactors>
+			<RangedCooldownFactor>0.9</RangedCooldownFactor>
+			<AimingDelayFactor>0.8</AimingDelayFactor>
+			<ShootingAccuracyFactor_Long>1.2</ShootingAccuracyFactor_Long>
+		</statFactors>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>graze</symbol></li>
+				<li><symbol>hay</symbol></li>
+				<li><symbol>herbi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>grazer</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>dae</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_RecessedClaws</defName>
+		<label>recessed claws</label>
+		<iconPath>Moka/Animal/PredMelee</iconPath>
+		<description>Carriers of this gene have heavier arms that make them slower at swinging melee weapons.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<statOffsets>
+			<MeleeCooldownFactor>-0.15</MeleeCooldownFactor>
+			<MeleeHitChance>0.12</MeleeHitChance>
+			<MeleeArmorPenetration>0.19</MeleeArmorPenetration>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.03</offset>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>slow</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>hitter</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_Blubber</defName>
+		<label>blubber</label>
+		<iconPath>Moka/Animal/ToxonCognition</iconPath>
+		<geneClass>MokaDevSpace.Gene_AddHediffToBody</geneClass>
+		<description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+		</customEffectDescriptions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="MokaDevSpace.Ext_AddHediffToBody">
+				<hediffToAdd>Moka_Blubber</hediffToAdd>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>fat</symbol></li>
+				<li><symbol>chubby</symbol></li>
+				<li><symbol>blubber</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>bodied</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Moka_Nimble</defName>
+		<label>naturally nimble</label>
+		<labelShortAdj>nimble</labelShortAdj>
+		<description>Carriers of this gene are more comfortable </description>
+		<iconPath>Moka/Animal/PredMotion</iconPath>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<displayCategory>ToBeSorted</displayCategory>
+		<biostatMet>-1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Nimble</def>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+</Defs>

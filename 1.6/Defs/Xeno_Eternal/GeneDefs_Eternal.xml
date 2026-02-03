@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_Expectations</defName>
+		<label>great expectations</label>
+		<labelShortAdj>high-expectations</labelShortAdj>
+		<description>Carriers of this gene are emotionally and mentally incapable of engaging in violence. They are overwhelmingly resistant to and horrified by the idea of hurting another.</description>
+		<iconPath>UI/Icons/Genes/Gene_ViolenceDisabled</iconPath>
+		<displayCategory>ToBeSorted</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory> 
+		<disabledWorkTags>
+          	<li>ManualDumb</li>
+      		<li>Commoner</li>
+		</disabledWorkTags>
+		<forcedTraits>
+			<li>
+				<def>Jealous</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>3</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>paci</symbol>
+					<weight>2</weight>
+				</li>
+				<li><symbol>calm</symbol></li>
+				<li><symbol>peace</symbol></li>
+				<li><symbol>dove</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>dove</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Standardglassesbald"]/styleTags</xpath>
+		<value>
+			<li>Bald</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Roundglassesbald"]/styleTags</xpath>
+		<value>
+			<li>Bald</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Smallroundglassesbald"]/styleTags</xpath>
+		<value>
+			<li>Bald</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Standardglassesdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Roundglassesdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Smallroundglassesdreads"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Standardglassesdreadsmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Roundglassesdreadsmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Smallroundglassesdreadsmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Standardglassesshavedmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Roundglassesshavedmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_Smallroundglassesshavedmale"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="RBGHD_AviatorS"]/styleTags</xpath>
+		<value>
+			<li>Moka_AfroTexture</li>
+		</value>
+	</Operation>
+			
+</Patch>

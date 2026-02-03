@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>Moka_AfroTextureHair</defName>
+		<label>afro texture</label>
+		<description>Carriers of this gene have any of the afrotextured hairs.</description>
+		<iconPath>Moka/Core/AfroTexturedHair</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+	    <selectionWeightFactorDarkSkin>1</selectionWeightFactorDarkSkin>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Moka_AfroTexture</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>afro</symbol></li>
+				<li><symbol>bantu</symbol></li>
+				<li><symbol>dread</symbol></li>
+				<li><symbol>coil</symbol></li>
+				<li><symbol>braid</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>lock</symbol></li>
+				<li><symbol>loc</symbol></li>
+				<li><symbol>lox</symbol></li>
+				<li><symbol>tie</symbol></li>
+				<li><symbol>knot</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Cosmetic</displayCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>HairStyle</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef Name="Moka_ColoredHairs" ParentName="GeneHairColorBase" Abstract = "true">
+		<selectionWeight>0</selectionWeight>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<iconPath>Moka/Core/ColoredAfroTex</iconPath>
+	</GeneDef>
+	
+ </Defs>

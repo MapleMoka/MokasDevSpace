@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="Moka_Headlox"]/genes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Moka_Headlox"]/genes</xpath>
+			<value>
+				<li>VRE_RecessiveGenome</li>
+				<li>VRE_PerfectBody</li>
+				<li>VRE_HighmateHair</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="Moka_Pawloc"]/genes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Moka_Pawloc"]/genes</xpath>
+			<value>
+				<li>VRE_DominantGenome</li>
+				<li>VRE_FelineEars</li>
+				<li>VRE_FelineTail</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

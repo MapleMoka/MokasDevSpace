@@ -11,7 +11,7 @@
 		<renderOrder>999</renderOrder>
 		<requireOne>
 			<li>
-				<li>Bloodfeeders_Revered</li>
+				<li>Moka_OrkskinRevered</li>
 			</li>
 			<li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>

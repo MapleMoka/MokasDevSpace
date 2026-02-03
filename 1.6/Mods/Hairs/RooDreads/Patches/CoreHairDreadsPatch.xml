@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Princess"]/styleTags</xpath>
+		<value>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="BraidedKnot"]/styleTags</xpath>
+		<value>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HairDef[defName="Locks"]/styleTags</xpath>
+		<value>
+			<li>Dreadlocks</li>
+		</value>
+	</Operation>
+	
+</Patch>

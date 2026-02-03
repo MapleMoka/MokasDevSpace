@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>Moka_RawToxFig</defName>
+		<label>toxon fig</label>
+		<description>Assorted berries. Nice to eat, even when raw.</description>
+		<!-- <possessionCount>10</possessionCount> -->
+		<graphicData>
+			<texPath>Moka/Toxic/ToxFig</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>Moka_AteToxFig</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<outcomeDoers>
+				<li Class="MokaDevSpace.IngestionOutcomeDoer_OffsetToxon">
+					<offset>0.15</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+  
+</Defs>

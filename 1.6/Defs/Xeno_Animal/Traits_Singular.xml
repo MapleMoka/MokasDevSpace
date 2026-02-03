@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TraitDef>
+		<defName>Moka_Zookeeper</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>zookeeper</label>
+				<description>{PAWN_nameDef} was always inheritly wild in a lot of ways. {PAWN_pronoun} has an innate understanding of animal behavior and is naturally more skilled at taming and training animals. It is easier for {PAWN_nameDef} to run wild when stressed.</description>
+				<statOffsets>
+					<TameAnimalChance>0.2</TameAnimalChance>
+					<TrainAnimalChance>0.4</TrainAnimalChance>
+					<BondAnimalChanceFactor>0.1</BondAnimalChanceFactor>
+				</statOffsets>
+				<theOnlyAllowedMentalBreaks>
+					<li>RunWild</li>
+				</theOnlyAllowedMentalBreaks>
+				<skillGains>
+					<Animals>4</Animals>
+				</skillGains>
+				<mentalBreakInspirationGainSet>
+					<li>Inspired_Taming</li>
+				</mentalBreakInspirationGainSet>
+				<mentalBreakInspirationGainReasonText>As an inheritly wild pawn, [PAWN_nameIndef] has experienced an inspiration.</mentalBreakInspirationGainReasonText>
+				<mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+				<possessions>
+					<Hay>10~25</Hay>
+				</possessions>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Moka_MeatSculptor</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>meat sculptor</label>
+				<description>{PAWN_nameDef} was always inheritly wild in a lot of ways. {PAWN_pronoun} has an innate understanding of animal behavior and is naturally more skilled at taming and training animals. It is easier for {PAWN_nameDef} to run wild when stressed.</description>
+				<statFactors>
+					<ButcheryFleshEfficiency>1.3</ButcheryFleshEfficiency>
+					<ButcheryFleshSpeed>1.2</ButcheryFleshSpeed>
+					<CookSpeed>1.3</CookSpeed>
+					<FoodPoisonChance>0.2</FoodPoisonChance>
+				</statFactors>
+				<theOnlyAllowedMentalBreaks>
+					<li>Slaughterer</li>
+				</theOnlyAllowedMentalBreaks>
+				<skillGains>
+					<Cooking>2</Cooking>
+				</skillGains>
+				<!-- <possessions>
+					<Hay>10~25</Hay>
+				</possessions> -->
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Moka_Greenskeeper</defName>
+		<commonality>0</commonality>
+		<forcedPassions>
+			<li>Plants</li>
+		</forcedPassions>
+		<degreeDatas>
+			<li>
+				<label>greenskeeper</label>
+				<description>{PAWN_nameDef} was born with more than a green thumb, {PAWN_pronoun} is naturally more skilled at tending to plants and sometimes jokes about speaking to them. If {PAWN_pronoun} finds a special enough plant, {PAWN_pronoun} can even hear from them too.</description>
+				<statOffsets>
+					<PlantWorkSpeed>0.5</PlantWorkSpeed>
+					<PlantHarvestYield>0.3</PlantHarvestYield>
+					<!-- <DrugHarvestYield>0.2</DrugHarvestYield> -->
+					<ForagedNutritionPerDay>0.4</ForagedNutritionPerDay>
+					<PruningSpeed>0.5</PruningSpeed>
+				</statOffsets>
+        		<allowedMeditationFocusTypes><li>Natural</li></allowedMeditationFocusTypes>
+				<skillGains>
+					<Plants>2</Plants>
+				</skillGains>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+</Defs>
